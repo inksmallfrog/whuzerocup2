@@ -16,7 +16,7 @@ class DBConnector
     }
 
     private function createConnection(){
-              $this->conn = mysqli_connect(SAE_MYSQL_HOST_M.":".SAE_MYSQL_PORT, SAE_MYSQL_USER, SAE_MYSQL_PASS, SAE_MYSQL_DB);
+              $this->conn = mysqli_connect(SAE_MYSQL_HOST_M, SAE_MYSQL_USER, SAE_MYSQL_PASS, SAE_MYSQL_DB, SAE_MYSQL_PORT);
         if(!conn){
             echo "连接数据库失败".mysqli_error();
         }
