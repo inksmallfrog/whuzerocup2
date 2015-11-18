@@ -31,12 +31,12 @@ class DBConnector
     }
 
     public function searchUser($userName){
-             $result = mysqli_query($this->conn, $this->conn, "select * from user WHERE userName=\"".$userName."\";");
+             $result = mysqli_query($this->conn, "select * from user WHERE userName=\"".$userName."\";");
         return mysqli_fetch_array($result);
     }
 
     public function getUserNewMessage($userName){
-             mysqli_query($this->conn, $this->conn, "create table if not EXISTS message(sender varchar(40), receiver varchar(40),
+             mysqli_query($this->conn, "create table if not EXISTS message(sender varchar(40), receiver varchar(40),
                      message varchar(1000), message_type tinyint(1), state tinyint(1));");
         $result = mysqli_query($this->conn, "select message from message WHERE receiver=\"".$userName."\" and state=0;");
         return $result;
