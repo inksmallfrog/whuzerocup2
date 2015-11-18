@@ -44,7 +44,6 @@ class DBConnector
 
     public function authenticateUser($userName, $password){
         mysqli_query($this->conn, "create database if not exists LoverSpaceInformation");
-        mysqli_select_db(SAE_MYSQL_DB);
         mysqli_query($this->conn, "create table if not EXISTS user(userName varchar(40), password varchar(40),
                      gender tinyint(1), pair VARCHAR(40), pairState tinyint(1));");
         $result = mysqli_query($this->conn, "select password from user WHERE  userName=\"".$userName."\";");
@@ -62,7 +61,6 @@ class DBConnector
 
     public function signupNewUser($userName, $password, $gender){
         mysqli_query($this->conn, "create database if not exists LoverSpaceInformation");
-        mysqli_select_db(SAE_MYSQLI_DB);
         mysqli_query($this->conn, "create table if not EXISTS user(userName varchar(40), password varchar(40),
                      gender tinyint(1), pair VARCHAR(40), pairState tinyint(1));");
         $result = mysqli_query($this->conn, "select * from user WHERE userName=\"".$userName."\";");
@@ -78,7 +76,6 @@ class DBConnector
         if($sender == $receiver){
             return "祝孤生orz";
         }
-        mysqli_select_db(SAE_MYSQLI_DB);
         $result = mysqli_query($this->conn, "select password from user WHERE  userName=\"".$receiver."\";");
         $user = mysqli_fetch_array($result);
         if(!$user){
