@@ -1,0 +1,23 @@
+div.authenticateBox{
+    width: 100%;
+    height: auto;
+    border: groove 1px;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+div.authenticateBox div.authenticateItem{
+    margin: 20px 0;
+}
+
+div.authenticateBox div.authenticateItem.errorInformation{
+    color: red;
+}
+
+div.authenticateBox .button{
+    margin: 0 2%;
+}
+
+div.authenticateBox textarea{
+    resize: none;
+}
