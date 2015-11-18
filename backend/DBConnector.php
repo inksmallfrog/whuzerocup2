@@ -31,13 +31,13 @@ class DBConnector
     }
 
     public function searchUser($userName){
-        mysql_select_db("LoverSpaceInformation");
+        mysql_select_db(SAE_MYSQL_DB);
         $result = mysql_query("select * from user WHERE userName=\"".$userName."\";");
         return mysql_fetch_array($result);
     }
 
     public function getUserNewMessage($userName){
-        mysql_select_db("LoverSpaceInformation");
+        mysql_select_db(SAE_MYSQL_DB);
         mysql_query("create table if not EXISTS message(sender varchar(40), receiver varchar(40),
                      message varchar(1000), message_type tinyint(1), state tinyint(1));");
         $result = mysql_query("select message from message WHERE receiver=\"".$userName."\" and state=0;");
@@ -46,7 +46,7 @@ class DBConnector
 
     public function authenticateUser($userName, $password){
         mysql_query("create database if not exists LoverSpaceInformation");
-        mysql_select_db("LoverSpaceInformation");
+        mysql_select_db(SAE_MYSQL_DB);
         mysql_query("create table if not EXISTS user(userName varchar(40), password varchar(40),
                      gender tinyint(1), pair VARCHAR(40), pairState tinyint(1));");
         $result = mysql_query("select password from user WHERE  userName=\"".$userName."\";");
@@ -64,7 +64,7 @@ class DBConnector
 
     public function signupNewUser($userName, $password, $gender){
         mysql_query("create database if not exists LoverSpaceInformation");
-        mysql_select_db("LoverSpaceInformation");
+        mysql_select_db(SAE_MYSQL_DB);
         mysql_query("create table if not EXISTS user(userName varchar(40), password varchar(40),
                      gender tinyint(1), pair VARCHAR(40), pairState tinyint(1));");
         $result = mysql_query("select * from user WHERE userName=\"".$userName."\";");
@@ -80,7 +80,7 @@ class DBConnector
         if($sender == $receiver){
             return "祝孤生orz";
         }
-        mysql_select_db("LoverSpaceInformation");
+        mysql_select_db(SAE_MYSQL_DB);
         $result = mysql_query("select password from user WHERE  userName=\"".$receiver."\";");
         $user = mysql_fetch_array($result);
         if(!$user){
