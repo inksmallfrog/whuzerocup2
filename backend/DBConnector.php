@@ -16,7 +16,7 @@ class DBConnector
     }
 
     private function createConnection(){
-        $this->conn = mysql_connect("127.0.0.1:3306", "root", "123456");
+        $this->conn = mysql_connect("SAE_MYSQL_HOST_M:SAE_MYSQL_PORT", "SAE_MYSQL_USER", "SAE_MYSQL_PASS");
         if(!conn){
             echo "连接数据库失败".mysql_error();
         }
