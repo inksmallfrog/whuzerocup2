@@ -16,7 +16,7 @@ class DBConnector
     }
 
     private function createConnection(){
-        $this->conn = mysqli_connect(SAE_MYSQL_HOST_M.":".SAE_MYSQL_PORT, SAE_MYSQL_USER, SAE_MYSQL_PASS);
+              $this->conn = mysqli_connect(SAE_MYSQL_HOST_M.":".SAE_MYSQL_PORT, SAE_MYSQL_USER, SAE_MYSQL_PASS, SAE_MYSQL_DB);
         if(!conn){
             echo "连接数据库失败".mysqli_error();
         }
@@ -31,25 +31,23 @@ class DBConnector
     }
 
     public function searchUser($userName){
-        mysqli_select_db(SAE_MYSQL_DB);
-        $result = mysqli_query("select * from user WHERE userName=\"".$userName."\";");
+             $result = mysqli_query($this->conn, $this->conn, "select * from user WHERE userName=\"".$userName."\";");
         return mysqli_fetch_array($result);
     }
 
     public function getUserNewMessage($userName){
-        mysqli_select_db(SAE_MYSQL_DB);
-        mysqli_query("create table if not EXISTS message(sender varchar(40), receiver varchar(40),
+             mysqli_query($this->conn, $this->conn, "create table if not EXISTS message(sender varchar(40), receiver varchar(40),
                      message varchar(1000), message_type tinyint(1), state tinyint(1));");
-        $result = mysqli_query("select message from message WHERE receiver=\"".$userName."\" and state=0;");
+        $result = mysqli_query($this->conn, "select message from message WHERE receiver=\"".$userName."\" and state=0;");
         return $result;
     }
 
     public function authenticateUser($userName, $password){
-        mysqli_query("create database if not exists LoverSpaceInformation");
+        mysqli_query($this->conn, "create database if not exists LoverSpaceInformation");
         mysqli_select_db(SAE_MYSQL_DB);
-        mysqli_query("create table if not EXISTS user(userName varchar(40), password varchar(40),
+        mysqli_query($this->conn, "create table if not EXISTS user(userName varchar(40), password varchar(40),
                      gender tinyint(1), pair VARCHAR(40), pairState tinyint(1));");
-        $result = mysqli_query("select password from user WHERE  userName=\"".$userName."\";");
+        $result = mysqli_query($this->conn, "select password from user WHERE  userName=\"".$userName."\";");
         $user = mysqli_fetch_array($result);
         if(!$user){
             return "用户名不存在";
@@ -63,15 +61,15 @@ class DBConnector
     }
 
     public function signupNewUser($userName, $password, $gender){
-        mysqli_query("create database if not exists LoverSpaceInformation");
+        mysqli_query($this->conn, "create database if not exists LoverSpaceInformation");
         mysqli_select_db(SAE_MYSQLI_DB);
-        mysqli_query("create table if not EXISTS user(userName varchar(40), password varchar(40),
+        mysqli_query($this->conn, "create table if not EXISTS user(userName varchar(40), password varchar(40),
                      gender tinyint(1), pair VARCHAR(40), pairState tinyint(1));");
-        $result = mysqli_query("select * from user WHERE userName=\"".$userName."\";");
+        $result = mysqli_query($this->conn, "select * from user WHERE userName=\"".$userName."\";");
         if(mysqli_fetch_array($result)){
             return "用户已存在";
         }
-        $result = mysqli_query("insert into user(userName, password, gender)
+        $result = mysqli_query($this->conn, "insert into user(userName, password, gender)
                                VALUES(\"".$userName."\", \"".$password."\", \"".$gender."\");");
         return "注册成功";
     }
@@ -81,16 +79,16 @@ class DBConnector
             return "祝孤生orz";
         }
         mysqli_select_db(SAE_MYSQLI_DB);
-        $result = mysqli_query("select password from user WHERE  userName=\"".$receiver."\";");
+        $result = mysqli_query($this->conn, "select password from user WHERE  userName=\"".$receiver."\";");
         $user = mysqli_fetch_array($result);
         if(!$user){
             return "用户名不存在";
         }
-        mysqli_query("create table if not EXISTS message(sender varchar(40), receiver varchar(40),
+        mysqli_query($this->conn, "create table if not EXISTS message(sender varchar(40), receiver varchar(40),
                      message varchar(1000), message_type tinyint(1), state tinyint(1));");
-        mysqli_query("insert into message(sender, receiver, message, message_type, state)
+        mysqli_query($this->conn, "insert into message(sender, receiver, message, message_type, state)
                      VALUES(\"".$sender."\", \"".$receiver."\", \"".$message."\", 0, 0)");
-        mysqli_query("update user set pair=\"".$receiver."\", pairState=0 where userName=\"".$sender."\";");
+        mysqli_query($this->conn, "update user set pair=\"".$receiver."\", pairState=0 where userName=\"".$sender."\";");
         return "申请成功";
     }
 }
