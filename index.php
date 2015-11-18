@@ -76,7 +76,7 @@
             else {
                 require("./backend/DBConnector.php");
                 $userInfo = $connector->searchUser($_SESSION["userName"]);
-                $messageNumber = mysql_num_rows($connector->getUserNewMessage($userInfo["userName"]));
+                $messageNumber = mysqli_num_rows($connector->getUserNewMessage($userInfo["userName"]));
 
                 $infoTip = "\n<a href=\"".htmlspecialchars($_SERVER["PHP_SELF"])."?action=logout\">\n
                               <span class=\"navigatorItem infoTip\">\n
