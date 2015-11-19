@@ -12,9 +12,11 @@ if(isset($_POST["userName"])) {
     } else if ($_POST["gender"] == "female") {
         $gender = 1;
     }
-    $authenticateResult = DBConnector::getInstance()->signupNewUser(htmlspecialchars($_POST["userName"]), htmlspecialchars($_POST["password"]), $gender);
+    $userName = htmlspecialchars($_POST["userName"]);
+    $password = password_hash(htmlspecialchars($_POST["password"]), PASSWORD_DEFAULT);
+    $authenticateResult = DBConnector::getInstance()->signupNewUser($userName, $password, $gender);
     if ($authenticateResult == "注册成功") {
-        $_SESSION["userName"] = $_POST["userName"];
+        $_SESSION["userName"] = $userName;
         $refresh = true;
     }
 }

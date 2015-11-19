@@ -21,7 +21,7 @@
             $option = "<button class=\"option\">删除</button></li>";
             switch($row["type"]){
                 case 0:
-                    $type = "交往请求";
+                    $type = "求勾搭0v0";
                     $option = "<button class=\"option\">接受</button></li><button class=\"option\">拒绝</button></li>";
                     break;
                 default:
@@ -29,7 +29,7 @@
                     break;
             }
             $htmlContent = $htmlContent."<li class=\"messageContent".$classType."\">
-                                         <a href=\"\">".$row["sender"]."</a>发来了一条".$type.
+                                         <a href=\"\">".$row["sender"]."</a>".$type.
                                         "<div class=\"message\">".$row["message"]."</div>".$option;
         }
 

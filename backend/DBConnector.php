@@ -20,13 +20,13 @@ class DBConnector
         if(!conn){
             echo "连接数据库失败".mysqli_error();
         }
-        mysqli_query($this->conn, "create table if not EXISTS user(userName varchar(40) NOT NULL,
-                                   password varchar(40) NOT NULL, gender tinyint(1) NOT NULL,
+        mysqli_query($this->conn, "create table if not EXISTS user(userName varchar(100) NOT NULL,
+                                   password varchar(100) NOT NULL, gender tinyint(1) NOT NULL,
                                    pair VARCHAR(40), pairState tinyint(1));");
         mysqli_query($this->conn, "create table if not EXISTS message(id bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
-                                   sender varchar(40) NOT NULL, receiver varchar(40) NOT NULL,
+                                   sender varchar(100) NOT NULL, receiver varchar(100) NOT NULL,
                                    message_type tinyint(1) NOT NULL, state tinyint(1) NOT NULL,
-                                   sendDate datetime NOT NULL, message varchar(1000))AUTO_INCREMENT=0;");
+                                   sendDate datetime NOT NULL, message varchar(1024))AUTO_INCREMENT=0;");
     }
 
     public static function getInstance(){
@@ -63,7 +63,7 @@ class DBConnector
         if(!$user){
             return "用户名不存在";
         }
-        else if($user["password"] != $password){
+        else if(!password_verify($password, $user["password"])){
             return "密码错误";
         }
         else{

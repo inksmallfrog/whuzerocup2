@@ -6,8 +6,10 @@
         }
     }
     if(isset($_POST["userName"])){
+        $userName = htmlspecialchars($_POST["userName"]);
+        $password = htmlspecialchars($_POST["password"]);
         require("../backend/DBConnector.php");
-        $authenticateResult = DBConnector::getInstance()->authenticateUser(htmlspecialchars($_POST["userName"]), htmlspecialchars($_POST["password"]));
+        $authenticateResult = DBConnector::getInstance()->authenticateUser($userName, $password);
         if($authenticateResult == "欢迎回家来～"){
             $_SESSION["userName"] = $_POST["userName"];
             $refresh = true;

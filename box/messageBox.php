@@ -28,15 +28,16 @@
                 $type = "";
                 switch($row["type"]){
                     case 0:
-                        $type = "交往请求";
+                        $type = "求勾搭0V0";
                         break;
                     default:
                         $type = "bad data";
                         break;
                 }
                 $htmlContent = $htmlContent."<li class=\"messageContent".$classType."\">
-                                                <a href=\"\">".$row["sender"]."</a>发来了一条".$type.
-                                                "<button class=\"hide\">隐藏</button></li>";
+                                                <a href=\"\">".$row["sender"]."</a>".$type.
+                                                "</li>";
+                DBConnector::getInstance()->readMessage($row["id"]);
             }
             echo $htmlContent;
         ?>

@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/navigator.css">
     <script language="JavaScript">
+        var xmlHttp;
         function authenticate(){
             document.getElementById("authentication").style.display = "block";
             document.getElementById("authenticationFilter").style.display = "block";
@@ -24,15 +25,50 @@
             document.getElementById("authenticationFilter").style.display = "none";
         }
         function showMessageBox(){
-            if(document.getElementById("messageFrame").style.display == "block"){
-                document.getElementById("messageFrame").style.display = "none";
-            }
-            else{
+            if(document.getElementById("unreadMessageCount").innerHTML != "（0）"){
                 document.getElementById("messageFrame").style.display = "block";
             }
         }
         function closeMessageBox(){
             document.getElementById("messageFrame").style.display = "none";
+        }
+        function GetXmlHttpObject()
+        {
+            var xmlHttp=null;
+            try
+            {
+                // Firefox, Opera 8.0+, Safari
+                xmlHttp=new XMLHttpRequest();
+            }
+            catch (e)
+            {
+                // Internet Explorer
+                try
+                {
+                    xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+                }
+                catch (e)
+                {
+                    xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+                }
+            }
+            return xmlHttp;
+        }
+        function autoUpdateUnreadMessage(){
+            xmlHttp=GetXmlHttpObject();
+            xmlHttp.onreadystatechange=resetUnreadMessage;
+            xmlHttp.open("GET","./backend/getUnreadMessage.php",true);
+            xmlHttp.send(null);
+        }
+        function resetUnreadMessage(){
+            if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete")
+            {
+                document.getElementById("unreadMessageCount").innerHTML= "（"+xmlHttp.responseText+"）";
+            }
+        }
+        function autoUpdate(){
+            autoUpdateUnreadMessage();
+            setTimeout("autoUpdateUnreadMessage()", 120000);
         }
         function buttonUp(event){
             if(event.keyCode == 27){
@@ -44,7 +80,7 @@
         }
     </script>
 </head>
-<body onkeyup="buttonUp(event)">
+<body onkeyup="buttonUp(event)" onload="autoUpdate()">
     <!--导航栏-->
     <div class="navigator">
         <a target="mainFrame" href="./page/mainPage.php">
@@ -113,15 +149,15 @@
                 }
 
                 $infoTip = $infoTip."<span class=\"navigatorItem infoTip\">
-                                     <a href=\"./page/messagePage.php\" target=\"mainFrame\">消息</a><a href=\"javascript:void(0)\" onclick=\"showMessageBox()\">（".$messageNumber."）</a>
-                                     <!--消息框-->
-                                     <iframe name=\"messageFrame\" id=\"messageFrame\"
-                                     src=\"box/messageBox.php\" frameborder=\"1\"></iframe>
-                                     </span>
+                                        <a href=\"./page/messagePage.php\" target=\"mainFrame\">消息</a>
+                                        <a href=\"javascript:void(0)\" id=\"unreadMessageCount\"
+                                            onmouseover=\"showMessageBox()\"></a>
+                                        <!--消息框-->
+                                        <iframe name=\"messageFrame\" id=\"messageFrame\"  onmouseout=\"closeMessageBox()\"
+                                            src=\"box/messageBox.php\" frameborder=\"1\"></iframe>
+                                        </span>
                                      <a target=\"mainFrame\" href=\"./src/information\">\n
-                                     <span class=\"navigatorItem infoTip\">\n
-                                     ".$userInfo["userName"]."
-                                     </span>\n
+                                        <span class=\"navigatorItem infoTip\">".$userInfo["userName"]."</span>
                                      </a>\n";
             }
             echo $infoTip;
