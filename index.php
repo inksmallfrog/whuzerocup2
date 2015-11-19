@@ -101,7 +101,7 @@
                                          </span>\n
                                          </a>\n";
                 }
-                else if($userInfo["pairState"] == "Waiting"){
+                else if($userInfo["pairState"] == 0){
                     $infoTip = $infoTip."<span class=\"avigatorItem infoTip\">\n
                                          等待 ".$userInfo["pair"]." 回应\n
                                          </span>\n";
@@ -112,17 +112,15 @@
                                          </span>\n";
                 }
 
-                $infoTip = $infoTip."<a href=\"javascript:void(0)\">
-                                     <span class=\"navigatorItem infoTip\" onclick=\"showMessageBox()\">
-                                     您有（".$messageNumber."）条新消息
+                $infoTip = $infoTip."<span class=\"navigatorItem infoTip\">
+                                     <a href=\"./page/messagePage.php\" target=\"mainFrame\">消息</a><a href=\"javascript:void(0)\" onclick=\"showMessageBox()\">（".$messageNumber."）</a>
                                      <!--消息框-->
                                      <iframe name=\"messageFrame\" id=\"messageFrame\"
                                      src=\"box/messageBox.php\" frameborder=\"1\"></iframe>
-                                     </span>\n
-                                     </a>
+                                     </span>
                                      <a target=\"mainFrame\" href=\"./src/information\">\n
                                      <span class=\"navigatorItem infoTip\">\n
-                                     ".$userInfo["userName"]."\n
+                                     ".$userInfo["userName"]."
                                      </span>\n
                                      </a>\n";
             }

@@ -7,9 +7,9 @@ if(isset($_GET["action"])){
 }
 if(isset($_POST["userName"])){
     require("../backend/DBConnector.php");
-    $authenticateResult = DBConnector::getInstance()->sendPairMessage($_SESSION["userName"],
-                                                                  $_POST["userName"],
-                                                                  $_POST["message"]);
+    $authenticateResult = DBConnector::getInstance()->sendPairMessage(htmlspecialchars($_SESSION["userName"]),
+                                                                  htmlspecialchars($_POST["userName"]),
+                                                                  htmlspecialchars($_POST["message"]));
     if($authenticateResult == "申请成功"){
         $close = true;
     }
