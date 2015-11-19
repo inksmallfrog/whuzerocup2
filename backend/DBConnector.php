@@ -35,11 +35,14 @@ class DBConnector
         return mysqli_fetch_array($result);
     }
 
-    public function getUserNewMessage($userName){
+    public function getUserMessage($userName, $state){
              mysqli_query($this->conn, "create table if not EXISTS message(sender varchar(40), receiver varchar(40),
-                     message varchar(1000), message_type tinyint(1), state tinyint(1));");
-        $result = mysqli_query($this->conn, "select message from message WHERE receiver=\"".$userName."\" and state=0;");
+                     message varchar(1000), message_type tinyint(1), state tinyint(1), id int(10), sendDate datetime);");
+        $result = mysqli_query($this->conn, "select * from message WHERE receiver=\"".$userName."\" and state=".$state.";");
         return $result;
+    }
+    public function readMessage($id){
+        mysqli_query($this->conn, "update message set state=1 WHERE id=".$id.";");
     }
 
     public function authenticateUser($userName, $password){
@@ -67,7 +70,7 @@ class DBConnector
         if(mysqli_fetch_array($result)){
             return "用户已存在";
         }
-        $result = mysqli_query($this->conn, "insert into user(userName, password, gender)
+        mysqli_query($this->conn, "insert into user(userName, password, gender)
                                VALUES(\"".$userName."\", \"".$password."\", \"".$gender."\");");
         return "注册成功";
     }

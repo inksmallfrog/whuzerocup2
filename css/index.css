@@ -2,3 +2,22 @@
     margin: 0;
     padding: 0;
 }
+
+iframe#authentication{
+    display: none;
+    position: fixed;
+    margin: 10% 32%;
+    width: 36%;
+    height: 330px;
+    z-index: 127;
+}
+
+div#authenticationFilter{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #666666;
+    opacity: 0.3;
+    z-index: 126;
+}

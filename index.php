@@ -14,7 +14,6 @@
     <title>情侣空间</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/navigator.css">
-    <link rel="stylesheet" type="text/css" href="css/authentication.css">
     <script language="JavaScript">
         function authenticate(){
             document.getElementById("authentication").style.display = "block";
@@ -23,6 +22,17 @@
         function closeAuthentication(){
             document.getElementById("authentication").style.display = "none";
             document.getElementById("authenticationFilter").style.display = "none";
+        }
+        function showMessageBox(){
+            if(document.getElementById("messageFrame").style.display == "block"){
+                document.getElementById("messageFrame").style.display = "none";
+            }
+            else{
+                document.getElementById("messageFrame").style.display = "block";
+            }
+        }
+        function closeMessageBox(){
+            document.getElementById("messageFrame").style.display = "none";
         }
         function buttonUp(event){
             if(event.keyCode == 27){
@@ -76,7 +86,7 @@
             else {
                 require("./backend/DBConnector.php");
                 $userInfo = $connector->searchUser($_SESSION["userName"]);
-                $messageNumber = mysqli_num_rows($connector->getUserNewMessage($userInfo["userName"]));
+                $messageNumber = mysqli_num_rows($connector->getUserMessage($userInfo["userName"], 0));
 
                 $infoTip = "\n<a href=\"".htmlspecialchars($_SERVER["PHP_SELF"])."?action=logout\">\n
                               <span class=\"navigatorItem infoTip\">\n
@@ -89,11 +99,7 @@
                                          <span class=\"navigatorItem infoTip\">\n
                                          选择情侣\n
                                          </span>\n
-                                         </a>
-                                        <span class=\"navigatorItem infoTip\">\n
-                                         您还没有选择情侣\n
-                                         </span>\n
-                                         \n";
+                                         </a>\n";
                 }
                 else if($userInfo["pairState"] == "Waiting"){
                     $infoTip = $infoTip."<span class=\"avigatorItem infoTip\">\n
@@ -106,11 +112,14 @@
                                          </span>\n";
                 }
 
-                $infoTip = $infoTip."<a target=\"mainFrame\" href=\"./src/messagePage\">\n
-                                     <span class=\"navigatorItem infoTip\">\n
-                                     您有（".$messageNumber."）条新消息\n
+                $infoTip = $infoTip."<a href=\"javascript:void(0)\">
+                                     <span class=\"navigatorItem infoTip\" onclick=\"showMessageBox()\">
+                                     您有（".$messageNumber."）条新消息
+                                     <!--消息框-->
+                                     <iframe name=\"messageFrame\" id=\"messageFrame\"
+                                     src=\"box/messageBox.php\" frameborder=\"1\"></iframe>
                                      </span>\n
-                                     </a>\n
+                                     </a>
                                      <a target=\"mainFrame\" href=\"./src/information\">\n
                                      <span class=\"navigatorItem infoTip\">\n
                                      ".$userInfo["userName"]."\n

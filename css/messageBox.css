@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div.header{
+    background: #eeffff;
+}
+div.header button{
+    position: relative;
+    left: 88%;
+}
+
+ul.messageList{
+    list-style: none;
+}
+
+ul.messageList .messageContent0{
+    background: #ffffff;
+}
+ul.messageList .messageContent1{
+    background: #eeffff;
+}
+ul.messageList .hide{
+    position: relative;
+    left: 13.3%;
+}
