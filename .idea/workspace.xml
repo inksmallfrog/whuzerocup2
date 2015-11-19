@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="581524c3-caee-4a78-b2f2-932a327bb3ad" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/messagePage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/DBConnector.php" afterPath="$PROJECT_DIR$/backend/DBConnector.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/authentication/choosePair.php" afterPath="$PROJECT_DIR$/authentication/choosePair.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/authentication/signin.php" afterPath="$PROJECT_DIR$/authentication/signin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/authentication/signup.php" afterPath="$PROJECT_DIR$/authentication/signup.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="581524c3-caee-4a78-b2f2-932a327bb3ad" name="Default" comment="" />
     <ignored path="whuzerocup.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -609,15 +601,15 @@
       <workItem from="1447826842353" duration="8085000" />
       <workItem from="1447846195802" duration="181000" />
       <workItem from="1447896328448" duration="7004000" />
-      <workItem from="1447906573496" duration="4394000" />
+      <workItem from="1447906573496" duration="4453000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73396000" />
+    <option name="totallyTimeSpent" value="73455000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1354" height="741" extended-state="4" />
+    <frame x="0" y="0" width="1354" height="741" extended-state="5" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
