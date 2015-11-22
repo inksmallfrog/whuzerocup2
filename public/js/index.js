@@ -119,11 +119,11 @@ function checkSignup(){
         showError(passwordRight, "密码不能为空");
         return false;
     }
-    if(!sexLeft[0].checked && !sexLeft[0].checked){
+    if(!sexLeft[0].checked || !sexLeft[0].checked){
         showError(sexLeft[0], "您……的性别");
         return false;
     }
-    if(!sexRight[0].checked && !sexRight[0].checked){
+    if(!sexRight[0].checked || !sexRight[0].checked){
         showError(sexRight[0], "您……的性别");
         return false;
     }
