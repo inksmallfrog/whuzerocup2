@@ -1,23 +1,84 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
-
-iframe#authentication{
-    display: none;
-    position: fixed;
-    margin: 10% 32%;
-    width: 36%;
-    height: 330px;
-    z-index: 127;
+body{
+    overflow-y: hidden;
 }
-
-div#authenticationFilter{
-    display: none;
-    position: fixed;
+div.firstScreen{
+    position:fixed;
     width: 100%;
-    height: 100%;
-    background: #666666;
-    opacity: 0.3;
-    z-index: 126;
+    height: 100vh;
+    background: #ffcccc;
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+}
+div.firstScreen.navigator{
+    height:4%;
+}
+
+div.firstScreen div.authenticateBox{
+    position: relative;
+    display: block;
+    margin: 8% 25%;
+    height: 60vh;
+    border: solid 1px;
+    left: 0;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+div.firstScreen div.authenticateBox.hide{
+    opacity: 0;
+}
+div.firstScreen div.authenticateBox.login.left{
+    left: -100%;
+}
+div.firstScreen div.authenticateBox.signup{
+    position: relative;
+    display: block;
+    margin: 4% 20%;
+    height: 76vh;
+    border: solid 1px;
+    top: -80vh;
+    left: 100%;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+div.firstScreen div.authenticateBox.signup.left{
+    left: 0;
+}
+
+div.firstScreen div.navigatorBox{
+    height: inherit;
+    width: 100%;
+}
+div.firstScreen div.navigatorBox.hide{
+    display: none;
+}
+
+
+div.secondScreen{
+    padding-top: 100vh;
+    width: 100%;
+    height:96vh;
+    background: #ccccff;
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+}
+div.secondScreen.mainPage{
+    padding-top: 4vh;
 }
