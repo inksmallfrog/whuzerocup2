@@ -3,13 +3,15 @@
     margin: 0;
 }
 body{
+    overflow-x: hidden;
     overflow-y: hidden;
 }
 div.firstScreen{
     position:fixed;
     width: 100%;
     height: 100vh;
-    background: #ffcccc;
+    background: url("../res/background/firstScreenBg.jpg");
+    background-size: 100% 100%;
     -webkit-transition: all 1.5s ease-in-out;
     -moz-transition: all 1.5s ease-in-out;
     -ms-transition: all 1.5s ease-in-out;
@@ -20,13 +22,24 @@ div.firstScreen.navigator{
     height:4%;
 }
 
+div.firstScreen .flystar{
+    position: absolute;
+    width: 231px;
+    height: 151px;
+    background: url("../res/background/flyStar.png");
+    z-index: 2;
+}
+
+
 div.firstScreen div.authenticateBox{
+    background-color: rgba(204, 204, 204, 0.3);
     position: relative;
     display: block;
     margin: 8% 25%;
     height: 60vh;
     border: solid 1px;
     left: 0;
+    z-index: 10;
 
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
@@ -34,12 +47,16 @@ div.firstScreen div.authenticateBox{
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 }
-div.firstScreen div.authenticateBox.hide{
-    opacity: 0;
-}
 div.firstScreen div.authenticateBox.login.left{
     left: -100%;
 }
+div.firstScreen div.authenticateBox.login.right{
+    left: 100%;
+}
+div.firstScreen div.authenticateBox.hide{
+    opacity: 0;
+}
+
 div.firstScreen div.authenticateBox.signup{
     position: relative;
     display: block;
@@ -59,12 +76,50 @@ div.firstScreen div.authenticateBox.signup.left{
     left: 0;
 }
 
-div.firstScreen div.navigatorBox{
-    height: inherit;
-    width: 100%;
+div.firstScreen div.authenticateBox.findPassword{
+    position: relative;
+    display: block;
+    margin: 4% 20%;
+    height: 50vh;
+    border: solid 1px;
+    top: -160vh;
+    left: -100%;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
-div.firstScreen div.navigatorBox.hide{
-    display: none;
+div.firstScreen div.authenticateBox.findPassword.right{
+    left: 0;
+}
+
+div.firstScreen div.navigatorBox{
+    position: inherit;
+    top:100%;
+    width: 100%;
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+}
+div.firstScreen div.navigatorBox ul{
+    list-style: none;
+    margin:0 30%;
+}
+div.firstScreen div.navigatorBox ul li{
+    display: inline-block;
+    margin:0 13%;
+}
+div.firstScreen div.navigatorBox ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+div.firstScreen.navigator div.navigatorBox.show{
+    left: 0;
+    top: 0;
 }
 
 
@@ -81,4 +136,8 @@ div.secondScreen{
 }
 div.secondScreen.mainPage{
     padding-top: 4vh;
+}
+div.secondScreen iframe{
+    width: 100%;
+    height: 100%;
 }
