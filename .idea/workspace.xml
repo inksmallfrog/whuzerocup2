@@ -60,8 +60,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47487843">
-              <caret line="121" column="40" selection-start-line="121" selection-start-column="40" selection-end-line="121" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.5915721">
+              <caret line="125" column="30" selection-start-line="125" selection-start-column="30" selection-end-line="125" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -575,12 +575,12 @@
       <workItem from="1448095838000" duration="8879000" />
       <workItem from="1448149487185" duration="16114000" />
       <workItem from="1448167537903" duration="2642000" />
-      <workItem from="1448190573887" duration="14545000" />
+      <workItem from="1448190573887" duration="14624000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42180000" />
+    <option name="totallyTimeSpent" value="42259000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="59" width="1362" height="741" extended-state="4" />
@@ -700,8 +700,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47487843">
-          <caret line="121" column="40" selection-start-line="121" selection-start-column="40" selection-end-line="121" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.5915721">
+          <caret line="125" column="30" selection-start-line="125" selection-start-column="30" selection-end-line="125" selection-end-column="30" />
           <folding />
         </state>
       </provider>
