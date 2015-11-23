@@ -6,6 +6,9 @@
     <title>情侣空间</title>
     <link rel="stylesheet" type="text/css" href="./css/index.css"/>
     <link rel="stylesheet" type="text/css" href="./css/form.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/findPasswordBox.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/loginBox.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/signupBox.css"/>
     <script src="./js/index.js"></script>
 </head>
 <body>
@@ -22,7 +25,7 @@
                 <div class="error userError"></div>
                 <input type="password" name="password" placeholder="密码" onblur="changeInput(this, '密码', false)">
                 <div class="error passwordError"></div>
-                <a href="javascript:void(0)" onclick="goFindPassword()">找回密码</a>
+                <div class="findPasswordButton"><a href="javascript:void(0)" onclick="goFindPassword()">找回密码</a></div>
                 <input type="submit" class="left default" value="登录">
                 <input type="button" class="right considerable" value="注册新帐号" onclick="goSignup()">
             </form>
@@ -77,7 +80,7 @@
         </div>
         <div class="navigatorBox">
             <ul>
-                <li class="left"><a target="mainPage" href="./page/home.php">主页</a></li>
+                <li class="left"><a target="mainPage" href="./page/main.php">主页</a></li>
                 <li class="left"><a target="mainPage" href="./page/dinary.php">日记</a></li>
                 <li class="left"><a target="mainPage" href="./page/album.php">相册</a></li>
             </ul>

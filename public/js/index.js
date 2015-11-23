@@ -171,12 +171,14 @@ function goSecondScreen(){
     var navigartorBox = document.getElementsByClassName("navigatorBox")[0];
 
     var secondScreen = document.getElementsByClassName("secondScreen")[0];
+    var mainPage = document.getElementsByName("mainPage")[0];
 
     firstScreen.classList.add("navigator");
     authenticateBox.classList.add("hide");
     navigartorBox.classList.add("show");
 
     secondScreen.classList.add("mainPage");
+    mainPage.setAttribute("src", "./page/main.php");
 }
 
 function goFirstScreen(){
@@ -267,7 +269,7 @@ wheelFunction(document, function(event){
         firstScreen.classList.add("navigator");
         secondScreen.classList.add("mainPage");
     }*/
-    if(event.delta > 0 && window.pageYOffset == 0){
+    if(event.delta > 0 && window.pageYOffset == 0 && isSecondScreen){
         goFirstScreen();
     }
 });

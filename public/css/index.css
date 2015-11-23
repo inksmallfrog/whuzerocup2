@@ -19,7 +19,7 @@ div.firstScreen{
     transition: all 1.5s ease-in-out;
 }
 div.firstScreen.navigator{
-    height:4%;
+    height:4vh;
 }
 
 div.firstScreen .flystar{
@@ -35,9 +35,9 @@ div.firstScreen div.authenticateBox{
     background-color: rgba(204, 204, 204, 0.3);
     position: relative;
     display: block;
-    margin: 8% 25%;
+    margin: 20vh 25%;
     height: 60vh;
-    border: solid 1px;
+    border: solid 0.1em;
     left: 0;
     z-index: 10;
 
@@ -60,9 +60,9 @@ div.firstScreen div.authenticateBox.hide{
 div.firstScreen div.authenticateBox.signup{
     position: relative;
     display: block;
-    margin: 4% 20%;
-    height: 76vh;
-    border: solid 1px;
+    margin: 20vh 20%;
+    height: 68vh;
+    border: solid 0.1em;
     top: -80vh;
     left: 100%;
 
@@ -79,8 +79,8 @@ div.firstScreen div.authenticateBox.signup.left{
 div.firstScreen div.authenticateBox.findPassword{
     position: relative;
     display: block;
-    margin: 4% 20%;
-    height: 50vh;
+    margin: 30vh 20%;
+    height: 40vh;
     border: solid 1px;
     top: -160vh;
     left: -100%;

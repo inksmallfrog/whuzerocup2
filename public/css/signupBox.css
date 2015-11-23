@@ -1,0 +1,36 @@
+form.formDouble{
+    padding: 10vh 2%;
+}
+form div.formLeft{
+    width: 45%;
+    float: left;
+}
+form div.formRight{
+    width: 45%;
+    margin-right: 2%;
+    float: right;
+}
+
+form.formDouble input[type="submit"],
+form.formDouble input[type="button"]{
+    margin: 3vh 20%;
+    width: 60%;
+    height: 8vh;
+    font-size: 3vh;
+    border: none;
+    background: #cff;
+}
+
+form.formDouble input[type="submit"].considerable,
+form.formDouble input[type="button"].considerable{
+    background: #eee;
+}
+
+form.formDouble div.checkBox{
+    font-size: 3vh;
+    float:right;
+}
+form.formDouble div.radioBox{
+    font-size: 3vh;
+    float:left;
+}

@@ -4,7 +4,7 @@
 }
 
 form{
-    padding: 10% 20%;
+    padding: 8vh 14%;
 }
 
 form div.error{
@@ -22,12 +22,13 @@ form div.error{
 }
 form div.error.show{
     height: 4vh;
+    font-size: 3vh;
     opacity: 1;
 }
 
 form div.error .errorIcon{
-    width: 5%;
-    margin: 2% 2% 0 4%;
+    width: 3vh;
+    margin: 1vh 2% 0 4%;
 }
 
 input[type="text"],
@@ -35,41 +36,32 @@ input[type="password"]{
     width: 100%;
     padding-left: 3%;
     height: 8vh;
-    border: solid 2px #fff;
+    border: solid 0.8vh #fff;
     background: inherit;
-    font-size: 1.2em;
+    font-size: 3vh;
 }
 input[type="text"]::-webkit-input-placeholder,
 input[type="password"]::-webkit-input-placeholder { /* WebKit browsers */
-    font-size: 1em;
     color:    #fff;
 }
 input[type="text"]:-moz-placeholder,
 input[type="password"]:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
-    font-size: 1em;
     color:    #fff;
 }
 input[type="text"]::-moz-placeholder,
 input[type="password"]::-moz-placeholder{ /* Mozilla Firefox 19+ */
-    font-size: 1em;
     color:    #fff;
 }
 input[type="text"]:-ms-input-placeholder,
 input[type="password"]:-ms-input-placeholder{ /* Internet Explorer 10+ */
-    font-size: 1em;
     color:    #fff;
-}
-form a{
-    margin: 0 0 0 82%;
-    text-decoration: none;
-    color: #fff;
 }
 input[type="submit"],
 input[type="button"]{
-    margin: 5% 0;
+    margin: 1.6vh 0;
     width: 35%;
     height: 8vh;
-    font-size: 1.2em;
+    font-size: 3vh;
     border: none;
     background: #cff;
 }
@@ -82,45 +74,10 @@ input[type="button"].left{
 input[type="submit"].right,
 input[type="button"].right{
     float: right;
-    margin-top: 5.2%;
+    margin-right: 3%;
     margin-left: 12%;
 }
 input[type="submit"].considerable,
 input[type="button"].considerable{
     background: #eee;
-}
-
-form.formDouble{
-    padding: 10% 2%;
-}
-form div.formLeft{
-    width: 45%;
-    float: left;
-}
-form div.formRight{
-    width: 45%;
-    margin-right: 2%;
-    float: right;
-}
-
-form.formDouble input[type="submit"],
-form.formDouble input[type="button"]{
-    margin: 12% 20%;
-    width: 60%;
-    height: 8vh;
-    font-size: 1.2em;
-    border: none;
-    background: #cff;
-}
-
-form.formDouble input[type="submit"].considerable,
-form.formDouble input[type="button"].considerable{
-    background: #eee;
-}
-
-form.formDouble div.checkBox{
-    float:right;
-}
-form.formDouble div.radioBox{
-    float:left;
 }
