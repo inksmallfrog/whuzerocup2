@@ -37,7 +37,7 @@ function changeTimeLineBarMonth(monthItem){
 
 var repeatCount = 0;
 var cTimeout;
-var initStep = 30;
+var initStep = 20;
 
 function getElementTopPosition(element){
     var top = 0;

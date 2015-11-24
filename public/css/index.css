@@ -15,11 +15,11 @@ div.firstScreen{
     height: 100vh;
     background: url("../res/background/firstScreenBg.jpg");
     background-size: 100vw 100vh;
-    -webkit-transition: all 1.5s ease-in-out;
-    -moz-transition: all 1.5s ease-in-out;
-    -ms-transition: all 1.5s ease-in-out;
-    -o-transition: all 1.5s ease-in-out;
-    transition: all 1.5s ease-in-out;
+    -webkit-transition: height 1.5s ease-in-out;
+    -moz-transition: height 1.5s ease-in-out;
+    -ms-transition: height 1.5s ease-in-out;
+    -o-transition: height 1.5s ease-in-out;
+    transition: height 1.5s ease-in-out;
 }
 div.firstScreen.navigator{
     height:4vh;
@@ -82,6 +82,9 @@ div.firstScreen div.authenticateBox.signup{
 div.firstScreen div.authenticateBox.signup.left{
     left: 0;
 }
+div.firstScreen div.authenticateBox.signup.hide{
+    display: none;
+}
 
 div.firstScreen div.authenticateBox.findPassword{
     position: relative;
@@ -117,7 +120,10 @@ div.firstScreen div.navigatorBox{
 }
 div.firstScreen div.navigatorBox ul{
     list-style: none;
-    margin:0 30vw;
+    width: 60vw;
+    margin:0.1vh auto;
+    font-size: 2.6vh;
+    text-align: center;
 }
 div.firstScreen div.navigatorBox ul li{
     display: inline-block;

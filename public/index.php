@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,7 +83,7 @@
         </div>
         <div class="navigatorBox">
             <ul>
-                <li class="left"><a target="mainPage" href="./page/main.php">主页</a></li>
+                <li class="left"><a target="mainPage" href="page/main.php">主页</a></li>
                 <li class="left"><a target="mainPage" href="./page/dinary.php">日记</a></li>
                 <li class="left"><a target="mainPage" href="./page/album.php">相册</a></li>
             </ul>
@@ -89,6 +92,11 @@
     <div class="secondScreen">
         <iframe name="mainPage"></iframe>
     </div>
+    <?php
+        if(isset($_SESSION["userName"])){
+            echo "<script>goSecondScreen()</script>";
+        }
+    ?>
     <script>
         starFly();
     </script>

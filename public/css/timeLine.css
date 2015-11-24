@@ -9,64 +9,19 @@ a{
     text-decoration: none;
     color:inherit;
 }
-body{
-    background: #3399cc;
-}
-
-div.selectBox{
-    position: fixed;
-    margin-left: 2%;
-    width: 6%;
-    padding-right: 1%;
-    border-right: solid 0.1em #fff;
-    float: left;
-    color: #ccc;
-}
-div.selectBox ul a:hover{
-    color: #fff;
-}
-
-div.selectBox ul.yearSelect ul.monthSelect li[class^="monthItem"].show.active,
-div.selectBox ul a.active{
-    color: #fff;
-}
-div.selectBox ul.yearSelect li.yearItem{
-    text-align: right;
-    font-size: 3vh;
-}
-div.selectBox ul.yearSelect ul.monthSelect li[class^="monthItem"]{
-    position: relative;
-    left:-200%;
-    opacity: 0;
-    height: 0;
-    -webkit-transition: height 1s ease-in-out, opacity 1s ease-in-out;
-    -moz-transition: height 1s ease-in-out, opacity 1s ease-in-out;
-    -ms-transition: height 1s ease-in-out, opacity 1s ease-in-out;
-    -o-transition: height 1s ease-in-out, opacity 1s ease-in-out;
-    transition: height 1s ease-in-out, opacity 1s ease-in-out;
-}
-div.selectBox ul.yearSelect ul.monthSelect li[class^="monthItem"].show{
-    opacity: 1;
-    height: 3vh;
-    left:0
-}
-div.selectBox ul.monthSelect li[class^="monthItem"]{
-    text-align: right;
-    font-size: 2vh;
-}
 
 div.timeLineBox{
     background: url("../res/background/timeLineBg.jpg") fixed;
     background-size: 100vw 100vh;
     float:right;
-    width: 90%;
+    width: 100vw;
     height: auto;
     padding-bottom: 82.5vh;
 }
 div.timeLineBox div.timeLine{
-    background: url("../res/background/timeLinep.png") repeat-y 10vw;
+    background: url("../res/background/timeLinep.png") repeat-y 21vw;
     padding-top: 6vh;
-    padding-left: 13vw;
+    padding-left: 24vw;
     position: relative;
 }
 
@@ -74,14 +29,14 @@ div.timeLineBox div.timeLine div.contentYear,
 div.timeLineBox div.timeLine div.contentMonth{
     height:3vh;
     font-weight: bold;
-    font-size: 3vh;
+    font-size: 1.4vw;
     position: relative;
-    left: -8vw;
+    left: -7vw;
     clear: both;
     color: #000;
 }
 div.timeLineBox div.timeLine div.contentMonth{
-    font-size: 2.5vh;
+    font-size: 1.2vw;
 }
 
 div.timeLineBox div.timeLine div.contentItemLeft,

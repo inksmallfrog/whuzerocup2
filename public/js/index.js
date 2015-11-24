@@ -167,14 +167,16 @@ function goSecondScreen(){
     for(var i = 0; i < stars.length; ++i){
         stars[i].style.display = "none";
     }
-    var authenticateBox = document.getElementsByClassName("authenticateBox")[0];
+    var authenticateBoxs = document.getElementsByClassName("authenticateBox");
     var navigartorBox = document.getElementsByClassName("navigatorBox")[0];
 
     var secondScreen = document.getElementsByClassName("secondScreen")[0];
     var mainPage = document.getElementsByName("mainPage")[0];
 
     firstScreen.classList.add("navigator");
-    authenticateBox.classList.add("hide");
+    for(var i = 0; i < authenticateBoxs.length; ++i){
+        authenticateBoxs[i].classList.add("hide");
+    }
     navigartorBox.classList.add("show");
 
     secondScreen.classList.add("mainPage");
@@ -188,13 +190,15 @@ function goFirstScreen(){
     for(var i = 0; i < stars.length; ++i){
         stars[i].style.removeProperty("display");
     }
-    var authenticateBox = document.getElementsByClassName("authenticateBox")[0];
+    var authenticateBoxs = document.getElementsByClassName("authenticateBox");
     var navigartorBox = document.getElementsByClassName("navigatorBox")[0];
 
     var secondScreen = document.getElementsByClassName("secondScreen")[0];
 
     firstScreen.classList.remove("navigator");
-    authenticateBox.classList.remove("hide");
+    for(var i = 0; i < authenticateBoxs.length; ++i){
+        authenticateBoxs[i].classList.remove("hide");
+    }
     navigartorBox.classList.remove("show");
 
     secondScreen.classList.remove("mainPage");
