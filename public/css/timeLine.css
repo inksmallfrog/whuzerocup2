@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+body{
+    background: #3399cc;
+}
+
+div.selectBox{
+    position: fixed;
+    margin-left: 2%;
+    width: 6%;
+    padding-right: 1%;
+    border-right: solid 0.1em #fff;
+    float: left;
+    color: #ccc;
+}
+div.selectBox ul a:hover{
+    color: #fff;
+}
+
+div.selectBox ul.yearSelect ul.monthSelect li[class^="monthItem"].show.active,
+div.selectBox ul a.active{
+    color: #fff;
+}
+div.selectBox ul.yearSelect li.yearItem{
+    text-align: right;
+    font-size: 3vh;
+}
+div.selectBox ul.yearSelect ul.monthSelect li[class^="monthItem"]{
+    position: relative;
+    left:-200%;
+    opacity: 0;
+    height: 0;
+    -webkit-transition: height 1s ease-in-out, opacity 1s ease-in-out;
+    -moz-transition: height 1s ease-in-out, opacity 1s ease-in-out;
+    -ms-transition: height 1s ease-in-out, opacity 1s ease-in-out;
+    -o-transition: height 1s ease-in-out, opacity 1s ease-in-out;
+    transition: height 1s ease-in-out, opacity 1s ease-in-out;
+}
+div.selectBox ul.yearSelect ul.monthSelect li[class^="monthItem"].show{
+    opacity: 1;
+    height: 3vh;
+    left:0
+}
+div.selectBox ul.monthSelect li[class^="monthItem"]{
+    text-align: right;
+    font-size: 2vh;
+}
+
+div.timeLineBox{
+    background: url("../res/background/timeLineBg.jpg") fixed;
+    background-size: 100vw 100vh;
+    float:right;
+    width: 90%;
+    height: auto;
+    padding-bottom: 82.5vh;
+}
+div.timeLineBox div.timeLine{
+    background: url("../res/background/timeLinep.png") repeat-y 10vw;
+    padding-top: 6vh;
+    padding-left: 13vw;
+    position: relative;
+}
+
+div.timeLineBox div.timeLine div.contentYear,
+div.timeLineBox div.timeLine div.contentMonth{
+    height:3vh;
+    font-weight: bold;
+    font-size: 3vh;
+    position: relative;
+    left: -8vw;
+    clear: both;
+    color: #000;
+}
+div.timeLineBox div.timeLine div.contentMonth{
+    font-size: 2.5vh;
+}
+
+div.timeLineBox div.timeLine div.contentItemLeft,
+div.timeLineBox div.timeLine div.contentItemRight{
+    width: 33vw;
+    background: #fff;
+    border-radius: 2%;
+    margin: 1vh 4vw 0 0;
+    position: relative;
+    float: left;
+}
+div.timeLineBox div.timeLine div.contentItemFirst{
+    top: -3vh
+}
+div.timeLineBox div.timeLine div.contentItemRight{
+    float: right;
+}
+
+div.timeLineBox div.timeLine div.contentIconArrow{
+    position: absolute;
+    left:-0.8vw;
+    top:0.8vh;
+    height: 0;
+    border-color: transparent #fff transparent transparent;
+    border-width: 1em 1em 1em 0;
+    border-style: dashed solid dashed dashed;
+}
+
+div.timeLineBox div.timeLine div.contentIconDot,
+div.timeLineBox div.timeLine div.contentIconSmallDot{
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    left: -3.4vw;
+    top: 2vh
+}
+div.timeLineBox div.timeLine div.contentIconSmallDot{
+    width: 0.4vw;
+    height: 0.4vw;
+    background: #57acff;
+    left: 0.3vw;
+    top: 0.65vh;
+}
+div.timeLineBox div.timeLine div.contentItemRight div.contentIconDot,
+div.timeLineBox div.timeLine div.contentItemRight div.contentIconSmallDot{
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    left: -42.4vw;
+    top: 2vh
+}
+div.timeLineBox div.timeLine div.contentItemRight div.contentIconSmallDot{
+    width: 0.4vw;
+    height: 0.4vw;
+    background: #57acff;
+    left: 0.3vw;
+    top: 0.65vh;
+}
+
+div.timeLineBox div.timeLine div.contentItemHead{
+    padding: 2vh 2vw;
+    padding-bottom: 0;
+}
+div.timeLineBox div.timeLine div.contentItemHeadTitle{
+    height: 4vh;
+    font-size: 3vh;
+    border-bottom: 0.1em solid #333;
+    position: relative;
+    color: #333;
+}
+div.timeLineBox div.timeLine div.contentItemHeadIntroduction{
+    height: auto;
+    font-size: 2vh;
+    position: relative;
+    color: #666;
+    padding: 1vh 0;
+}

@@ -30,6 +30,6 @@
 
         </div>
     </div>
-    <canvas class="timeLine"></canvas>
+    <iframe class="contentFrame" src="timeLine.html"></iframe>
 </body>
 </html>

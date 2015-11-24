@@ -270,7 +270,7 @@ wheelFunction(document, function(event){
         secondScreen.classList.add("mainPage");
     }*/
     if(event.delta > 0 && window.pageYOffset == 0 && isSecondScreen){
-        goFirstScreen();
+//        goFirstScreen();
     }
 });
 

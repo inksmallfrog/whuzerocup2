@@ -11,7 +11,7 @@ ul{
 }
 div.leftBar{
     float: left;
-    width: 20%;
+    width: 16%;
     height: 100vh;
     background: #fcc;
     -webkit-transition: height 1.5s ease-in-out;
@@ -35,12 +35,12 @@ div.leftBar div.head{
 }
 div.leftBar div.head .headImg{
     border-radius: 50%;
-    height: 15vh;
-    margin: 1vh;
+    height: 5vw;
+    margin: 1vh 2vw;
 }
 div.leftBar div.head a.userName{
-    margin:2vh 0 1vh 0;
-    font-size: 3vh;
+    margin:1vh 0 1vh 0;
+    font-size: 2.5vh;
     display: inline-block;
 }
 div.leftBar div.head a.userName .selectIcon{
@@ -63,7 +63,7 @@ div.leftBar div.head div.option .selectItem{
     transition: all 1s ease-in-out;
 }
 div.leftBar div.head div.option .selectItem.show{
-    height:3vh;
+    height:2.5vh;
     opacity:1;
 }
 div.leftBar div.head div.option .selectItem.show:hover{
@@ -75,6 +75,8 @@ div.leftBar div.head .introduction{
     font-size: 2vh;
 }
 
-canvas.timeLine{
+iframe.contentFrame{
     float:right;
+    width: 83.7%;
+    height: 99vh;
 }
