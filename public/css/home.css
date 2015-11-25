@@ -119,7 +119,7 @@ div.memorialFixed ul.yearSelect li.yearItem{
 }
 div.memorialFixed ul.yearSelect ul.monthSelect li[class^="monthItem"]{
     position: relative;
-    left:-100%;
+    left:-100vw;
     opacity: 0;
     height: 0;
     -webkit-transition: height 1s ease-in-out, opacity 1s ease-in-out;
