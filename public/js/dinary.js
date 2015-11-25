@@ -10,8 +10,12 @@ function enterPassage(){
 function quitPassage(){
     document.getElementsByClassName("firstScreen")[0].classList.remove("up");
     document.getElementsByClassName("secondScreen")[0].classList.remove("up");
+    isInPassage = false;
 }
 function showCategory(type){
+    if(isInPassage){
+        quitPassage();
+    }
     var allPasage = document.getElementsByClassName("passage");
     if(type == null){
         for(var i = 0; i < allPasage.length; ++i){

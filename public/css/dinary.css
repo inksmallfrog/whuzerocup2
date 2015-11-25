@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
 a{
     text-decoration: none;
     color: inherit;
@@ -130,6 +125,11 @@ div.secondScreen.up{
     height: auto;
 }
 div.secondScreen iframe{
+    border: none;
+    height: 0vh;
+    width: 100vw;
+}
+div.secondScreen.up iframe{
     border: none;
     height: 100vh;
     width: 100vw;

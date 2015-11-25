@@ -12,72 +12,68 @@
     <script src="../js/dinary.js"></script>
 </head>
 <body>
-    <div class="fixedBox">
-        <div class="head">
-            <img src="../res/headImg/head.jpg" class="headImg">
-            <span class="select">
-                <a class="userName" href="javascript:void(0)" onclick="toggleSelectOption()">
-                    二娃就是这么任性
-                    <img src="../res/icon/select.png" class="selectIcon">
-                </a>
-            </span>
-            <div class="option">
-                <ul>
-                    <li class="selectItem"><a href="javascript:void(0)">个人信息</a></li>
-                    <li class="selectItem"><a href="javascript:void(0)" onclick="goDinary()">情侣信息</a></li>
-                    <li class="selectItem"><a href="javascript:void(0)" onclick="logout()">登出</a></li>
-                </ul>
-            </div>
-            <p class="introduction">其实还是很喜欢你的～</p>
+    <div class="head">
+        <img src="../res/headImg/head.jpg" class="headImg">
+        <span class="select">
+            <a class="userName" href="javascript:void(0)" onclick="toggleSelectOption()">
+                二娃就是这么任性
+                <img src="../res/icon/select.png" class="selectIcon">
+            </a>
+        </span>
+        <div class="option">
+            <ul>
+                <li class="selectItem"><a href="javascript:void(0)">个人信息</a></li>
+                <li class="selectItem"><a href="javascript:void(0)" onclick="goDinary()">情侣信息</a></li>
+                <li class="selectItem"><a href="javascript:void(0)" onclick="logout()">登出</a></li>
+            </ul>
         </div>
-        <div class="selectBox">
-            <div class="memorialFixed">
-                <ul class="yearSelect">
-                    <li class="yearItem" id="yearItem2015">
-                        <a class="year" href="javascript:void(0)" onclick="toYear(this)">
-                            2015
-                        </a>
-                        <ul class="monthSelect">
-                            <li class="monthItem2015" id="2015_11"><a class="month" href="javascript:void(0)" onclick="toMonth(this)">11月</a></li>
-                            <li class="monthItem2015" id="2015_9"><a class="month" href="javascript:void(0)" onclick="toMonth(this)">9月</a></li>
-                            <li class="monthItem2015" id="2015_7"><a class="month" href="javascript:void(0)" onclick="toMonth(this)">7月</a></li>
-                            <li class="monthItem2015" id="2015_6"><a class="month" href="javascript:void(0)" onclick="toMonth(this)">6月</a></li>
-                            <li class="monthItem2015" id="2015_3"><a class="month" href="javascript:void(0)" onclick="toMonth(this)">3月</a></li>
-                        </ul>
-                    </li>
-                    <li class="yearItem" id="yearItem2014">
-                        <a class="year" href="javascript:void(0)" onclick="toYear(this)">
-                            2014
-                        </a>
-                        <ul class="monthSelect">
-                            <li class="monthItem2014" id="2014_12"><a class="month" href="javascript:void(0)" onclick="toMonth(this)">12月</a></li>
-                            <li class="monthItem2014" id="2014_2"><a class="month" href="javascript:void(0)" onclick="toMonth(this)">2月</a></li>
-                            <li class="monthItem2014" id="2014_1"><a class="month" href="javascript:void(0)" onclick="toMonth(this)">1月</a></li>
-                        </ul>
-                    </li>
-                    <li class="yearItem" id="yearItem2013">
-                        <a class="year" href="javascript:void(0)" onclick="toYear(this)">
-                            2013
-                        </a>
-                        <ul class="monthSelect">
-                            <li class="monthItem2013" id="2013_5"><a class="month" href="javascript:void(0)" onclick="toMonth(this)">5月</a></li>
-                            <li class="monthItem2013" id="2013_4"><a class="month" href="javascript:void(0)" onclick="toMonth(this)">4月</a></li>
-                            <li class="monthItem2013" id="2013_3"><a class="month" href="javascript:void(0)" onclick="toMonth(this)">3月</a></li>
-                            <li class="monthItem2013" id="2013_2"><a class="month" href="javascript:void(0)" onclick="toMonth(this)">2月</a></li>
-                        </ul>
-                    </li>
+        <p class="introduction">其实还是很喜欢你的～</p>
+    </div>
+    <div class="memorialFixed">
+        <ul class="yearSelect">
+            <li class="yearItem" id="yearItem2015">
+                <a class="year" href="javascript:void(0)" onclick="toYear(this)">
+                    2015
+                </a>
+                <ul class="monthSelect">
+                    <li class="monthItem2015" id="2015_11"><a class="month" href="javascript:void(0)" onclick="toMonth(this)">11月</a></li>
+                    <li class="monthItem2015" id="2015_9"><a class="month" href="javascript:void(0)" onclick="toMonth(this)">9月</a></li>
+                    <li class="monthItem2015" id="2015_7"><a class="month" href="javascript:void(0)" onclick="toMonth(this)">7月</a></li>
+                    <li class="monthItem2015" id="2015_6"><a class="month" href="javascript:void(0)" onclick="toMonth(this)">6月</a></li>
+                    <li class="monthItem2015" id="2015_3"><a class="month" href="javascript:void(0)" onclick="toMonth(this)">3月</a></li>
                 </ul>
-            </div>
-            <div class="dinaryFixed">
-                <div class="category">
-                    <ul class="categorySelect">
-                        <li class="categoryItem"><a href="javascript:void(0)" onclick="showCategory()">全部(8)</a></li>
-                        <li class="categoryItem"><a href="javascript:void(0)" onclick="showCategory('test0')">test0(3)</a></li>
-                        <li class="categoryItem"><a href="javascript:void(0)" onclick="showCategory('test1')">test1(2)</a></li>
-                        <li class="categoryItem"><a href="javascript:void(0)" onclick="showCategory('test2')">test2(3)</a></li>
-                    </ul>
-                </div>
-            </div>
+            </li>
+            <li class="yearItem" id="yearItem2014">
+                <a class="year" href="javascript:void(0)" onclick="toYear(this)">
+                    2014
+                </a>
+                <ul class="monthSelect">
+                    <li class="monthItem2014" id="2014_12"><a class="month" href="javascript:void(0)" onclick="toMonth(this)">12月</a></li>
+                    <li class="monthItem2014" id="2014_2"><a class="month" href="javascript:void(0)" onclick="toMonth(this)">2月</a></li>
+                    <li class="monthItem2014" id="2014_1"><a class="month" href="javascript:void(0)" onclick="toMonth(this)">1月</a></li>
+                </ul>
+            </li>
+            <li class="yearItem" id="yearItem2013">
+                <a class="year" href="javascript:void(0)" onclick="toYear(this)">
+                    2013
+                </a>
+                <ul class="monthSelect">
+                    <li class="monthItem2013" id="2013_5"><a class="month" href="javascript:void(0)" onclick="toMonth(this)">5月</a></li>
+                    <li class="monthItem2013" id="2013_4"><a class="month" href="javascript:void(0)" onclick="toMonth(this)">4月</a></li>
+                    <li class="monthItem2013" id="2013_3"><a class="month" href="javascript:void(0)" onclick="toMonth(this)">3月</a></li>
+                    <li class="monthItem2013" id="2013_2"><a class="month" href="javascript:void(0)" onclick="toMonth(this)">2月</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="dinaryFixed">
+        <div class="category">
+            <ul class="categorySelect">
+                <li class="categoryItem"><a href="javascript:void(0)" onclick="showCategory()">全部(8)</a></li>
+                <li class="categoryItem"><a href="javascript:void(0)" onclick="showCategory('test0')">test0(3)</a></li>
+                <li class="categoryItem"><a href="javascript:void(0)" onclick="showCategory('test1')">test1(2)</a></li>
+                <li class="categoryItem"><a href="javascript:void(0)" onclick="showCategory('test2')">test2(3)</a></li>
+            </ul>
         </div>
     </div>
 

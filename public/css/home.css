@@ -15,31 +15,40 @@ div.fixedBox{
     position: fixed;
     width: 12vw;
     margin-top: 2vh;
-    margin-left: 2vw;
+
     z-index: 100;
 }
 
-div.fixedBox div.head{
+div.head,
+div.memorialFixed,
+div.dinaryFixed{
+    position: fixed;
+    width: 12vw;
+    margin-top: 2vh;
+    margin-left: 2vw;
+    z-index: 100;
+}
+div.head{
     border: solid 0.1em;
     border-color: transparent #666 #666 transparent;
 }
-div.fixedBox div.head img.headImg{
+div.head img.headImg{
     display: block;
     border-radius: 50%;
     width: 3vw;
     margin: 1vh auto;
 }
-div.fixedBox div.head span.select a.userName{
+div.head span.select a.userName{
     display: inline-block;
     font-size: 1.2vw;
     color: #333;
     width: auto;
     margin: 0 auto;
 }
-div.fixedBox div.head span.select a.userName img.selectIcon{
+div.head span.select a.userName img.selectIcon{
     width: 1vw;
 }
-div.fixedBox div.head div.option{
+div.head div.option{
     width: 7vw;
     font-size: 1vw;
     text-align: center;
@@ -48,8 +57,8 @@ div.fixedBox div.head div.option{
     background: #505050;
     color: #ccc;
 }
-div.fixedBox div.head div.option li.selectItem{
-    position: relative;
+div.head div.option li.selectItem{
+    margin-left: 2vw;
     height: 0;
     top:-100vh;
     opacity: 0;
@@ -59,15 +68,15 @@ div.fixedBox div.head div.option li.selectItem{
     -o-transition: height 1s ease-in-out, opacity 1s ease-in-out;
     transition: height 1s ease-in-out, opacity 1s ease-in-out;
 }
-div.fixedBox div.head div.option li.selectItem.show{
+div.head div.option li.selectItem.show{
     top:0;
     height: 3vh;
     opacity: 1;
 }
-div.fixedBox div.head div.option li.selectItem.show:hover{
+div.head div.option li.selectItem.show:hover{
     color:#eee;
 }
-div.fixedBox div.head p.introduction{
+div.head p.introduction{
     clear: both;
     margin-top: 1vh;
     color: #666;
@@ -75,42 +84,42 @@ div.fixedBox div.head p.introduction{
     text-align: center;
 }
 
-
-div.fixedBox div.selectBox{
-    margin-top: 2vh;
+div.memorialFixed,
+div.dinaryFixed{
+    top:18vh;
+    width: 11vw;
     padding-right: 1vw;
-    border-right: solid 0.1em #333;
-    color: #999999;
-}
-div.fixedBox div.selectBox div{
+    border-right: #666 solid 0.1em;
     text-align: right;
+    color: #999;
 }
-div.fixedBox div.selectBox a:hover{
-    color: #333;
+div.memorialFixed a:hover,
+div.dinaryFixed a:hover{
+    color: #000;
 }
-div.fixedBox div.selectBox a.active,
-div.fixedBox div.selectBox ul.yearSelect ul.monthSelect li[class^="monthItem"].show.active {
-    color: #333;
+div.dinaryFixed a.active,
+div.memorialFixed a.active,
+div.memorialFixed ul.yearSelect ul.monthSelect li[class^="monthItem"].show.active {
+    color: #000;
 }
-div.fixedBox div.selectBox div.memorialFixed{
+div.memorialFixed{
+    left: 0;
     height: auto;
-    opacity: 1;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -ms-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 }
-div.fixedBox div.selectBox div.memorialFixed.hide{
-    height: 0;
-    opacity: 0;
+div.memorialFixed.hide{
+    left:-100vw;
 }
-div.selectBox ul.yearSelect li.yearItem{
+div.memorialFixed ul.yearSelect li.yearItem{
     font-size: 3vh;
 }
-div.selectBox ul.yearSelect ul.monthSelect li[class^="monthItem"]{
+div.memorialFixed ul.yearSelect ul.monthSelect li[class^="monthItem"]{
     position: relative;
-    left:-200%;
+    left:-100%;
     opacity: 0;
     height: 0;
     -webkit-transition: height 1s ease-in-out, opacity 1s ease-in-out;
@@ -119,18 +128,17 @@ div.selectBox ul.yearSelect ul.monthSelect li[class^="monthItem"]{
     -o-transition: height 1s ease-in-out, opacity 1s ease-in-out;
     transition: height 1s ease-in-out, opacity 1s ease-in-out;
 }
-div.selectBox ul.yearSelect ul.monthSelect li[class^="monthItem"].show{
+div.memorialFixed ul.yearSelect ul.monthSelect li[class^="monthItem"].show{
     opacity: 1;
     height: 3vh;
     left:0
 }
-div.selectBox ul.monthSelect li[class^="monthItem"]{
+div.memorialFixed ul.monthSelect li[class^="monthItem"]{
     text-align: right;
     font-size: 2vh;
 }
-div.fixedBox div.selectBox div.dinaryFixed{
-    height: 0;
-    opacity: 0;
+div.dinaryFixed{
+    left:100vw;
 
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
@@ -138,9 +146,8 @@ div.fixedBox div.selectBox div.dinaryFixed{
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 }
-div.fixedBox div.selectBox div.dinaryFixed.show{
-    height: auto;
-    opacity: 1;
+div.dinaryFixed.show{
+    left: 0;
 }
 
 div.timeLine{

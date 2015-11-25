@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" type="text/css" href="../css/dinary.css">
+    <link rel="stylesheet" type="text/css" href="../css/home.css">
+
     <script src="../js/dinary.js"></script>
 </head>
 <body>
