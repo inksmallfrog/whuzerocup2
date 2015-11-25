@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+
+div.firstScreen{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh;
+
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+}
+div.firstScreen.up{
+    top:-100vh;
+}
+
+div.passageBox{
+    float: right;
+    background: url("../res/background/timeLineBg.jpg") fixed;
+    padding-left: 24vw;
+    padding-top: 8vh;
+    min-height: 100vh;
+    min-width: 76vw;
+}
+div.passageBox div.passage{
+    width: 14vw;
+    float: left;
+    min-height: 40vh;
+    margin-right: 10vw;
+    margin-bottom: 10vh;
+
+    background: url("../res/background/passageBg.jpg");
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    opacity: 0.8;
+}
+div.passageBox div.passage:hover{
+    opacity: 1;
+}
+div.passageBox div.passage div.passageInfo{
+    height: 30vh;
+    width: 88%;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: solid 0.1em #8f480c;
+}
+div.passageBox div.passage div.passageInfo div.title{
+    padding-top: 5vh;
+    font-size: 2.4vw;
+}
+div.passageBox div.passage div.passageInfo div.postTime,
+div.passageBox div.passage div.passageInfo div.postUser{
+    padding-top: 6vh;
+    font-size: 1vw;
+}
+div.passageBox div.passage div.passageInfo div.postUser{
+    padding-top: 0.4vh;
+}
+
+div.passageBox div.passage div.passageState{
+    font-size: 1vw;
+}
+div.passageBox div.passage div.passageState div.type,
+div.passageBox div.passage div.passageState div.readTimes,
+div.passageBox div.passage div.passageState div.accessible,
+div.passageBox div.passage div.passageState div.commentTimes{
+    float:left;
+    margin-right: 0.8vw;
+    margin-top: 0.6vh;
+}
+div.passageBox div.passage div.passageState div.type,
+div.passageBox div.passage div.passageState div.accessible{
+    padding-left: 1vw;
+}
+
+div.passageBox div.passage div.passageState div.accessible,
+div.passageBox div.passage div.passageState div.commentTimes{
+    margin-top: 0;
+}
+div.passageBox div.passage div.passageState a.edit,
+div.passageBox div.passage div.passageState a.delete{
+    float:right;
+    margin-top: 0.6vh;
+    margin-right: 1vw;
+}
+div.passageBox div.passage div.passageState a.delete{
+    margin-top: 0;
+}
+
+div.passageBox div.passage div.passageState div.accessible{
+    clear: both;
+    float:left;
+}
+
+div.secondScreen{
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 100vw;
+    height: 0;
+
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+}
+
+div.secondScreen.up{
+    top: 0;
+    height: auto;
+}
+div.secondScreen iframe{
+    border: none;
+    height: 100vh;
+    width: 100vw;
+}

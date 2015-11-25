@@ -27,16 +27,16 @@ div.timeLineBox div.timeLine{
 
 div.timeLineBox div.timeLine div.contentYear,
 div.timeLineBox div.timeLine div.contentMonth{
-    height:3vh;
+    height:3.4vh;
     font-weight: bold;
-    font-size: 1.4vw;
+    font-size: 3vh;
     position: relative;
     left: -7vw;
     clear: both;
     color: #000;
 }
 div.timeLineBox div.timeLine div.contentMonth{
-    font-size: 1.2vw;
+    font-size: 2vh;
 }
 
 div.timeLineBox div.timeLine div.contentItemLeft,

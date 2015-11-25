@@ -5,6 +5,7 @@
 a{
     text-decoration: none;
     color: inherit;
+    overflow-y: hidden;
 }
 ul{
     list-style: none;
@@ -81,16 +82,30 @@ div.fixedBox div.selectBox{
     border-right: solid 0.1em #333;
     color: #999999;
 }
-div.fixedBox div.selectBox ul a:hover{
+div.fixedBox div.selectBox div{
+    text-align: right;
+}
+div.fixedBox div.selectBox a:hover{
     color: #333;
 }
-
-div.fixedBox div.selectBox ul.yearSelect ul.monthSelect li[class^="monthItem"].show.active,
-div.fixedBox div.selectBox ul a.active{
+div.fixedBox div.selectBox a.active,
+div.fixedBox div.selectBox ul.yearSelect ul.monthSelect li[class^="monthItem"].show.active {
     color: #333;
+}
+div.fixedBox div.selectBox div.memorialFixed{
+    height: auto;
+    opacity: 1;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+div.fixedBox div.selectBox div.memorialFixed.hide{
+    height: 0;
+    opacity: 0;
 }
 div.selectBox ul.yearSelect li.yearItem{
-    text-align: right;
     font-size: 3vh;
 }
 div.selectBox ul.yearSelect ul.monthSelect li[class^="monthItem"]{
@@ -112,4 +127,49 @@ div.selectBox ul.yearSelect ul.monthSelect li[class^="monthItem"].show{
 div.selectBox ul.monthSelect li[class^="monthItem"]{
     text-align: right;
     font-size: 2vh;
+}
+div.fixedBox div.selectBox div.dinaryFixed{
+    height: 0;
+    opacity: 0;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+div.fixedBox div.selectBox div.dinaryFixed.show{
+    height: auto;
+    opacity: 1;
+}
+
+div.timeLine{
+    position: absolute;
+    left: 0;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+div.timeLine.left{
+    left: -100vw;
+}
+
+
+div.dinary{
+    position: absolute;
+    left:100vw;
+    width: 100vw;
+    height: auto;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+div.dinary.left{
+    left:0;
 }

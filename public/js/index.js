@@ -180,7 +180,7 @@ function goSecondScreen(){
     navigartorBox.classList.add("show");
 
     secondScreen.classList.add("mainPage");
-    mainPage.setAttribute("src", "./page/main.php");
+    mainPage.setAttribute("src", "./page/home.php");
 }
 
 function goFirstScreen(){
@@ -240,6 +240,14 @@ function starFly(){
             stars[i].classList.add("fly");
         }
     }
+}
+
+function goHomePage(){
+    mainPage.window.goHome();
+}
+
+function goDinaryPage(){
+    mainPage.window.goDinary();
 }
 
 var wheelFunction = function(obj, callback){

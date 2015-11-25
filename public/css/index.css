@@ -6,6 +6,9 @@ body{
     overflow-x: hidden;
     overflow-y: hidden;
 }
+form{
+    padding: 8vh 8vw;
+}
 iframe{
     border: none;
 }
