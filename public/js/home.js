@@ -76,9 +76,9 @@ function calculateCountDown(){
     var now = new Date();
     var nextTime = (60 - now.getMinutes()) * 60000;
     var countDown = new Array();
-    countDonw[0] = document.getElementById("countDown0");
-    countDonw[1] = document.getElementById("countDown1");
-    countDonw[2] = document.getElementById("countDown2");
+    countDown[0] = document.getElementById("countDown0");
+    countDown[1] = document.getElementById("countDown1");
+    countDown[2] = document.getElementById("countDown2");
     for(var i = 0; i < 3; ++i){
         time = countDownTarget[i].getTime() - now.getTime;
         day = Math.floor(time/(1000 * 3600 * 24));
