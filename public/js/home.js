@@ -30,13 +30,13 @@ function goScreen(screen){
         window.scrollTo(0, 0);
         return;
     }
+    window.scrollTo(0, 0);
     if(currentScreen == "timeLine"){
         console.log(2);
         document.getElementsByClassName(currentScreen)[0].classList.add("left");
         document.getElementsByClassName(screen)[0].classList.add("left");
         document.getElementsByClassName(currentScreen+"Fixed")[0].classList.add("hide");
         document.getElementsByClassName(screen + "Fixed")[0].classList.add("show");
-
     }
     else{
         document.getElementsByClassName(currentScreen)[0].classList.remove("left");
