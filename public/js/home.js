@@ -74,7 +74,9 @@ function initCountDown(month0, day0, month1, day1, month2, day2){
 function calculateCountDown(){
     console.log("countDonw");
     var now = new Date();
+    console.log(now.getMinutes());
     var nextTime = (60 - now.getMinutes()) * 60000;
+    console.log(nextTime);
     var countDown = new Array();
     countDown[0] = document.getElementById("countDown0");
     countDown[1] = document.getElementById("countDown1");
@@ -89,5 +91,5 @@ function calculateCountDown(){
             countDown[i].innerHTML = day + "天";
         }
     }
-    setTimeout(nextTime, calculateCountDown());
+    //setTimeout(nextTime, calculateCountDown());
 }
