@@ -79,8 +79,7 @@ function calculateCountDown(){
     countDown[1] = document.getElementById("countDown1");
     countDown[2] = document.getElementById("countDown2");
     for(var i = 0; i < 3; ++i){
-        time = countDownTarget[i].getTime() - now.getTime;
-        console.log(time);
+        time = countDownTarget[i].getTime() - now.getTime();
         day = Math.floor(time/(1000 * 3600 * 24));
         if(day == 0){
             countDown[i].innerHTML = "祝幸福";

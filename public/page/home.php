@@ -753,7 +753,6 @@
         </div>
     </div>
     <script>
-        console.log("adf");
         initCurrentYear();
         initCountDown(11, 23, 1, 24, 4, 3);
     </script>
