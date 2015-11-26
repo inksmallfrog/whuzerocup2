@@ -89,5 +89,5 @@ function calculateCountDown(){
             countDown[i].innerHTML = day + "天";
         }
     }
-    setTimeout(calculateCountDown(), nextTime);
+    setTimeout('calculateCountDown()', nextTime);
 }
