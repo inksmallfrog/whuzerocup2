@@ -1,0 +1,50 @@
+div.albumBox{
+    float: right;
+    background: url("../res/background/timeLineBg.jpg") fixed;
+    padding-left: 20vw;
+    padding-top: 4vh;
+    min-height: 100vh;
+    min-width: 80vw;
+}
+div.albumBox div.photograph{
+    float:left;
+    margin: 0 2vw 6vh 0;
+    padding: 0;
+    width: 32vw;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+div.albumBox div.photograph:hover{
+}
+
+div.albumBox div.photograph img{
+    width: 20vw;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+div.albumBox div.photograph img:hover{
+    width: 100%;
+}
+div.albumBox div.photograph div.introduction{
+}
+div.albumBox div.photograph div.introduction div.describe{
+    float: left;
+    margin-bottom: 1vh;
+}
+div.albumBox div.photograph div.introduction div.author{
+    clear: both;
+}
+div.albumBox div.photograph div.introduction div.author,
+div.albumBox div.photograph div.introduction div.postTime{
+    float:left;
+    margin-right: 4vw;
+    font-size: 2vh;
+}

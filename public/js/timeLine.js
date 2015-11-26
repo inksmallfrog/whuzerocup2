@@ -57,8 +57,6 @@ function scrollToElement(element){
 }
 function ScrollSmoothly(scrollPos, repeatTime){
     var step = initStep * (scrollPos < 0 ? -1 : 1);
-    console.log(scrollPos);
-    console.log(step);
     if(repeatCount < repeatTime){
         window.scrollBy(0, step);
     }

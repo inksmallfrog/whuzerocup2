@@ -83,9 +83,9 @@
         </div>
         <div class="navigatorBox">
             <ul>
-                <li class="left"><a target="mainPage" href="javascript:void(0)" onclick="goHomePage()">主页</a></li>
-                <li class="left"><a href="javascript:void(0)" onclick="goDinaryPage()">日记</a></li>
-                <li class="left"><a target="mainPage" href="./page/album.php">相册</a></li>
+                <li class="left"><a target="mainPage" href="javascript:void(0)" onclick="goScreen('timeLine')">主页</a></li>
+                <li class="left"><a href="javascript:void(0)" onclick="goScreen('dinary')">日记</a></li>
+                <li class="left"><a href="javascript:void(0)" onclick="goScreen('album')">相册</a></li>
             </ul>
         </div>
     </div>

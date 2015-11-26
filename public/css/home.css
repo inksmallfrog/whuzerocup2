@@ -20,8 +20,10 @@ div.fixedBox{
 }
 
 div.head,
-div.memorialFixed,
-div.dinaryFixed{
+div.timeLineFixed,
+div.dinaryFixed,
+div.albumFixed,
+div.countDown{
     position: fixed;
     width: 12vw;
     margin-top: 2vh;
@@ -38,14 +40,14 @@ div.head img.headImg{
     width: 3vw;
     margin: 1vh auto;
 }
-div.head span.select a.userName{
-    display: inline-block;
+div.head a.userName{
+    display: block;
+    width: 100%;
+    text-align: center;
     font-size: 1.2vw;
     color: #333;
-    width: auto;
-    margin: 0 auto;
 }
-div.head span.select a.userName img.selectIcon{
+div.head a.userName img.selectIcon{
     width: 1vw;
 }
 div.head div.option{
@@ -58,7 +60,6 @@ div.head div.option{
     color: #ccc;
 }
 div.head div.option li.selectItem{
-    margin-left: 2vw;
     height: 0;
     top:-100vh;
     opacity: 0;
@@ -84,25 +85,28 @@ div.head p.introduction{
     text-align: center;
 }
 
-div.memorialFixed,
-div.dinaryFixed{
-    top:18vh;
+div.timeLineFixed,
+div.dinaryFixed,
+div.albumFixed{
+    top:25vh;
     width: 11vw;
     padding-right: 1vw;
     border-right: #666 solid 0.1em;
     text-align: right;
     color: #999;
 }
-div.memorialFixed a:hover,
-div.dinaryFixed a:hover{
+div.timeLineFixed a:hover,
+div.dinaryFixed a:hover,
+div.albumFixed a:hover{
     color: #000;
 }
 div.dinaryFixed a.active,
-div.memorialFixed a.active,
-div.memorialFixed ul.yearSelect ul.monthSelect li[class^="monthItem"].show.active {
+div.albumFixed a.active,
+div.timeLineFixed a.active,
+div.timeLineFixed ul.yearSelect ul.monthSelect li[class^="monthItem"].show.active {
     color: #000;
 }
-div.memorialFixed{
+div.timeLineFixed{
     left: 0;
     height: auto;
     -webkit-transition: all 1s ease-in-out;
@@ -111,13 +115,13 @@ div.memorialFixed{
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 }
-div.memorialFixed.hide{
+div.timeLineFixed.hide{
     left:-100vw;
 }
-div.memorialFixed ul.yearSelect li.yearItem{
+div.timeLineFixed ul.yearSelect li.yearItem{
     font-size: 3vh;
 }
-div.memorialFixed ul.yearSelect ul.monthSelect li[class^="monthItem"]{
+div.timeLineFixed ul.yearSelect ul.monthSelect li[class^="monthItem"]{
     position: relative;
     left:-100vw;
     opacity: 0;
@@ -128,12 +132,12 @@ div.memorialFixed ul.yearSelect ul.monthSelect li[class^="monthItem"]{
     -o-transition: height 1s ease-in-out, opacity 1s ease-in-out;
     transition: height 1s ease-in-out, opacity 1s ease-in-out;
 }
-div.memorialFixed ul.yearSelect ul.monthSelect li[class^="monthItem"].show{
+div.timeLineFixed ul.yearSelect ul.monthSelect li[class^="monthItem"].show{
     opacity: 1;
     height: 3vh;
     left:0
 }
-div.memorialFixed ul.monthSelect li[class^="monthItem"]{
+div.timeLineFixed ul.monthSelect li[class^="monthItem"]{
     text-align: right;
     font-size: 2vh;
 }
@@ -148,6 +152,27 @@ div.dinaryFixed{
 }
 div.dinaryFixed.show{
     left: 0;
+}
+div.albumFixed{
+    left:100vw;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+div.albumFixed.show{
+    left: 0;
+}
+div.countDown{
+    top: 70vh;
+    font-size: 2vh;
+    text-align: right;
+    border-right: #666 solid 0.1em;
+}
+div.countDown ul{
+    padding-right: 1vw;
 }
 
 div.timeLine{
@@ -178,5 +203,21 @@ div.dinary{
     transition: all 1s ease-in-out;
 }
 div.dinary.left{
+    left:0;
+}
+
+div.album{
+    position: absolute;
+    left:100vw;
+    width: 100vw;
+    height: auto;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+div.album.left{
     left:0;
 }

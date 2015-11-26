@@ -242,12 +242,8 @@ function starFly(){
     }
 }
 
-function goHomePage(){
-    mainPage.window.goHome();
-}
-
-function goDinaryPage(){
-    mainPage.window.goDinary();
+function goScreen(screen){
+    mainPage.window.goScreen(screen);
 }
 
 var wheelFunction = function(obj, callback){

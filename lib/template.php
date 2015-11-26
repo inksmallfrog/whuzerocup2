@@ -6,44 +6,50 @@
  * Time: 7:52 AM
  */
     $home_selfInfo = "
-    <div class=\"leftBar\">
-        <div class=\"head\">
-            <img src=\"{headImg}\" class=\"headImg\">
-            <span class=\"select\">
-                <a class=\"userName\" href=\"javascript:void(0)\" onclick=\"toggleSelectOption()\">
-                    {userName}
-                    <img src=\"../res/icon/select.png\" class=\"selectIcon\">
-                </a>
-            </span>
-            <div class=\"option\">
-                <ul>
-                    <li class=\"selectItem\"><a href=\"javascript:void(0)\">个人信息</a></li>
-                    <li class=\"selectItem\"><a href=\"javascript:void(0)\">情侣信息</a></li>
-                    <li class=\"selectItem\"><a href=\"javascript:void(0)\" onclick=\"logout()\">登出</a></li>
-                </ul>
-            </div>
-            <p class=\"introduction\">{introduction}</p>
-        </div>";
+    <div class=\"head\">
+        <img src=\"{userHeadImg}\" class=\"headImg\">
+        <a class=\"userName\" href=\"javascript:void(0)\" onclick=\"toggleSelectOption()\">
+            {userName}
+            <img src=\"../res/icon/select.png\" class=\"selectIcon\">
+        </a>
+        <div class=\"option\">
+            <ul>
+                <li class=\"selectItem\"><a href=\"javascript:void(0)\">个人信息</a></li>
+                <li class=\"selectItem\"><a href=\"javascript:void(0)\" onclick=\"goDinary()\">情侣信息</a></li>
+                <li class=\"selectItem\"><a href=\"javascript:void(0)\" onclick=\"logout()\">登出</a></li>
+            </ul>
+        </div>
+        <p class=\"introduction\">{userIntroduction}</p>
+    </div>";
 
     $home_timeBar = "
-    <div class=\"selectBox\">
+    <div class=\"timeLineFixed\">
         <ul class=\"yearSelect\">
             {list}
         </ul>
     </div>";
     $home_timeBar_list = "
-    <li class=\"yearItem\">
-        <a class=\"year\" href=\"javascript:void(0)\" onclick=\"ToYear(this)\">
+    <li class=\"yearItem\" id=\"yearItem{year}\">
+        <a class=\"year\" href=\"javascript:void(0)\" onclick=\"toYear(this)\">
             {year}
         </a>
         <ul class=\"monthSelect\">
             {list}
         </ul>
     </li>";
-    $home_list_list = "
-    <li class=\"monthItem{year}\" id=\"{year}_{month}\"><a class=\"month\" href=\"javascript:void(0)\" onclick=\"ToMonth(this)\">{month}月</a></li>";
+    $home_timeBar_list_list = "
+    <li class=\"monthItem{year}\" id=\"{year}_{month}\"><a class=\"month\" href=\"javascript:void(0)\" onclick=\"toMonth(this)\">{month}月</a></li>";
+
 
     $home_memorialDay = "
+    <div class=\"timeLine\">
+        <div class=\"timeLineBox\">
+            <div class=\"timeLine\">
+                {list}
+            </div>
+        </div>
+    </div>";
+    $home_memorialDay_list = "
     <div class=\"contentYear\" id=\"{year}Y{month}M\">{year}</div>
     <div class=\"contentMonth\">{month}</div>
     <div class=\"contentItemLeft contentItemFirst\">
@@ -59,7 +65,7 @@
         </div>
     </div>
     {list}";
-    $home_memorialDay_list = "
+    $home_memorialDay_list_list = "
      <div class=\"contentItem{LeftOrRight} contentItemFirst\">
         <div class=\"contentIconArrow\"></div>
         <div class=\"contentIconDot\"><div class=\"contentIconSmallDot\"></div></div>
@@ -74,64 +80,69 @@
     </div>";
 
     $dinary_category = "
-    <div class=\"fixedBox\">
+    <div class=\"dinaryFixed\">
         <div class=\"category\">
-            <li class=\"categoryItem\">
-                <a href=\"javascript:void(0)\" onclick=\"showCategory()\">
-                    全部({categoryNumberSum})
-                </a>
-            </li>
             <ul class=\"categorySelect\">
+                <li class=\"categoryItem\">
+                    <a href=\"javascript:void(0)\" onclick=\"showCategory()\">
+                        全部({categoryNumberSum})
+                    </a>
+                </li>
                 {list}
             </ul>
         </div>
     </div>";
     $dinary_category_list = "
     <li class=\"categoryItem\">
-        <a href=\"javascript:void(0)\" onclick=\"showCategory('{category}')\">
-            {category}({categoryNumber})
+        <a href=\"javascript:void(0)\" onclick=\"showCategory('{categoryId}')\">
+            {categoryName}({categoryNumber})
         </a>
     </li>";
+
     $dinary_passage = "
-    <div class=\"passageBox\">
-        {list}
+    <div class=\"dinary\">
+        <div class=\"firstScreen\">
+            <div class=\"passageBox\">
+            {list}
+            </div>
+        </div>
     </div>";
     $dinary_passage_list = "
-        <div class=\"passage {type}\">
-            <a target=\"secondScreenFrame\" href=\"./passage?id={id}\" onclick=\"enterPassage()\">
-                <div class=\"passageInfo\">
-                    <div class=\"title\">
-                        {title}
-                    </div>
-                    <div class=\"postTime\">
-                        {time}
-                    </div>
-                    <div class=\"postUser\">
-                        {author}
-                    </div>
+    <div class=\"passage {category}\">
+        <a target=\"secondScreenFrame\" href=\"./passage.php?id={id}\" onclick=\"enterPassage()\">
+            <div class=\"passageInfo\">
+                <div class=\"title\">
+                    {title}
                 </div>
-            </a>
-            <div class=\"passageState\">
-                <div class=\"type\">
-                    类别: {typeString}
+                <div class=\"postTime\">
+                    {postTime}
                 </div>
-                <div class=\"readTimes\">
-                    阅读: {readTimes}
+                <div class=\"postUser\">
+                    {author}
                 </div>
-                <a class=\"edit\" href=\"javascript:void(0)\" id=\"{id}_edit\" onclick=\"editPassage(this)\">
-                    <img src=\"../res/icon/edit.png\">
-                </a>
-                <div class=\"accessible\">
-                    权限: {accessible}
-                </div>
-                <div class=\"commentTimes\">
-                    评论: {commentTimes}
-                </div>
-                <a class=\"delete\" href=\"javascript:void(0)\" id=\"{id}_delete\" onclick=\"deletePassage(this)\">
-                    <img src=\"../res/icon/delete.png\">
-                </a>
             </div>
-        </div>";
+        </a>
+        <div class=\"passageState\">
+            <div class=\"type\">
+                类别: {categoryString}
+            </div>
+            <div class=\"readTimes\">
+                阅读: 0
+            </div>
+            <a class=\"edit\" href=\"javascript:void(0)\" id=\"{id}_edit\" onclick=\"editPassage(this)\">
+                <img src=\"../res/icon/edit.png\">
+            </a>
+            <div class=\"accessible\">
+                权限: {accessibleString}
+            </div>
+            <div class=\"commentTimes\">
+                评论: {commentNumber}
+            </div>
+            <a class=\"delete\" href=\"javascript:void(0)\" id=\"{id}_delete\" onclick=\"deletePassage(this)\">
+                <img src=\"../res/icon/delete.png\">
+            </a>
+        </div>
+    </div>";
 
     $passage = "
     <div class=\"passageHead\">
@@ -197,3 +208,23 @@
              {commentContent}
          </div>
      </div>";
+
+    $album_category = "
+        <div class=\"albumFixed\">
+            <div class=\"albumList\">
+                <ul class=\"albumSelect\">
+                    <li class=\"albumItem\">
+                        <a href=\"javascript:void(0)\" onclick=\"showAlbum()\">
+                            全部({albumNumberSum})
+                        </a>
+                    </li>
+                    {list}
+                </ul>
+            </div>
+        </div>";
+    $album_category_list = "
+        <li class=\"albumItem\">
+            <a href=\"javascript:void(0)\" onclick=\"showAlbum('{albumId}')\">
+                {albumName}({albumNumber})
+            </a>
+        </li>";

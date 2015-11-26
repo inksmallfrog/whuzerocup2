@@ -7,9 +7,11 @@
     <link rel="stylesheet" type="text/css" href="../css/home.css">
     <link rel="stylesheet" type="text/css" href="../css/timeLine.css">
     <link rel="stylesheet" type="text/css" href="../css/dinary.css">
+    <link rel="stylesheet" type="text/css" href="../css/album.css">
     <script src="../js/home.js"></script>
     <script src="../js/timeLine.js"></script>
     <script src="../js/dinary.js"></script>
+    <script src="../js/album.js"></script>
 </head>
 <body>
     <div class="head">
@@ -29,7 +31,7 @@
         </div>
         <p class="introduction">其实还是很喜欢你的～</p>
     </div>
-    <div class="memorialFixed">
+    <div class="timeLineFixed">
         <ul class="yearSelect">
             <li class="yearItem" id="yearItem2015">
                 <a class="year" href="javascript:void(0)" onclick="toYear(this)">
@@ -75,6 +77,23 @@
                 <li class="categoryItem"><a href="javascript:void(0)" onclick="showCategory('test2')">test2(3)</a></li>
             </ul>
         </div>
+    </div>
+    <div class="albumFixed">
+        <div class="albumList">
+            <ul class="albumSelect">
+                <li class="albumItem"><a href="javascript:void(0)" onclick="showAlbum()">全部(8)</a></li>
+                <li class="albumItem"><a href="javascript:void(0)" onclick="showAlbum('test0')">test0(3)</a></li>
+                <li class="albumItem"><a href="javascript:void(0)" onclick="showAlbum('test1')">test1(2)</a></li>
+                <li class="albumItem"><a href="javascript:void(0)" onclick="showAlbum('test2')">test2(3)</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="countDown">
+        <ul class="countDownList">
+            <li class="countDownItem">距离 一起看电影 还有<p id="countDown0"></p></li>
+            <li class="countDownItem">距离 一起看吃饭 还有<p id="countDown1"></p></li>
+            <li class="countDownItem">距离 一起看逛街 还有<p id="countDown2"></p></li>
+        </ul>
     </div>
 
 
@@ -649,8 +668,94 @@
             <iframe src="" name="secondScreenFrame"></iframe>
         </div>
     </div>
+
+    <div class="album">
+        <div class="albumBox">
+            <div class="photograph">
+                <img src="../res/photograph/1.jpg">
+                <div class="introduction">
+                    <div class="describe">
+                        萌萌哒～
+                    </div>
+                    <div class="author">
+                        二娃不不乖
+                    </div>
+                    <div class="postTime">
+                        2015.11.26
+                    </div>
+                </div>
+            </div><div class="photograph">
+                <img src="../res/photograph/2.jpg">
+                <div class="introduction">
+                    <div class="describe">
+                        萌萌哒～
+                    </div>
+                    <div class="author">
+                        二娃不不乖
+                    </div>
+                    <div class="postTime">
+                        2015.11.26
+                    </div>
+                </div>
+            </div><div class="photograph">
+                <img src="../res/photograph/3.jpg">
+                <div class="introduction">
+                    <div class="describe">
+                        萌萌哒～
+                    </div>
+                    <div class="author">
+                        二娃不不乖
+                    </div>
+                    <div class="postTime">
+                        2015.11.26
+                    </div>
+                </div>
+            </div><div class="photograph">
+                <img src="../res/photograph/4.jpg">
+                <div class="introduction">
+                    <div class="describe">
+                        萌萌哒～
+                    </div>
+                    <div class="author">
+                        二娃不不乖
+                    </div>
+                    <div class="postTime">
+                        2015.11.26
+                    </div>
+                </div>
+            </div><div class="photograph">
+                <img src="../res/photograph/5.jpg">
+                <div class="introduction">
+                    <div class="describe">
+                        萌萌哒～
+                    </div>
+                    <div class="author">
+                        二娃不不乖
+                    </div>
+                    <div class="postTime">
+                        2015.11.26
+                    </div>
+                </div>
+            </div><div class="photograph">
+                <img src="../res/photograph/6.jpg">
+                <div class="introduction">
+                    <div class="describe">
+                        萌萌哒～
+                    </div>
+                    <div class="author">
+                        二娃不不乖
+                    </div>
+                    <div class="postTime">
+                        2015.11.26
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script>
+        console.log("adf");
         initCurrentYear();
+        initCountDown(11, 23, 1, 24, 4, 3);
     </script>
 </body>
 </html>
