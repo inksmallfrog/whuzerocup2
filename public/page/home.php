@@ -97,9 +97,9 @@
     </div>
 
 
-    <div class="timeLine">
-        <div class="timeLineBox">
-            <div class="timeLine">
+
+        <div class="timeLine">
+            <div class="timeLineBox">
                 <div class="contentYear" id="2015Y11M">2015</div>
                 <div class="contentMonth">11月</div>
                 <div class="contentItemLeft contentItemFirst">
@@ -282,7 +282,7 @@
                 </div>
             </div>
         </div>
-    </div>
+
 
     <div class="dinary">
         <div class="firstScreen">
@@ -360,6 +360,142 @@
                         <div class="passageInfo">
                             <div class="title">
                                 致二娃2
+                            </div>
+                            <div class="postTime">
+                                2015.11.24
+                            </div>
+                            <div class="postUser">
+                                二娃就是这么任性
+                            </div>
+                        </div>
+                    </a>
+                    <div class="passageState">
+                        <div class="type">
+                            类别: 情书
+                        </div>
+                        <div class="readTimes">
+                            阅读: 0
+                        </div>
+                        <a class="edit" href="javascript:void(0)" id="112_edit" onclick="editPassage(this)">
+                            <img src="../res/icon/edit.png">
+                        </a>
+                        <div class="accessible">
+                            权限: 仅情侣
+                        </div>
+                        <div class="commentTimes">
+                            评论: 0
+                        </div>
+                        <a class="delete" href="javascript:void(0)" id="112_delete" onclick="deletePassage(this)">
+                            <img src="../res/icon/delete.png">
+                        </a>
+                    </div>
+                </div><div class="passage">
+                    <a target="secondScreenFrame" href="./passage?id=112" onclick="enterPassage()">
+                        <div class="passageInfo">
+                            <div class="title">
+                                致二娃
+                            </div>
+                            <div class="postTime">
+                                2015.11.24
+                            </div>
+                            <div class="postUser">
+                                二娃就是这么任性
+                            </div>
+                        </div>
+                    </a>
+                    <div class="passageState">
+                        <div class="type">
+                            类别: 情书
+                        </div>
+                        <div class="readTimes">
+                            阅读: 0
+                        </div>
+                        <a class="edit" href="javascript:void(0)" id="112_edit" onclick="editPassage(this)">
+                            <img src="../res/icon/edit.png">
+                        </a>
+                        <div class="accessible">
+                            权限: 仅情侣
+                        </div>
+                        <div class="commentTimes">
+                            评论: 0
+                        </div>
+                        <a class="delete" href="javascript:void(0)" id="112_delete" onclick="deletePassage(this)">
+                            <img src="../res/icon/delete.png">
+                        </a>
+                    </div>
+                </div><div class="passage">
+                    <a target="secondScreenFrame" href="./passage?id=112" onclick="enterPassage()">
+                        <div class="passageInfo">
+                            <div class="title">
+                                致二娃
+                            </div>
+                            <div class="postTime">
+                                2015.11.24
+                            </div>
+                            <div class="postUser">
+                                二娃就是这么任性
+                            </div>
+                        </div>
+                    </a>
+                    <div class="passageState">
+                        <div class="type">
+                            类别: 情书
+                        </div>
+                        <div class="readTimes">
+                            阅读: 0
+                        </div>
+                        <a class="edit" href="javascript:void(0)" id="112_edit" onclick="editPassage(this)">
+                            <img src="../res/icon/edit.png">
+                        </a>
+                        <div class="accessible">
+                            权限: 仅情侣
+                        </div>
+                        <div class="commentTimes">
+                            评论: 0
+                        </div>
+                        <a class="delete" href="javascript:void(0)" id="112_delete" onclick="deletePassage(this)">
+                            <img src="../res/icon/delete.png">
+                        </a>
+                    </div>
+                </div><div class="passage">
+                    <a target="secondScreenFrame" href="./passage?id=112" onclick="enterPassage()">
+                        <div class="passageInfo">
+                            <div class="title">
+                                致二娃
+                            </div>
+                            <div class="postTime">
+                                2015.11.24
+                            </div>
+                            <div class="postUser">
+                                二娃就是这么任性
+                            </div>
+                        </div>
+                    </a>
+                    <div class="passageState">
+                        <div class="type">
+                            类别: 情书
+                        </div>
+                        <div class="readTimes">
+                            阅读: 0
+                        </div>
+                        <a class="edit" href="javascript:void(0)" id="112_edit" onclick="editPassage(this)">
+                            <img src="../res/icon/edit.png">
+                        </a>
+                        <div class="accessible">
+                            权限: 仅情侣
+                        </div>
+                        <div class="commentTimes">
+                            评论: 0
+                        </div>
+                        <a class="delete" href="javascript:void(0)" id="112_delete" onclick="deletePassage(this)">
+                            <img src="../res/icon/delete.png">
+                        </a>
+                    </div>
+                </div><div class="passage">
+                    <a target="secondScreenFrame" href="./passage?id=112" onclick="enterPassage()">
+                        <div class="passageInfo">
+                            <div class="title">
+                                致二娃
                             </div>
                             <div class="postTime">
                                 2015.11.24

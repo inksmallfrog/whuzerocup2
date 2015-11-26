@@ -1,32 +1,31 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-ul{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-    color:inherit;
-}
-
-div.timeLineBox{
+div.timeLine{
+    position: absolute;
+    left: 0;
     background: url("../res/background/timeLineBg.jpg") fixed;
     background-size: 100vw 100vh;
     float:right;
     width: 100vw;
-    height: auto;
     padding-bottom: 82.5vh;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
-div.timeLineBox div.timeLine{
+div.timeLine.left{
+    left: -100vw;
+}
+
+div.timeLine div.timeLineBox{
     background: url("../res/background/timeLinep.png") repeat-y 21vw;
     padding-top: 6vh;
     padding-left: 24vw;
-    position: relative;
+    min-height: 100vh;
 }
 
-div.timeLineBox div.timeLine div.contentYear,
-div.timeLineBox div.timeLine div.contentMonth{
+div.timeLine div.timeLineBox div.contentYear,
+div.timeLine div.timeLineBox div.contentMonth{
     height:3.4vh;
     font-weight: bold;
     font-size: 3vh;
@@ -35,12 +34,12 @@ div.timeLineBox div.timeLine div.contentMonth{
     clear: both;
     color: #000;
 }
-div.timeLineBox div.timeLine div.contentMonth{
+div.timeLine div.timeLineBox div.contentMonth{
     font-size: 2vh;
 }
 
-div.timeLineBox div.timeLine div.contentItemLeft,
-div.timeLineBox div.timeLine div.contentItemRight{
+div.timeLine div.timeLineBox div.contentItemLeft,
+div.timeLine div.timeLineBox div.contentItemRight{
     width: 33vw;
     background: #fff;
     border-radius: 2%;
@@ -48,14 +47,14 @@ div.timeLineBox div.timeLine div.contentItemRight{
     position: relative;
     float: left;
 }
-div.timeLineBox div.timeLine div.contentItemFirst{
+div.timeLine div.timeLineBox div.contentItemFirst{
     top: -3vh
 }
-div.timeLineBox div.timeLine div.contentItemRight{
+div.timeLine div.timeLineBox div.contentItemRight{
     float: right;
 }
 
-div.timeLineBox div.timeLine div.contentIconArrow{
+div.timeLine div.timeLineBox div.contentIconArrow{
     position: absolute;
     left:-0.8vw;
     top:0.8vh;
@@ -65,8 +64,8 @@ div.timeLineBox div.timeLine div.contentIconArrow{
     border-style: dashed solid dashed dashed;
 }
 
-div.timeLineBox div.timeLine div.contentIconDot,
-div.timeLineBox div.timeLine div.contentIconSmallDot{
+div.timeLine div.timeLineBox div.contentIconDot,
+div.timeLine div.timeLineBox div.contentIconSmallDot{
     width: 1vw;
     height: 1vw;
     border-radius: 50%;
@@ -75,15 +74,15 @@ div.timeLineBox div.timeLine div.contentIconSmallDot{
     left: -3.4vw;
     top: 2vh
 }
-div.timeLineBox div.timeLine div.contentIconSmallDot{
+div.timeLine div.timeLineBox div.contentIconSmallDot{
     width: 0.4vw;
     height: 0.4vw;
     background: #57acff;
     left: 0.3vw;
     top: 0.65vh;
 }
-div.timeLineBox div.timeLine div.contentItemRight div.contentIconDot,
-div.timeLineBox div.timeLine div.contentItemRight div.contentIconSmallDot{
+div.timeLine div.timeLineBox div.contentItemRight div.contentIconDot,
+div.timeLine div.timeLineBox div.contentItemRight div.contentIconSmallDot{
     width: 1vw;
     height: 1vw;
     border-radius: 50%;
@@ -92,7 +91,7 @@ div.timeLineBox div.timeLine div.contentItemRight div.contentIconSmallDot{
     left: -42.4vw;
     top: 2vh
 }
-div.timeLineBox div.timeLine div.contentItemRight div.contentIconSmallDot{
+div.timeLine div.timeLineBox div.contentItemRight div.contentIconSmallDot{
     width: 0.4vw;
     height: 0.4vw;
     background: #57acff;
@@ -100,18 +99,18 @@ div.timeLineBox div.timeLine div.contentItemRight div.contentIconSmallDot{
     top: 0.65vh;
 }
 
-div.timeLineBox div.timeLine div.contentItemHead{
+div.timeLine div.timeLineBox div.contentItemHead{
     padding: 2vh 2vw;
     padding-bottom: 0;
 }
-div.timeLineBox div.timeLine div.contentItemHeadTitle{
+div.timeLine div.timeLineBox div.contentItemHeadTitle{
     height: 4vh;
     font-size: 3vh;
     border-bottom: 0.1em solid #333;
     position: relative;
     color: #333;
 }
-div.timeLineBox div.timeLine div.contentItemHeadIntroduction{
+div.timeLine div.timeLineBox div.contentItemHeadIntroduction{
     height: auto;
     font-size: 2vh;
     position: relative;

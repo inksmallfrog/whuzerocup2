@@ -31,22 +31,29 @@ function goScreen(screen){
         return;
     }
     window.scrollTo(0, 0);
+    var currentElement = document.getElementsByClassName(currentScreen)[0];
+    var goElement = document.getElementsByClassName(screen)[0];
     if(currentScreen == "timeLine"){
-        console.log(2);
-        document.getElementsByClassName(currentScreen)[0].classList.add("left");
-        document.getElementsByClassName(screen)[0].classList.add("left");
+        currentElement.classList.add("left");
+        setTimeout(function(){currentElement.style.display = "none";}, 1000);
+        goElement.style.display = "block";
+        setTimeout(function(){goElement.classList.add("left");}, 10);
         document.getElementsByClassName(currentScreen+"Fixed")[0].classList.add("hide");
         document.getElementsByClassName(screen + "Fixed")[0].classList.add("show");
     }
     else{
-        document.getElementsByClassName(currentScreen)[0].classList.remove("left");
+        currentElement.classList.remove("left");
         document.getElementsByClassName(currentScreen+"Fixed")[0].classList.remove("show");
+        setTimeout(function(){currentElement.style.display = "none";}, 1000);
+
         if(screen == "timeLine"){
-            document.getElementsByClassName(screen)[0].classList.remove("left");
+            goElement.style.display = "block";
+            setTimeout(function(){goElement.classList.remove("left");}, 10);
             document.getElementsByClassName(screen+"Fixed")[0].classList.remove("hide");
         }
         else{
-            document.getElementsByClassName(screen)[0].classList.add("left");
+            goElement.style.display = "block";
+            setTimeout(function(){goElement.classList.add("left");}, 10);
             document.getElementsByClassName(screen + "Fixed")[0].classList.add("show");
         }
     }

@@ -1,10 +1,26 @@
-div.albumBox{
-    float: right;
+div.album{
+    display: none;
+    position: absolute;
+    left:100vw;
     background: url("../res/background/timeLineBg.jpg") fixed;
+    background-size: 100vw 100vh;
+    float:right;
+    width: 100vw;
+    height: auto;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+div.album.left{
+    left:0;
+}
+div.albumBox{
     padding-left: 20vw;
     padding-top: 4vh;
     min-height: 100vh;
-    min-width: 80vw;
 }
 div.albumBox div.photograph{
     float:left;

@@ -1,34 +1,44 @@
-a{
-    text-decoration: none;
-    color: inherit;
+div.dinary{
+    display: none;
+    position: absolute;
+    left: 100vw;
+    float:right;
+    width: 100vw;
+    height: auto;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
-ul{
-    list-style: none;
+div.dinary.left{
+    left:0;
 }
 
 div.firstScreen{
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: auto;
+    padding-bottom: 20vh;
+    background: url("../res/background/timeLineBg.jpg") fixed;
+    background-size: 100vw 100vh;
 
-    -webkit-transition: all 1.5s ease-in-out;
-    -moz-transition: all 1.5s ease-in-out;
-    -ms-transition: all 1.5s ease-in-out;
-    -o-transition: all 1.5s ease-in-out;
-    transition: all 1.5s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 div.firstScreen.up{
-    top:-100vh;
+    top:-100%;
 }
 
 div.passageBox{
-    float: right;
-    background: url("../res/background/timeLineBg.jpg") fixed;
-    padding-left: 24vw;
     padding-top: 8vh;
+    padding-left: 24vw;
     min-height: 100vh;
-    min-width: 76vw;
 }
 div.passageBox div.passage{
     width: 14vw;
@@ -108,16 +118,16 @@ div.passageBox div.passage div.passageState div.accessible{
 
 div.secondScreen{
     position: absolute;
-    top:100%;
+    top:100vh;
     left: 0;
     width: 100vw;
     height: 0;
 
-    -webkit-transition: all 1.5s ease-in-out;
-    -moz-transition: all 1.5s ease-in-out;
-    -ms-transition: all 1.5s ease-in-out;
-    -o-transition: all 1.5s ease-in-out;
-    transition: all 1.5s ease-in-out;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -ms-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
 }
 
 div.secondScreen.up{

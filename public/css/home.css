@@ -5,7 +5,6 @@
 a{
     text-decoration: none;
     color: inherit;
-    overflow-y: hidden;
 }
 ul{
     list-style: none;
@@ -181,49 +180,8 @@ div.countDown ul{
     padding-right: 1vw;
 }
 
-div.timeLine{
-    position: absolute;
-    left: 0;
-
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -ms-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-}
-div.timeLine.left{
-    left: -100vw;
-}
 
 
-div.dinary{
-    position: absolute;
-    left:100vw;
-    width: 100vw;
-    height: auto;
 
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -ms-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-}
-div.dinary.left{
-    left:0;
-}
 
-div.album{
-    position: absolute;
-    left:100vw;
-    width: 100vw;
-    height: auto;
 
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -ms-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-}
-div.album.left{
-    left:0;
-}
