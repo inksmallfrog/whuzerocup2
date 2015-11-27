@@ -109,7 +109,6 @@
                 </a>
             </div>
         </div>
-
 <script>
     initCurrentYear();
 </script>

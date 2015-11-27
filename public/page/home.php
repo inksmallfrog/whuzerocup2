@@ -929,7 +929,7 @@
                     <div class="formItem">
                         <p class="label">&nbsp</p>
                         <input type="submit" value="提交">
-                        <input type="reset" value="取消">
+                        <input type="reset" value="取消" onclick="goScreen('timeLine')">
                     </div>
                 </form>
             </div>
@@ -954,7 +954,7 @@
                         <div class="formItem">
                             <p class="label">&nbsp</p>
                             <input type="submit" value="提交">
-                            <input type="reset" value="取消">
+                            <input type="reset" value="取消" onclick="goScreen('timeLine')">
                         </div>
                     </div>
                 </form>
@@ -970,7 +970,7 @@
                         <div class="formItem">
                             <p class="label">&nbsp</p>
                             <input type="submit" value="提交">
-                            <input type="reset" value="取消">
+                            <input type="reset" value="取消" onclick="goScreen('timeLine')">
                         </div>
                     </div>
                 </form>
