@@ -60,10 +60,10 @@ function goScreen(screen){
 
         goElement.style.display = "block";
         if(goElement.classList.contains("RightScreen")){
-            setTimeout(function(){goElement.classList.add("left");}, 10);
+            setTimeout(function(){goElement.classList.add("left");}, 50);
         }
         else{
-            setTimeout(function(){goElement.classList.add("right");}, 10);
+            setTimeout(function(){goElement.classList.add("right");}, 50);
         }
         document.getElementsByClassName(screen+"Fixed")[0].classList.add("show");
     }
@@ -73,10 +73,10 @@ function goScreen(screen){
 
         goElement.style.display = "block";
         if(goElement.classList.contains("RightScreen")){
-            setTimeout(function(){goElement.classList.add("left");}, 10);
+            setTimeout(function(){goElement.classList.add("left");}, 50);
         }
         else{
-            setTimeout(function(){goElement.classList.add("right");}, 10);
+            setTimeout(function(){goElement.classList.add("right");}, 50);
         }
         document.getElementsByClassName(screen+"Fixed")[0].classList.add("show");
     }

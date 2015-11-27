@@ -3,8 +3,7 @@ div.firstScreen{
     top: 0;
     left: 0;
     min-width: 100vw;
-    background: url("../res/background/timeLineBg.jpg") fixed;
-    background-size: 100vw 100vh;
+
 
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
