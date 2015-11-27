@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52d3a540-c983-4d1c-89b8-b55a53dacb61" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/dataEdit.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/dataEdit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/page/passageEdit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/photograghEdit.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/page/photograghEdit.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/album.css" afterPath="$PROJECT_DIR$/public/css/album.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/dinary.css" afterPath="$PROJECT_DIR$/public/css/dinary.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/formInPage.css" afterPath="$PROJECT_DIR$/public/css/formInPage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/home.css" afterPath="$PROJECT_DIR$/public/css/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/home.js" afterPath="$PROJECT_DIR$/public/js/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/page/home.php" afterPath="$PROJECT_DIR$/public/page/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/selfInfo.css" afterPath="$PROJECT_DIR$/public/css/selfInfo.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/timeLine.css" afterPath="$PROJECT_DIR$/public/css/timeLine.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="whuzerocup.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,11 +37,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="album.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/css/album.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.08752026">
+              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="dinary.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/dinary.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -72,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/public/css/timeLine.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -98,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.116693676">
-              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -194,13 +193,13 @@
         <option value="$PROJECT_DIR$/public/js/dataEdit.js" />
         <option value="$PROJECT_DIR$/public/css/photograghEdit.css" />
         <option value="$PROJECT_DIR$/public/page/photograghEdit.html" />
-        <option value="$PROJECT_DIR$/public/css/album.css" />
-        <option value="$PROJECT_DIR$/public/css/dinary.css" />
         <option value="$PROJECT_DIR$/public/css/selfInfo.css" />
-        <option value="$PROJECT_DIR$/public/css/timeLine.css" />
         <option value="$PROJECT_DIR$/public/css/home.css" />
         <option value="$PROJECT_DIR$/public/page/home.php" />
         <option value="$PROJECT_DIR$/public/js/home.js" />
+        <option value="$PROJECT_DIR$/public/css/dinary.css" />
+        <option value="$PROJECT_DIR$/public/css/timeLine.css" />
+        <option value="$PROJECT_DIR$/public/css/album.css" />
       </list>
     </option>
   </component>
@@ -676,12 +675,12 @@
       <workItem from="1448448308824" duration="5634000" />
       <workItem from="1448494943089" duration="15156000" />
       <workItem from="1448527494714" duration="4231000" />
-      <workItem from="1448583626140" duration="21713000" />
+      <workItem from="1448583626140" duration="21962000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175027000" />
+    <option name="totallyTimeSpent" value="175276000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1360" height="741" extended-state="4" />
@@ -1039,26 +1038,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/selfInfo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/album.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -1087,10 +1070,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/timeLine.css">
+    <entry file="file://$PROJECT_DIR$/public/js/home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -1103,18 +1086,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/dinary.css">
+    <entry file="file://$PROJECT_DIR$/public/css/selfInfo.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/home.js">
+    <entry file="file://$PROJECT_DIR$/public/css/dinary.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.116693676">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/timeLine.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/album.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08752026">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
           <folding />
         </state>
       </provider>

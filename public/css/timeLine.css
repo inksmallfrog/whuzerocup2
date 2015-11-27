@@ -3,13 +3,6 @@ div.timeLine{
     background-size: 100vw 100vh;
     padding-bottom: 82.5vh;
 }
-div.timeLine.left{
-    left: -100vw;
-}
-div.timeLine.right{
-    left: 100vw;
-}
-
 
 div.timeLine div.timeLineBox{
     background: url("../res/background/timeLinep.png") repeat-y 21vw;

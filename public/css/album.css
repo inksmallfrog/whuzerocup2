@@ -2,9 +2,6 @@ div.album{
     background: url("../res/background/timeLineBg.jpg") fixed;
     background-size: 100vw 100vh;
 }
-div.album.left{
-    left:0;
-}
 div.albumBox{
     padding-left: 20vw;
     padding-top: 4vh;
