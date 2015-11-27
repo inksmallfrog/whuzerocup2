@@ -60,7 +60,8 @@ div.EditBox div.Box form div.formItem label.typeChooserDiv.choose,
 div.EditBox div.Box form div.formItem label.albumChooserDiv.choose{
     background: #333;
 }
-div.EditBox div.Box form div.formItem input.newType{
+div.EditBox div.Box form div.formItem input.newType,
+div.EditBox div.Box form div.formItem input.newAlbum{
     width: 3vw;
     margin-top: 1vh;
     margin-right: 2vw;
