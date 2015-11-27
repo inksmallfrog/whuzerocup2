@@ -64,3 +64,17 @@ function togglePasswordShow(check){
         document.getElementsByName("newPassword")[0].setAttribute("type", "password");
     }
 }
+
+function showHeadImg(fileElement){
+    var image = document.getElementById("headImgShower");
+    var file = fileElement.files[0];
+    if(!/image\/\w+/.test(file.type)){
+        alert("文件必须为图片！");
+        return false;
+    }
+    var reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = function(e){
+        image.setAttribute("src", this.result);
+    }
+}

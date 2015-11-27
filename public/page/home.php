@@ -10,11 +10,14 @@
     <link rel="stylesheet" type="text/css" href="../css/album.css">
     <link rel="stylesheet" type="text/css" href="../css/selfInfo.css">
     <link rel="stylesheet" type="text/css" href="../css/formInPage.css">
+    <link rel="stylesheet" type="text/css" href="../css/dataEdit.css">
+    <link rel="stylesheet" type="text/css" href="../css/photograghEdit.css">
     <script src="../js/selfInfo.js"></script>
     <script src="../js/home.js"></script>
     <script src="../js/timeLine.js"></script>
     <script src="../js/dinary.js"></script>
     <script src="../js/album.js"></script>
+    <script src="../js/dataEdit.js"></script>
 </head>
 <body>
     <div class="Fixed head">
@@ -70,7 +73,8 @@
             </li>
         </ul>
     </div>
-    <div class="Fixed CenterFixed dinaryFixed">
+    <div class="Fixed CenterFixed dinaryFixed passageEditFixed">
+        <input type="button" value="+写日记" onclick="goScreen('passageEdit')">
         <div class="category">
             <ul class="categorySelect">
                 <li class="categoryItem"><a href="javascript:void(0)" onclick="showCategory(null, this)">全部(8)</a></li>
@@ -80,7 +84,8 @@
             </ul>
         </div>
     </div>
-    <div class="Fixed CenterFixed albumFixed">
+    <div class="Fixed CenterFixed albumFixed photograghEditFixed">
+        <input type="button" value="+新记忆" onclick="goScreen('photograghEdit')">
         <div class="albumList">
             <ul class="albumSelect">
                 <li class="albumItem"><a href="javascript:void(0)" onclick="showAlbum(null, this)">全部(8)</a></li>
@@ -918,7 +923,7 @@
                 <form class="selfInfoForm">
                     <div class="formItem"><p class="label">昵称:</p><input type="text" name="userName"></div>
                     <div class="formItem"><p class="label">生日:</p><input type="date" name="birthday"></div>
-                    <div class="formItem"><p class="label">头像:</p><input type="file" name="headImg"><img src=""></div>
+                    <div class="formItem"><p class="label">头像:</p><input type="file" name="headImg" onchange="showHeadImg(this)"><img id="headImgShower"></div>
                     <div class="formItem"><p class="label">签名:</p><textarea name="introduction"></textarea></div>
                     <div class="formItem"><p class="label">我眼中的他/她:</p><textarea name="theOtherInMyEyes"></textarea></div>
                     <div class="formItem">
@@ -967,6 +972,79 @@
                             <input type="submit" value="提交">
                             <input type="reset" value="取消">
                         </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="Screen LeftScreen Edit passageEdit">
+        <div class="ScreenBox EditBox passageEditBox">
+            <div class="Box PassageBox">
+                <form>
+                    <div class="formItem">
+                        <p class="label">标题:</p>
+                        <input type="text" id="title" name="title" placeholder="标题">
+                    </div>
+                    <div class="formItem" id="typeBox">
+                        <p class="label">分类:</p>
+                        <input type="radio" class="typeChooser" name="typeChooser" id="typeDefault" value="默认" checked>
+                        <label for="typeDefault" class="typeChooserDiv" onclick="chooseType(this)">默认</label>
+                        <input type="radio" class="typeChooser" name="typeChooser" id="type0" value="分类0">
+                        <label for="type0" class="typeChooserDiv" onclick="chooseType(this)">分类0</label>
+                        <input type="radio" class="typeChooser" name="typeChooser" id="type1" value="分类1">
+                        <label for="type1" class="typeChooserDiv" onclick="chooseType(this)">分类1</label>
+                        <input type="radio" class="typeChooser" name="typeChooser" id="type2" value="分类2">
+                        <label for="type2" class="typeChooserDiv" onclick="chooseType(this)">分类2</label>
+                        <label id="newType" class="typeChooserDiv" onclick="addType(this)">新分类</label>
+                    </div>
+                    <div class="formItem Content PassageContent">
+                        <p class="label">正文:</p>
+                        <div contenteditable class="textarea"></div>
+                    </div>
+                    <div class="formItem">
+                        <p class="label">&nbsp</p>
+                        <input type="submit" value="发表">
+                        <input type="reset" value="取消" onclick="goScreen('dinary')">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="Screen LeftScreen Edit photograghEdit">
+        <div class="ScreenBox EditBox photograghEditBox">
+            <div class="Box photograghBox">
+                <form>
+                    <div class="formItem">
+                        <p class="label">选择照片</p>
+                        <input type="file" id="photo" name="photogragh" onchange="showImg(this)">
+
+                    </div>
+                    <div class="formItem">
+                        <p class="label">&nbsp</p>
+                        <img id="fileShower">
+                    </div>
+                    <div class="formItem" id="typeBox">
+                        <p class="label">分类:</p>
+                        <input type="radio" class="typeChooser" name="typeChooser" id="typeDefault" value="默认" checked>
+                        <label for="typeDefault" class="typeChooserDiv" onclick="chooseType(this)">默认</label>
+                        <input type="radio" class="typeChooser" name="typeChooser" id="type0" value="分类0">
+                        <label for="type0" class="typeChooserDiv" onclick="chooseType(this)">分类0</label>
+                        <input type="radio" class="typeChooser" name="typeChooser" id="type1" value="分类1">
+                        <label for="type1" class="typeChooserDiv" onclick="chooseType(this)">分类1</label>
+                        <input type="radio" class="typeChooser" name="typeChooser" id="type2" value="分类2">
+                        <label for="type2" class="typeChooserDiv" onclick="chooseType(this)">分类2</label>
+                        <label id="newType" class="typeChooserDiv" onclick="addType(this)">新分类</label>
+                    </div>
+                    <div class="formItem Content PhotograghDescribe">
+                        <p class="label">描述:</p>
+                        <div contenteditable class="textarea"></div>
+                    </div>
+                    <div class="formItem">
+                        <p class="label">&nbsp</p>
+                        <input type="submit" value="贴出">
+                        <input type="reset" value="取消" onclick="goScreen('album')">
                     </div>
                 </form>
             </div>

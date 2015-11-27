@@ -3,9 +3,6 @@ body{
 }
 div.Edit{
     position: absolute;
-
-    background: url("../res/background/timeLineBg.jpg") fixed;
-    background-size: 100vw 100vh;
     float:right;
     width: 100vw;
     height: auto;

@@ -33,7 +33,7 @@ function toggleSelectOption(){
             items[i].classList.remove("show");
             item = items[i];
         }
-        setTimeout(function(){box.style.display = "none";}, 1000);
+        setTimeout(function(){box.style.display = "none";}, 400);
         isSelectShow = false;
     }
 }
@@ -43,8 +43,8 @@ function logout(){
 
 function goScreen(screen){
     console.log(screen);
+    console.log(currentScreen);
     if(currentScreen == screen){
-        console.log(1);
         window.scrollTo(0, 0);
         return;
     }
