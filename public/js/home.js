@@ -90,6 +90,7 @@ function goScreen(screen){
         else if(screen == "timeLine"){
             goElement.style.display = "block";
             setTimeout(function(){goElement.classList.remove("left");}, 10);
+            setTimeout(function(){goElement.classList.remove("right");}, 10);
             document.getElementsByClassName(screen+"Fixed")[0].classList.remove("hide");
         }
         else{
