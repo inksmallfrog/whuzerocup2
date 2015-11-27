@@ -2,7 +2,7 @@
  * Created by inksmallfrog on 11/24/15.
  */
 var isInPassage = false;
-var currentType = document.getElementsByClassName("categoryItem")[0].getElementsByTagName("a")[0];
+var currentType;
 function enterPassage(){
     window.scrollTo(0, 0);
     document.getElementsByClassName("firstScreen")[0].classList.add("up");
@@ -17,6 +17,7 @@ function quitPassage(){
     isInPassage = false;
 }
 function initDinaryFixed(){
+    currentType = document.getElementsByClassName("categoryItem")[0].getElementsByTagName("a")[0];
     currentType.classList.add("active");
 }
 function showCategory(type){

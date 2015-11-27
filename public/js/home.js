@@ -12,7 +12,6 @@ function init(){
     initTimeLineFixed();
     initDinaryFixed();
     initAlbumFixed();
-    initSelfInfoFixed();
     initSelfInfo();
 }
 

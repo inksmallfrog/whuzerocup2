@@ -1,8 +1,9 @@
 /**
  * Created by inksmallfrog on 11/26/15.
  */
-var currentAlbum = document.getElementsByClassName("albumItem")[0].getElementsByTagName("a")[0];
+var currentAlbum;
 function initAlbumFixed(){
+    currentAlbum = document.getElementsByClassName("albumItem")[0].getElementsByTagName("a")[0];
     currentAlbum.classList.add("active");
 }
 function showAlbum(album){

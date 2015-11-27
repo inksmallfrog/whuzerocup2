@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52d3a540-c983-4d1c-89b8-b55a53dacb61" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/page/selfInfo.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/album.js" afterPath="$PROJECT_DIR$/public/js/album.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/dinary.js" afterPath="$PROJECT_DIR$/public/js/dinary.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/home.css" afterPath="$PROJECT_DIR$/public/css/home.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/home.js" afterPath="$PROJECT_DIR$/public/js/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/page/home.php" afterPath="$PROJECT_DIR$/public/page/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/selfInfo.css" afterPath="$PROJECT_DIR$/public/css/selfInfo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/selfInfo.js" afterPath="$PROJECT_DIR$/public/js/selfInfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/timeLine.js" afterPath="$PROJECT_DIR$/public/js/timeLine.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="whuzerocup.iws" />
@@ -36,18 +32,18 @@
       <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/page/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.407408">
-              <caret line="108" column="24" selection-start-line="108" selection-start-column="24" selection-end-line="108" selection-end-column="24" />
+            <state vertical-scroll-proportion="-66.666664">
+              <caret line="100" column="38" selection-start-line="100" selection-start-column="38" selection-end-line="100" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="selfInfo.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="selfInfo.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/selfInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64181525">
-              <caret line="22" column="80" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="80" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -63,14 +59,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="album.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/album.js">
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/home.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#47#0" expanded="false" />
-              </folding>
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -79,8 +73,20 @@
         <entry file="file://$PROJECT_DIR$/public/js/dinary.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="43" selection-end-column="40" />
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="album.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/album.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.029173419">
+              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#47#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -152,12 +158,12 @@
         <option value="$PROJECT_DIR$/public/css/selfInfo.css" />
         <option value="$PROJECT_DIR$/public/css/timeLine.css" />
         <option value="$PROJECT_DIR$/public/css/dinary.css" />
-        <option value="$PROJECT_DIR$/public/js/dinary.js" />
-        <option value="$PROJECT_DIR$/public/js/album.js" />
         <option value="$PROJECT_DIR$/public/js/timeLine.js" />
-        <option value="$PROJECT_DIR$/public/js/home.js" />
         <option value="$PROJECT_DIR$/public/page/home.php" />
         <option value="$PROJECT_DIR$/public/js/selfInfo.js" />
+        <option value="$PROJECT_DIR$/public/js/home.js" />
+        <option value="$PROJECT_DIR$/public/js/dinary.js" />
+        <option value="$PROJECT_DIR$/public/js/album.js" />
       </list>
     </option>
   </component>
@@ -633,12 +639,12 @@
       <workItem from="1448448308824" duration="5634000" />
       <workItem from="1448494943089" duration="15156000" />
       <workItem from="1448527494714" duration="4231000" />
-      <workItem from="1448583626140" duration="23349000" />
+      <workItem from="1448583626140" duration="23661000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176663000" />
+    <option name="totallyTimeSpent" value="176975000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1360" height="741" extended-state="4" />
@@ -1008,14 +1014,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/dinary.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="43" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1024,10 +1022,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/home.js">
+    <entry file="file://$PROJECT_DIR$/public/page/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-66.666664">
+          <caret line="100" column="38" selection-start-line="100" selection-start-column="38" selection-end-line="100" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/selfInfo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1040,37 +1046,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/page/selfInfo.php">
+    <entry file="file://$PROJECT_DIR$/public/js/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6779661">
-          <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/page/home.php">
+    <entry file="file://$PROJECT_DIR$/public/js/dinary.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.407408">
-          <caret line="108" column="24" selection-start-line="108" selection-start-column="24" selection-end-line="108" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/album.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.029173419">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
           <folding>
             <element signature="e#0#47#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/selfInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64181525">
-          <caret line="22" column="80" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
