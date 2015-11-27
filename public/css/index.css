@@ -6,28 +6,24 @@ body{
     overflow-x: hidden;
     overflow-y: hidden;
 }
-form{
-    padding: 8vh 8vw;
-}
 iframe{
     border: none;
 }
+
 div.firstScreen{
     position:fixed;
     width: 100vw;
     height: 100vh;
+    top: 0;
+    left: 0;
     background: url("../res/background/firstScreenBg.jpg");
     background-size: 100vw 100vh;
-    -webkit-transition: height 1.5s ease-in-out;
-    -moz-transition: height 1.5s ease-in-out;
-    -ms-transition: height 1.5s ease-in-out;
-    -o-transition: height 1.5s ease-in-out;
-    transition: height 1.5s ease-in-out;
+    -webkit-transition: top 1s ease-in-out;
+    -moz-transition: top 1s ease-in-out;
+    -ms-transition: top 1s ease-in-out;
+    -o-transition: top 1s ease-in-out;
+    transition: top 1s ease-in-out;
 }
-div.firstScreen.navigator{
-    height:4vh;
-}
-
 div.firstScreen .flystar{
     position: absolute;
     width: 231px;
@@ -35,15 +31,12 @@ div.firstScreen .flystar{
     background: url("../res/background/flyStar.png");
     z-index: 2;
 }
-
-
 div.firstScreen div.authenticateBox{
     background-color: rgba(204, 204, 204, 0.3);
     position: relative;
-    display: block;
-    margin: 20vh auto;
+    margin: 14vh auto;
     height: 60vh;
-    width: 60vw;
+    width: 50vw;
     border: solid 0.1em;
     left: 0;
     z-index: 10;
@@ -55,71 +48,65 @@ div.firstScreen div.authenticateBox{
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 }
-div.firstScreen div.authenticateBox.login.left{
-    left: -100%;
+@media screen and (max-width: 600px) {
+    div.firstScreen div.authenticateBox{
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+    }
 }
-div.firstScreen div.authenticateBox.login.right{
-    left: 100%;
+@media screen and (max-height: 300px) and (min-width:600px){
+    div.firstScreen div.authenticateBox{
+        width: 50vw;
+        height: 100vh;
+        margin: 0 auto;
+    }
 }
 div.firstScreen div.authenticateBox.hide{
     opacity: 0;
     top: -100vh;
 }
-
-div.firstScreen div.authenticateBox.signup{
-    position: relative;
-    display: block;
-    margin: 15vh auto;
-    height: 68vh;
-    width: 80vw;
-    border: solid 0.1em;
-    top: -80vh;
-    left: 100%;
-
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -ms-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+div.firstScreen div.authenticateBox form{
+    width: 80%;
+    margin: 10vh auto;
 }
-div.firstScreen div.authenticateBox.signup.left{
-    left: 0;
+@media screen and (max-width: 600px) {
+    div.firstScreen div.authenticateBox form{
+        width: 80%;
+        margin: 25vh auto;
+    }
 }
-div.firstScreen div.authenticateBox.signup.hide{
-    display: none;
+@media screen and (max-height: 300px) and (min-width:600px){
+    div.firstScreen div.authenticateBox form{
+        width: 80%;
+        margin: 25vh auto;
+    }
 }
 
-div.firstScreen div.authenticateBox.findPassword{
-    position: relative;
-    display: block;
-    margin: 25vh auto;
-    height: 40vh;
-    width: 50vw;
-    border: solid 0.1em;
-    top: -160vh;
-    left: -100%;
-
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -ms-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+div.firstScreen.navigator{
+    top:-96vh;
 }
-div.firstScreen div.authenticateBox.findPassword.right{
-    left: 0;
+@media screen and (max-height: 400px){
+    div.firstScreen.navigator{
+        top:-94vh;
+    }
 }
-
 div.firstScreen div.navigatorBox{
     position: inherit;
     top:100%;
     width: 100vw;
     height: 4vh;
     box-shadow: 0 0.1em 0 rgba(128, 128, 128, 0.7);
-    -webkit-transition: all 1.5s ease-in-out;
-    -moz-transition: all 1.5s ease-in-out;
-    -ms-transition: all 1.5s ease-in-out;
-    -o-transition: all 1.5s ease-in-out;
-    transition: all 1.5s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+@media screen and (max-height: 400px){
+    div.firstScreen div.navigatorBox{
+        height:6vh;
+    }
 }
 div.firstScreen div.navigatorBox ul{
     list-style: none;
@@ -127,6 +114,11 @@ div.firstScreen div.navigatorBox ul{
     margin:0.1vh auto;
     font-size: 2.6vh;
     text-align: center;
+}
+@media screen and (max-height: 400px){
+    div.firstScreen div.navigatorBox ul{
+        font-size: 4vh;
+    }
 }
 div.firstScreen div.navigatorBox ul li{
     display: inline-block;

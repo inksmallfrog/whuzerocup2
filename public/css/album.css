@@ -45,3 +45,10 @@ div.albumBox div.photograph div.introduction div.postTime{
     margin-right: 4vw;
     font-size: 2vh;
 }
+@media screen and (max-width: 600px){
+    div.albumBox{
+        padding-top: 8vh;
+        padding-left: 40vw;
+        min-height: 100vh;
+    }
+}

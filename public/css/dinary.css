@@ -4,7 +4,6 @@ div.firstScreen{
     left: 0;
     min-width: 100vw;
 
-
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -ms-transition: all 1s ease-in-out;
@@ -21,7 +20,7 @@ div.passageBox{
     min-height: 100vh;
 }
 div.passageBox div.passage{
-    width: 14vw;
+    width: 200px;
     float: left;
     min-height: 40vh;
     margin-right: 10vw;
@@ -50,19 +49,19 @@ div.passageBox div.passage div.passageInfo{
 }
 div.passageBox div.passage div.passageInfo div.title{
     padding-top: 5vh;
-    font-size: 2.4vw;
+    font-size: 30px;
 }
 div.passageBox div.passage div.passageInfo div.postTime,
 div.passageBox div.passage div.passageInfo div.postUser{
     padding-top: 6vh;
-    font-size: 1vw;
+    font-size: 16px;
 }
 div.passageBox div.passage div.passageInfo div.postUser{
     padding-top: 0.4vh;
 }
 
 div.passageBox div.passage div.passageState{
-    font-size: 1vw;
+    font-size: 10px;
 }
 div.passageBox div.passage div.passageState div.type,
 div.passageBox div.passage div.passageState div.readTimes,
@@ -123,4 +122,11 @@ div.secondScreen.up iframe{
     border: none;
     height: 100vh;
     width: 100vw;
+}
+@media screen and (max-width: 600px){
+    div.passageBox{
+        padding-top: 8vh;
+        padding-left: 40vw;
+        min-height: 100vh;
+    }
 }

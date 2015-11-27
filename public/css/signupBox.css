@@ -1,5 +1,35 @@
-form.formDouble{
-    padding: 10vh 2%;
+div.firstScreen div.authenticateBox.signup{
+    margin: 40vh auto;
+    height: 68vh;
+    width: 80vw;
+    top: -100vh;
+    left: 100%;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+@media screen and (max-width: 600px) {
+    div.firstScreen div.authenticateBox.signup{
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+    }
+}
+@media screen and (max-height: 300px) and (min-width:600px){
+    div.firstScreen div.authenticateBox.signup{
+        width: 80vw;
+        height: 100vh;
+        margin: 0 auto;
+    }
+}
+div.firstScreen div.authenticateBox.signup.left{
+    left: 0;
+}
+div.firstScreen div.authenticateBox.signup.hide{
+    display: none;
 }
 form div.formLeft{
     width: 45%;
@@ -7,25 +37,14 @@ form div.formLeft{
 }
 form div.formRight{
     width: 45%;
-    margin-right: 2%;
     float: right;
 }
 
 form.formDouble input[type="submit"],
 form.formDouble input[type="button"]{
-    margin: 3vh 20%;
+    margin: 3vh auto;
     width: 60%;
-    height: 8vh;
-    font-size: 3vh;
-    border: none;
-    background: #cff;
 }
-
-form.formDouble input[type="submit"].considerable,
-form.formDouble input[type="button"].considerable{
-    background: #eee;
-}
-
 form.formDouble div.checkBox{
     font-size: 3vh;
     float:right;
@@ -34,3 +53,30 @@ form.formDouble div.radioBox{
     font-size: 3vh;
     float:left;
 }
+@media screen and (max-width: 600px) {
+    form.formDouble input[type="submit"],
+    form.formDouble input[type="button"]{
+        width: 90%;
+    }
+    form.formDouble div.checkBox,
+    form.formDouble div.radioBox{
+        font-size: 2.4vw;
+    }
+}
+@media screen and (max-height: 350px){
+    div.firstScreen div.authenticateBox.signup form div.error.show{
+        font-size: 5vh;
+    }
+    div.firstScreen div.authenticateBox.signup form input[type="text"],
+    div.firstScreen div.authenticateBox.signup form input[type="password"]{
+        height: 12vh;
+        font-size: 6vh;
+    }
+    div.firstScreen div.authenticateBox.signup form input[type="submit"],
+    div.firstScreen div.authenticateBox.signup form input[type="button"]{
+        margin: 8vh 0;
+        height: 10vh;
+        font-size: 6vh;
+    }
+}
+

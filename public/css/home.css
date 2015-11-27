@@ -9,7 +9,6 @@ a{
 ul{
     list-style: none;
 }
-
 div.fixedBox{
     position: fixed;
     width: 12vw;
@@ -24,6 +23,8 @@ div.Fixed{
     margin-left: 2vw;
     z-index: 100;
 }
+
+
 div.head{
     border: solid 0.1em;
     border-color: transparent #666 #666 transparent;
@@ -78,7 +79,6 @@ div.head p.introduction{
     font-size: 1vw;
     text-align: center;
 }
-
 div.CenterFixed{
     top:25vh;
     width: 11vw;
@@ -180,6 +180,66 @@ div.countDown{
 div.countDown ul{
     padding-right: 1vw;
 }
+@media screen and (max-width: 600px){
+    div.fixedBox{
+        width: 25vw;
+    }
+    div.Fixed{
+        width: 25vw;
+        margin-top: 6vh;
+        margin-left: 0;
+    }
+    div.head img.headImg{
+        width: 8vw;
+    }
+    div.head a.userName{
+        font-size: 3vw;
+    }
+    div.head a.userName img.selectIcon{
+        display: none;
+    }
+    div.head div.option{
+        width: 14vw;
+        font-size: 2.6vw;
+    }
+    div.head p.introduction{
+        margin-top: 0;
+        font-size: 2.6vw;
+    }
+    div.CenterFixed{
+        width: 24.6vw;
+    }
+    div.timeLineFixed ul.yearSelect li.yearItem{
+        font-size: 4vw;
+    }
+    div.timeLineFixed ul.monthSelect li[class^="monthItem"]{
+        font-size: 3vw;
+    }
+    div.countDown{
+        font-size: 2vw;
+    }
+}
+@media screen and (max-height: 350px){
+    div.CenterFixed{
+        top:40vh;
+    }
+    div.head div.option{
+        width: 14vw;
+        font-size: 3.6vh;
+    }
+}
+@media screen and (max-height: 500px){
+    div.fixedBox{
+        margin-top: 6vh;
+    }
+    div.head div.option li.selectItem.show{
+        height:5vh;
+    }
+    div.CenterFixed{
+        top: 40vh;
+    }
+}
+
 
 div.Screen{
     display: none;

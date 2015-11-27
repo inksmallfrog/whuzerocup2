@@ -1,7 +1,39 @@
-form a{
+div.firstScreen div.authenticateBox.login form a{
     display: block;
     float:right;
     text-decoration: none;
     color: #fff;
     font-size: 3vh;
+    height:6vh;
+    width: 100%;
+    text-align: right;
+}
+@media screen and (max-width: 600px) {
+
+}
+@media screen and (max-height: 350px){
+    div.firstScreen div.authenticateBox.login form a{
+        font-size: 6vh;
+    }
+    div.firstScreen div.authenticateBox.login form div.error.show{
+        font-size: 5vh;
+    }
+    div.firstScreen div.authenticateBox.login form input[type="text"],
+    div.firstScreen div.authenticateBox.login form input[type="password"]{
+        height: 12vh;
+        font-size: 6vh;
+    }
+    div.firstScreen div.authenticateBox.login form input[type="submit"],
+    div.firstScreen div.authenticateBox.login form input[type="button"]{
+        margin: 8vh 0;
+        width: 35%;
+        height: 10vh;
+        font-size: 6vh;
+    }
+}
+div.firstScreen div.authenticateBox.login.left{
+    left: -100%;
+}
+div.firstScreen div.authenticateBox.login.right{
+    left: 100%;
 }

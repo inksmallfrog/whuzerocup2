@@ -102,3 +102,11 @@ div.timeLine div.timeLineBox div.contentItemHeadIntroduction{
     color: #666;
     padding: 1vh 0;
 }
+@media screen and (max-width: 600px){
+    div.timeLineBox{
+        background: url("../res/background/timeLinep.png") repeat-y 40vw;
+        padding-top: 8vh;
+        padding-left: 40vw;
+        min-height: 100vh;
+    }
+}
