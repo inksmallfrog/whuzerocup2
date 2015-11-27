@@ -17,7 +17,7 @@
     <script src="../js/album.js"></script>
 </head>
 <body>
-    <div class="head">
+    <div class="Fixed head">
         <img src="../res/headImg/head.jpg" class="headImg">
         <span class="select">
             <a class="userName" href="javascript:void(0)" onclick="toggleSelectOption()">
@@ -33,7 +33,7 @@
         </div>
         <p class="introduction">其实还是很喜欢你的～</p>
     </div>
-    <div class="timeLineFixed">
+    <div class="Fixed CenterFixed timeLineFixed show">
         <ul class="yearSelect">
             <li class="yearItem" id="yearItem2015">
                 <a class="year" href="javascript:void(0)" onclick="toYear(this)">
@@ -70,7 +70,7 @@
             </li>
         </ul>
     </div>
-    <div class="dinaryFixed">
+    <div class="Fixed CenterFixed dinaryFixed">
         <div class="category">
             <ul class="categorySelect">
                 <li class="categoryItem"><a href="javascript:void(0)" onclick="showCategory()">全部(8)</a></li>
@@ -80,7 +80,7 @@
             </ul>
         </div>
     </div>
-    <div class="albumFixed">
+    <div class="Fixed CenterFixed albumFixed">
         <div class="albumList">
             <ul class="albumSelect">
                 <li class="albumItem"><a href="javascript:void(0)" onclick="showAlbum()">全部(8)</a></li>
@@ -90,7 +90,7 @@
             </ul>
         </div>
     </div>
-    <div class="selfInfoFixed">
+    <div class="Fixed CenterFixed selfInfoFixed">
         <div class="selfInfoList">
             <ul class="selfInfoSelect">
                 <li class="selfInfoItem"><a href="javascript:void(0)" onclick="goForm('individualInfo')">我的信息</a></li>
@@ -99,7 +99,7 @@
             </ul>
         </div>
     </div>
-    <div class="countDown">
+    <div class="Fixed countDown">
         <ul class="countDownList">
             <li class="countDownItem">距离 一起看电影 还有<p id="countDown0"></p></li>
             <li class="countDownItem">距离 一起看吃饭 还有<p id="countDown1"></p></li>
@@ -109,193 +109,193 @@
 
 
 
-        <div class="timeLine">
-            <div class="timeLineBox">
-                <div class="contentYear" id="2015Y11M">2015</div>
-                <div class="contentMonth">11月</div>
-                <div class="contentItemLeft contentItemFirst">
-                    <div class="contentIconArrow"></div>
-                    <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
-                    <div class="contentItemHead">
-                        <div class="contentItemHeadTitle">
-                            纪念日
-                        </div>
-                        <div class="contentItemHeadIntroduction">
-                            这是个纪念日
-                        </div>
+    <div class="Screen RightScreen timeLine left">
+        <div class="timeLineBox">
+            <div class="contentYear" id="2015Y11M">2015</div>
+            <div class="contentMonth">11月</div>
+            <div class="contentItemLeft contentItemFirst">
+                <div class="contentIconArrow"></div>
+                <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
+                <div class="contentItemHead">
+                    <div class="contentItemHeadTitle">
+                        纪念日
+                    </div>
+                    <div class="contentItemHeadIntroduction">
+                        这是个纪念日
                     </div>
                 </div>
-                <div class="contentItemRight">
-                    <div class="contentIconArrow"></div>
-                    <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
-                    <div class="contentItemHead">
-                        <div class="contentItemHeadTitle">
-                            纪念日
-                        </div>
-                        <div class="contentItemHeadIntroduction">
-                            这是个纪念日
-                        </div>
+            </div>
+            <div class="contentItemRight">
+                <div class="contentIconArrow"></div>
+                <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
+                <div class="contentItemHead">
+                    <div class="contentItemHeadTitle">
+                        纪念日
+                    </div>
+                    <div class="contentItemHeadIntroduction">
+                        这是个纪念日
                     </div>
                 </div>
-                <div class="contentYear" id="2015Y7M">2015</div>
-                <div class="contentMonth">7月</div>
-                <div class="contentItemLeft contentItemFirst">
-                    <div class="contentIconArrow"></div>
-                    <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
-                    <div class="contentItemHead">
-                        <div class="contentItemHeadTitle">
-                            纪念日
-                        </div>
-                        <div class="contentItemHeadIntroduction">
-                            这是个纪念日
-                        </div>
+            </div>
+            <div class="contentYear" id="2015Y7M">2015</div>
+            <div class="contentMonth">7月</div>
+            <div class="contentItemLeft contentItemFirst">
+                <div class="contentIconArrow"></div>
+                <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
+                <div class="contentItemHead">
+                    <div class="contentItemHeadTitle">
+                        纪念日
+                    </div>
+                    <div class="contentItemHeadIntroduction">
+                        这是个纪念日
                     </div>
                 </div>
-                <div class="contentItemRight">
-                    <div class="contentIconArrow"></div>
-                    <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
-                    <div class="contentItemHead">
-                        <div class="contentItemHeadTitle">
-                            纪念日
-                        </div>
-                        <div class="contentItemHeadIntroduction">
-                            这是个纪念日
-                        </div>
+            </div>
+            <div class="contentItemRight">
+                <div class="contentIconArrow"></div>
+                <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
+                <div class="contentItemHead">
+                    <div class="contentItemHeadTitle">
+                        纪念日
+                    </div>
+                    <div class="contentItemHeadIntroduction">
+                        这是个纪念日
                     </div>
                 </div>
-                <div class="contentItemLeft">
-                    <div class="contentIconArrow"></div>
-                    <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
-                    <div class="contentItemHead">
-                        <div class="contentItemHeadTitle">
-                            纪念日
-                        </div>
-                        <div class="contentItemHeadIntroduction">
-                            这是个纪念日
-                        </div>
+            </div>
+            <div class="contentItemLeft">
+                <div class="contentIconArrow"></div>
+                <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
+                <div class="contentItemHead">
+                    <div class="contentItemHeadTitle">
+                        纪念日
+                    </div>
+                    <div class="contentItemHeadIntroduction">
+                        这是个纪念日
                     </div>
                 </div>
-                <div class="contentYear" id="2015Y6M">2015</div>
-                <div class="contentMonth">6月</div>
-                <div class="contentItemLeft contentItemFirst">
-                    <div class="contentIconArrow"></div>
-                    <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
-                    <div class="contentItemHead">
-                        <div class="contentItemHeadTitle">
-                            纪念日
-                        </div>
-                        <div class="contentItemHeadIntroduction">
-                            这是个纪念日
-                        </div>
+            </div>
+            <div class="contentYear" id="2015Y6M">2015</div>
+            <div class="contentMonth">6月</div>
+            <div class="contentItemLeft contentItemFirst">
+                <div class="contentIconArrow"></div>
+                <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
+                <div class="contentItemHead">
+                    <div class="contentItemHeadTitle">
+                        纪念日
+                    </div>
+                    <div class="contentItemHeadIntroduction">
+                        这是个纪念日
                     </div>
                 </div>
-                <div class="contentItemRight">
-                    <div class="contentIconArrow"></div>
-                    <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
-                    <div class="contentItemHead">
-                        <div class="contentItemHeadTitle">
-                            纪念日
-                        </div>
-                        <div class="contentItemHeadIntroduction">
-                            这是个纪念日
-                        </div>
+            </div>
+            <div class="contentItemRight">
+                <div class="contentIconArrow"></div>
+                <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
+                <div class="contentItemHead">
+                    <div class="contentItemHeadTitle">
+                        纪念日
+                    </div>
+                    <div class="contentItemHeadIntroduction">
+                        这是个纪念日
                     </div>
                 </div>
-                <div class="contentItemLeft">
-                    <div class="contentIconArrow"></div>
-                    <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
-                    <div class="contentItemHead">
-                        <div class="contentItemHeadTitle">
-                            纪念日
-                        </div>
-                        <div class="contentItemHeadIntroduction">
-                            这是个纪念日
-                        </div>
+            </div>
+            <div class="contentItemLeft">
+                <div class="contentIconArrow"></div>
+                <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
+                <div class="contentItemHead">
+                    <div class="contentItemHeadTitle">
+                        纪念日
+                    </div>
+                    <div class="contentItemHeadIntroduction">
+                        这是个纪念日
                     </div>
                 </div>
-                <div class="contentYear" id="2014Y12M">2014</div>
-                <div class="contentMonth">12月</div>
-                <div class="contentItemLeft contentItemFirst">
-                    <div class="contentIconArrow"></div>
-                    <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
-                    <div class="contentItemHead">
-                        <div class="contentItemHeadTitle">
-                            纪念日
-                        </div>
-                        <div class="contentItemHeadIntroduction">
-                            这是个纪念日
-                        </div>
+            </div>
+            <div class="contentYear" id="2014Y12M">2014</div>
+            <div class="contentMonth">12月</div>
+            <div class="contentItemLeft contentItemFirst">
+                <div class="contentIconArrow"></div>
+                <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
+                <div class="contentItemHead">
+                    <div class="contentItemHeadTitle">
+                        纪念日
+                    </div>
+                    <div class="contentItemHeadIntroduction">
+                        这是个纪念日
                     </div>
                 </div>
-                <div class="contentItemRight">
-                    <div class="contentIconArrow"></div>
-                    <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
-                    <div class="contentItemHead">
-                        <div class="contentItemHeadTitle">
-                            纪念日
-                        </div>
-                        <div class="contentItemHeadIntroduction">
-                            这是个纪念日
-                        </div>
+            </div>
+            <div class="contentItemRight">
+                <div class="contentIconArrow"></div>
+                <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
+                <div class="contentItemHead">
+                    <div class="contentItemHeadTitle">
+                        纪念日
+                    </div>
+                    <div class="contentItemHeadIntroduction">
+                        这是个纪念日
                     </div>
                 </div>
-                <div class="contentItemLeft">
-                    <div class="contentIconArrow"></div>
-                    <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
-                    <div class="contentItemHead">
-                        <div class="contentItemHeadTitle">
-                            纪念日
-                        </div>
-                        <div class="contentItemHeadIntroduction">
-                            这是个纪念日
-                        </div>
+            </div>
+            <div class="contentItemLeft">
+                <div class="contentIconArrow"></div>
+                <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
+                <div class="contentItemHead">
+                    <div class="contentItemHeadTitle">
+                        纪念日
+                    </div>
+                    <div class="contentItemHeadIntroduction">
+                        这是个纪念日
                     </div>
                 </div>
-                <div class="contentYear" id="2014Y1M">2014</div>
-                <div class="contentMonth">1月</div>
-                <div class="contentItemLeft contentItemFirst">
-                    <div class="contentIconArrow"></div>
-                    <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
-                    <div class="contentItemHead">
-                        <div class="contentItemHeadTitle">
-                            纪念日
-                        </div>
-                        <div class="contentItemHeadIntroduction">
-                            这是个纪念日
-                        </div>
+            </div>
+            <div class="contentYear" id="2014Y1M">2014</div>
+            <div class="contentMonth">1月</div>
+            <div class="contentItemLeft contentItemFirst">
+                <div class="contentIconArrow"></div>
+                <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
+                <div class="contentItemHead">
+                    <div class="contentItemHeadTitle">
+                        纪念日
+                    </div>
+                    <div class="contentItemHeadIntroduction">
+                        这是个纪念日
                     </div>
                 </div>
-                <div class="contentYear" id="2013Y2M">2013</div>
-                <div class="contentMonth">2月</div>
-                <div class="contentItemLeft contentItemFirst">
-                    <div class="contentIconArrow"></div>
-                    <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
-                    <div class="contentItemHead">
-                        <div class="contentItemHeadTitle">
-                            纪念日
-                        </div>
-                        <div class="contentItemHeadIntroduction">
-                            这是个纪念日
-                        </div>
+            </div>
+            <div class="contentYear" id="2013Y2M">2013</div>
+            <div class="contentMonth">2月</div>
+            <div class="contentItemLeft contentItemFirst">
+                <div class="contentIconArrow"></div>
+                <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
+                <div class="contentItemHead">
+                    <div class="contentItemHeadTitle">
+                        纪念日
+                    </div>
+                    <div class="contentItemHeadIntroduction">
+                        这是个纪念日
                     </div>
                 </div>
-                <div class="contentItemRight">
-                    <div class="contentIconArrow"></div>
-                    <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
-                    <div class="contentItemHead">
-                        <div class="contentItemHeadTitle">
-                            纪念日
-                        </div>
-                        <div class="contentItemHeadIntroduction">
-                            这是个纪念日
-                        </div>
+            </div>
+            <div class="contentItemRight">
+                <div class="contentIconArrow"></div>
+                <div class="contentIconDot"><div class="contentIconSmallDot"></div></div>
+                <div class="contentItemHead">
+                    <div class="contentItemHeadTitle">
+                        纪念日
+                    </div>
+                    <div class="contentItemHeadIntroduction">
+                        这是个纪念日
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
 
-    <div class="dinary">
+    <div class="Screen RightScreen dinary">
         <div class="firstScreen">
             <div class="passageBox">
                 <div class="passage test1">
@@ -816,7 +816,7 @@
         </div>
     </div>
 
-    <div class="album">
+    <div class="Screen RightScreen album">
         <div class="albumBox">
             <div class="photograph">
                 <img src="../res/photograph/1.jpg">
@@ -900,7 +900,7 @@
         </div>
     </div>
 
-    <div class="selfInfo">
+    <div class="Screen LeftScreen selfInfo">
         <div class="selfInfoBox">
             <div class="individualInfo up">
                 <form class="selfInfoForm">
@@ -964,6 +964,7 @@
     <script>
         initCurrentYear();
         initCountDown(11, 23, 1, 24, 4, 3);
+        initScreen();
         initSelfInfo();
     </script>
 </body>

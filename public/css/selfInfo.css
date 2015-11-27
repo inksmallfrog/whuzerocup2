@@ -1,16 +1,6 @@
 div.selfInfo{
-    position: absolute;
     background: url("../res/background/timeLineBg.jpg") fixed;
     left: -100vw;
-    float:right;
-    width: 100vw;
-    min-height: 100vh;
-
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -ms-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
 }
 div.selfInfo.right{
     left:0;

@@ -33,6 +33,7 @@ function logout(){
 }
 
 function goScreen(screen){
+    console.log(screen);
     if(currentScreen == screen){
         console.log(1);
         window.scrollTo(0, 0);
@@ -42,62 +43,33 @@ function goScreen(screen){
     window.scrollTo(0, 0);
     var currentElement = document.getElementsByClassName(currentScreen)[0];
     var goElement = document.getElementsByClassName(screen)[0];
-    if(currentScreen == "selfInfo"){
-        if(screen == "timeLine"){
-            currentElement.classList.remove("right");
-            document.getElementsByClassName(currentScreen+"Fixed")[0].classList.remove("hide");
-            currentTimeout = setTimeout(function(){currentElement.style.display = "none";}, 1000);
-            goElement.style.display = "block";
-            setTimeout(function(){goElement.classList.remove("right");}, 10);
-            document.getElementsByClassName(screen+"Fixed")[0].classList.remove("show");
+
+    document.getElementsByClassName(currentScreen+"Fixed")[0].classList.remove("show");
+    if(currentElement.classList.contains("RightScreen")){
+        currentElement.classList.remove("left");
+        currentTimeout = setTimeout(function(){currentElement.style.display = "none";}, 1000);
+
+        goElement.style.display = "block";
+        if(goElement.classList.contains("RightScreen")){
+            setTimeout(function(){goElement.classList.add("left");}, 10);
         }
         else{
-            currentElement.classList.remove("right");
-            document.getElementsByClassName(currentScreen+"Fixed")[0].classList.remove("show");
-            currentTimeout = setTimeout(function(){currentElement.style.display = "none";}, 1000);
-            goElement.style.display = "block";
-            setTimeout(function(){goElement.classList.add("left");}, 10);
-            document.getElementsByClassName(screen+"Fixed")[0].classList.add("show");
-        }
-    }
-    if(currentScreen == "timeLine"){
-        if(screen == "selfInfo"){
-            currentElement.classList.add("right");
-            document.getElementsByClassName(currentScreen+"Fixed")[0].classList.add("hide");
-            currentTimeout = setTimeout(function(){currentElement.style.display = "none";}, 1000);
-            goElement.style.display = "block";
             setTimeout(function(){goElement.classList.add("right");}, 10);
-            document.getElementsByClassName(screen+"Fixed")[0].classList.add("show");
         }
-        else{
-            currentElement.classList.add("left");
-            currentTimeout = setTimeout(function(){currentElement.style.display = "none";}, 1000);
-            goElement.style.display = "block";
-            setTimeout(function(){goElement.classList.add("left");}, 10);
-            document.getElementsByClassName(currentScreen+"Fixed")[0].classList.add("hide");
-            document.getElementsByClassName(screen + "Fixed")[0].classList.add("show");
-        }
+        document.getElementsByClassName(screen+"Fixed")[0].classList.add("show");
     }
     else{
-        currentElement.classList.remove("left");
-        document.getElementsByClassName(currentScreen+"Fixed")[0].classList.remove("show");
+        currentElement.classList.remove("right");
         currentTimeout = setTimeout(function(){currentElement.style.display = "none";}, 1000);
-        if(screen == "selfInfo"){
-            goElement.style.display = "block";
-            setTimeout(function(){goElement.classList.add("right");}, 10);
-            document.getElementsByClassName(screen+"Fixed")[0].classList.add("show");
-        }
-        else if(screen == "timeLine"){
-            goElement.style.display = "block";
-            setTimeout(function(){goElement.classList.remove("left");}, 10);
-            setTimeout(function(){goElement.classList.remove("right");}, 10);
-            document.getElementsByClassName(screen+"Fixed")[0].classList.remove("hide");
+
+        goElement.style.display = "block";
+        if(goElement.classList.contains("RightScreen")){
+            setTimeout(function(){goElement.classList.add("left");}, 10);
         }
         else{
-            goElement.style.display = "block";
-            setTimeout(function(){goElement.classList.add("left");}, 10);
-            document.getElementsByClassName(screen + "Fixed")[0].classList.add("show");
+            setTimeout(function(){goElement.classList.add("right");}, 10);
         }
+        document.getElementsByClassName(screen+"Fixed")[0].classList.add("show");
     }
 
     currentScreen = screen;
@@ -118,6 +90,13 @@ function initCountDown(month0, day0, month1, day1, month2, day2){
         countDownTarget[2] = new Date(now.getFullYear() + 1, month2, day2);
     }
     calculateCountDown();
+}
+
+function initScreen(){
+    clearTimeout(currentTimeout);
+    window.scrollTo(0, 0);
+    var currentElement = document.getElementsByClassName(currentScreen)[0];
+    currentElement.style.display = "block";
 }
 
 function calculateCountDown(){

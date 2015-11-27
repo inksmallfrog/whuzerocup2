@@ -1,0 +1,15 @@
+div.EditBox.PhotograghEditBox div.Box form div.formItem p.label{
+    width: 6vw;
+}
+div.EditBox.PhotograghEditBox div.Box form div.formItem img#fileShower{
+    float: left;
+    width: 20vw;
+    border-radius: 0;
+}
+div.EditBox.PhotograghEditBox div.Box form div.formItem input#photo{
+    padding-top: 1vh;
+}
+div.EditBox.PhotograghEditBox div.Box form div.Content div.textarea{
+    min-height: 20vh;
+    width: 40vw;
+}

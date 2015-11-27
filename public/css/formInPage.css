@@ -1,7 +1,7 @@
 form{
     margin: 4vh 1vw;
 }
-div.selfInfo div.formItem{
+form div.formItem{
     clear: both;
     float: left;
     margin-bottom: 2vh;
@@ -29,6 +29,7 @@ form div.formItem input[type="password"]{
     height: 3vh;
     width: 18vw;
 }
+form div.textarea,
 form div.formItem textarea{
     resize: none;
     float: left;
@@ -51,7 +52,8 @@ form div.formItem input[type="button"]{
 form div.formItem input[type="reset"]{
     background: #ccc;
 }
-form div.formItem input[type="checkbox"]{
+form div.formItem input[type="checkbox"],
+form div.formItem input[type="radio"]{
     float:left;
     margin:0.5vh 1vw 0 1vw;
     height: 2vh;

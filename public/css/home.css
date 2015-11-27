@@ -17,13 +17,7 @@ div.fixedBox{
 
     z-index: 100;
 }
-
-div.head,
-div.timeLineFixed,
-div.dinaryFixed,
-div.albumFixed,
-div.selfInfoFixed,
-div.countDown{
+div.Fixed{
     position: fixed;
     width: 12vw;
     margin-top: 2vh;
@@ -85,10 +79,7 @@ div.head p.introduction{
     text-align: center;
 }
 
-div.timeLineFixed,
-div.dinaryFixed,
-div.albumFixed,
-div.selfInfoFixed{
+div.CenterFixed{
     top:25vh;
     width: 11vw;
     padding-right: 1vw;
@@ -96,21 +87,15 @@ div.selfInfoFixed{
     text-align: right;
     color: #999;
 }
-div.timeLineFixed a:hover,
-div.dinaryFixed a:hover,
-div.albumFixed a:hover,
-div.selfInfoFixed a:hover{
+div.CenterFixed a:hover{
     color: #000;
 }
-div.dinaryFixed a.active,
-div.albumFixed a.active,
-div.timeLineFixed a.active,
-div.timeLineFixed ul.yearSelect ul.monthSelect li[class^="monthItem"].show.active,
-div.selfInfoFixed a.active{
+div.CenterFixed a.active,
+div.timeLineFixed ul.yearSelect ul.monthSelect li[class^="monthItem"].show.active{
     color: #000;
 }
 div.timeLineFixed{
-    left: 0;
+    left:-100vw;
     height: auto;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
@@ -118,8 +103,8 @@ div.timeLineFixed{
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 }
-div.timeLineFixed.hide{
-    left:-100vw;
+div.timeLineFixed.show{
+    left:0;
 }
 div.timeLineFixed ul.yearSelect li.yearItem{
     font-size: 3vh;
@@ -153,9 +138,6 @@ div.dinaryFixed{
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 }
-div.dinaryFixed.show{
-    left: 0;
-}
 div.albumFixed{
     left:100vw;
 
@@ -164,9 +146,6 @@ div.albumFixed{
     -ms-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
-}
-div.albumFixed.show{
-    left: 0;
 }
 div.selfInfoFixed{
     left:-100vw;
@@ -177,7 +156,7 @@ div.selfInfoFixed{
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 }
-div.selfInfoFixed.show{
+div.CenterFixed.show{
     left: 0;
 }
 div.countDown{
@@ -196,8 +175,24 @@ div.countDown ul{
     padding-right: 1vw;
 }
 
+div.Screen{
+    display: none;
+    position: absolute;
+    float:right;
+    width: 100vw;
+    min-height: 100vh;
 
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
 
+div.Screen.RightScreen{
+    left:100vw;
+}
 
-
-
+div.Screen.RightScreen.left{
+    left:0;
+}
