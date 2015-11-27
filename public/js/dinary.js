@@ -20,7 +20,7 @@ function initDinaryFixed(){
     currentType = document.getElementsByClassName("categoryItem")[0].getElementsByTagName("a")[0];
     currentType.classList.add("active");
 }
-function showCategory(type){
+function showCategory(type, element){
     if(isInPassage){
         quitPassage();
     }
@@ -41,6 +41,6 @@ function showCategory(type){
         }
     }
     currentType.classList.remove("active");
-    currentType = type;
+    currentType = element;
     currentType.classList.add("active");
 }

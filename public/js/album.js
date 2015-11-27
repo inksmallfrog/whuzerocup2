@@ -6,7 +6,7 @@ function initAlbumFixed(){
     currentAlbum = document.getElementsByClassName("albumItem")[0].getElementsByTagName("a")[0];
     currentAlbum.classList.add("active");
 }
-function showAlbum(album){
+function showAlbum(album, element){
     var allPhotographs = document.getElementsByClassName("photograph");
     if(album == null){
         for(var i = 0; i < allPasage.length; ++i){
@@ -24,6 +24,6 @@ function showAlbum(album){
         }
     }
     currentAlbum.classList.remove("active");
-    currentAlbum = type;
+    currentAlbum = element;
     currentAlbum.classList.add("active");
 }
