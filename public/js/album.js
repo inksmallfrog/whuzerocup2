@@ -9,12 +9,12 @@ function initAlbumFixed(){
 function showAlbum(album, element){
     var allPhotographs = document.getElementsByClassName("photograph");
     if(album == null){
-        for(var i = 0; i < allPasage.length; ++i){
+        for(var i = 0; i < allPhotographs.length; ++i){
             allPhotographs[i].style.display = "block";
         }
     }
     else{
-        for(var i = 0; i < allPasage.length; ++i){
+        for(var i = 0; i < allPhotographs.length; ++i){
             if(allPhotographs[i].classList.contains(album)){
                 allPhotographs[i].style.display = "block";
             }
