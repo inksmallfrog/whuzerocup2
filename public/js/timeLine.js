@@ -96,7 +96,7 @@ function toMonth(monthItem){
     scrollToMonth(monthItem);
 }
 
-function initCurrentYear(){
+function initTimeLineFixed(){
     currentActiveYear = document.getElementsByClassName("year")[0];
     currentYear = currentActiveYear.innerHTML.replace(/\s+/g,'');
 

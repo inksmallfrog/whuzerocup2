@@ -192,7 +192,12 @@ div.Screen{
 div.Screen.RightScreen{
     left:100vw;
 }
-
 div.Screen.RightScreen.left{
+    left:0;
+}
+div.Screen.LeftScreen{
+    left:-100vw;
+}
+div.Screen.LeftScreen.right{
     left:0;
 }

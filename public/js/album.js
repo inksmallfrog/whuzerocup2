@@ -1,6 +1,10 @@
 /**
  * Created by inksmallfrog on 11/26/15.
  */
+var currentAlbum = document.getElementsByClassName("albumItem")[0].getElementsByTagName("a")[0];
+function initAlbumFixed(){
+    currentAlbum.classList.add("active");
+}
 function showAlbum(album){
     var allPhotographs = document.getElementsByClassName("photograph");
     if(album == null){
@@ -18,4 +22,7 @@ function showAlbum(album){
             }
         }
     }
+    currentAlbum.classList.remove("active");
+    currentAlbum = type;
+    currentAlbum.classList.add("active");
 }

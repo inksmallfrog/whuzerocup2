@@ -1,9 +1,6 @@
 div.selfInfo{
     background: url("../res/background/timeLineBg.jpg") fixed;
-    left: -100vw;
-}
-div.selfInfo.right{
-    left:0;
+    background-size: 100vw 100vh;
 }
 div.selfInfoBox{
     float: left;

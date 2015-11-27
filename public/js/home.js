@@ -6,6 +6,16 @@ var currentScreen = "timeLine";
 var countDownTarget = new Array();
 var currentTimeout;
 
+function init(){
+    initCountDown(11, 23, 1, 24, 4, 3);
+    initScreen();
+    initTimeLineFixed();
+    initDinaryFixed();
+    initAlbumFixed();
+    initSelfInfoFixed();
+    initSelfInfo();
+}
+
 function toggleSelectOption(){
     var box = document.getElementsByClassName("option")[0];
     var items = document.getElementsByClassName("selectItem");

@@ -4,6 +4,7 @@
 var currentFormName = "individualInfo";
 function initSelfInfo(){
     document.getElementsByClassName(currentFormName)[0].style.display = "block";
+    document.getElementById(currentFormName + "Option").classList.add("active");
 }
 
 function goForm(name){
@@ -17,7 +18,9 @@ function goForm(name){
     setTimeout(function(){toForm.classList.add("up")}, 50);
     currentForm.classList.remove("up");
     setTimeout(function(){currentForm.style.display = "none"}, 1000);
+    document.getElementById(currentFormName + "Option").classList.remove("active");
     currentFormName = name;
+    document.getElementById(currentFormName + "Option").classList.add("active");
 }
 
 function addMemorialDayItem(){

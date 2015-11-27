@@ -93,9 +93,21 @@
     <div class="Fixed CenterFixed selfInfoFixed">
         <div class="selfInfoList">
             <ul class="selfInfoSelect">
-                <li class="selfInfoItem"><a href="javascript:void(0)" onclick="goForm('individualInfo')">我的信息</a></li>
-                <li class="selfInfoItem"><a href="javascript:void(0)" onclick="goForm('pairInfo')">情侣信息</a></li>
-                <li class="selfInfoItem"><a href="javascript:void(0)" onclick="goForm('changePassword')">修改密码</a></li>
+                <li class="selfInfoItem">
+                    <a href="javascript:void(0)" id="individualInfoOption" onclick="goForm('individualInfo')">
+                        我的信息
+                    </a>
+                </li>
+                <li class="selfInfoItem">
+                    <a href="javascript:void(0)" id="pairInfoOption" onclick="goForm('pairInfo')">
+                        情侣信息
+                    </a>
+                </li>
+                <li class="selfInfoItem">
+                    <a href="javascript:void(0)" id="changePasswordOption" onclick="goForm('changePassword')">
+                        修改密码
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
@@ -962,10 +974,7 @@
     </div>
 
     <script>
-        initCurrentYear();
-        initCountDown(11, 23, 1, 24, 4, 3);
-        initScreen();
-        initSelfInfo();
+        init()
     </script>
 </body>
 </html>
