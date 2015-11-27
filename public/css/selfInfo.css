@@ -1,0 +1,70 @@
+div.selfInfo{
+    position: absolute;
+    background: url("../res/background/timeLineBg.jpg") fixed;
+    left: -100vw;
+    float:right;
+    width: 100vw;
+    min-height: 100vh;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+div.selfInfo.right{
+    left:0;
+}
+div.selfInfoBox{
+    float: left;
+    width: 100vw;
+}
+
+div.pairInfo ul.memorialDayList{
+    clear: both;
+}
+div.pairInfo ul.memorialDayList li{
+    float:left;
+    margin:2vh 0;
+}
+div.pairInfo ul.memorialDayList p.label{
+    clear: both;
+    float:left;
+    font-size: 2vh;
+}
+div.pairInfo ul.memorialDayList img{
+    float:left;
+}
+div.pairInfo div.formItem input[type="button"]{
+    float:left;
+    width: 5vw;
+    height: 4vh;
+}
+
+div.selfInfo div.individualInfo,
+div.selfInfo div.pairInfo,
+div.selfInfo div.changePassword{
+    position: absolute;
+    float: left;
+    background: none;
+    padding-top: 2vh;
+    padding-left: 20vw;
+    min-height: 100vh;
+    width: 80vw;
+    top: 100vh;
+    background-size: 100vw 100vh;
+    display: none;
+
+    -webkit-transition: top 1s ease-in-out;
+    -moz-transition: top 1s ease-in-out;
+    -ms-transition: top 1s ease-in-out;
+    -o-transition: top 1s ease-in-out;
+    transition: top 1s ease-in-out;
+}
+
+div.selfInfo div.individualInfo.up,
+div.selfInfo div.pairInfo.up,
+div.selfInfo div.changePassword.up{
+    background: url("../res/background/timeLineBg.jpg") fixed;
+    top: 0vh;
+}

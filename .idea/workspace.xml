@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52d3a540-c983-4d1c-89b8-b55a53dacb61" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/album.css" afterPath="$PROJECT_DIR$/public/css/album.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/formInPage.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/selfInfo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/selfInfo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/page/selfInfo.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/page/album.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/dinary.css" afterPath="$PROJECT_DIR$/public/css/dinary.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/dinary.js" afterPath="$PROJECT_DIR$/public/js/dinary.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/home.css" afterPath="$PROJECT_DIR$/public/css/home.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/home.js" afterPath="$PROJECT_DIR$/public/js/home.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/page/home.php" afterPath="$PROJECT_DIR$/public/page/home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/timeLine.css" afterPath="$PROJECT_DIR$/public/css/timeLine.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -31,82 +37,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="formInPage.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/formInPage.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/page/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-38.51852">
-              <caret line="595" column="22" selection-start-line="561" selection-start-column="22" selection-end-line="595" selection-end-column="22" />
+            <state vertical-scroll-proportion="-15.851851">
+              <caret line="966" column="23" selection-start-line="966" selection-start-column="23" selection-end-line="966" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/home.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dinary.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/dinary.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="timeLine.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/timeLine.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="album.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/album.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5834684">
-              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dinary.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/dinary.js">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/index.php">
+      <file leaf-file-name="selfInfo.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/selfInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5185184">
-              <caret line="80" column="72" selection-start-line="80" selection-start-column="72" selection-end-line="80" selection-end-column="72" />
-              <folding />
+            <state vertical-scroll-proportion="0.08752026">
+              <caret line="5" column="80" selection-start-line="5" selection-start-column="80" selection-end-line="5" selection-end-column="80" />
+              <folding>
+                <element signature="e#0#47#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,8 +85,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Html5" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -164,21 +132,26 @@
         <option value="$PROJECT_DIR$/public/js/passage.js" />
         <option value="$PROJECT_DIR$/public/page/timeLine.html" />
         <option value="$PROJECT_DIR$/public/page/dinary.php" />
-        <option value="$PROJECT_DIR$/public/js/dinary.js" />
         <option value="$PROJECT_DIR$/public/page/product_home.html" />
         <option value="$PROJECT_DIR$/public/js/timeLine.js" />
         <option value="$PROJECT_DIR$/public/page/product_home.php" />
         <option value="$PROJECT_DIR$/public/page/album.html" />
         <option value="$PROJECT_DIR$/public/js/index.js" />
-        <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/public/js/album.js" />
         <option value="$PROJECT_DIR$/lib/template.php" />
-        <option value="$PROJECT_DIR$/public/css/home.css" />
-        <option value="$PROJECT_DIR$/public/page/home.php" />
-        <option value="$PROJECT_DIR$/public/css/timeLine.css" />
-        <option value="$PROJECT_DIR$/public/css/dinary.css" />
         <option value="$PROJECT_DIR$/public/css/album.css" />
+        <option value="$PROJECT_DIR$/public/css/dinary.css" />
+        <option value="$PROJECT_DIR$/public/js/dinary.js" />
+        <option value="$PROJECT_DIR$/public/page/selfInfo.html" />
+        <option value="$PROJECT_DIR$/public/index.php" />
+        <option value="$PROJECT_DIR$/public/css/formInPage.css" />
+        <option value="$PROJECT_DIR$/public/css/home.css" />
+        <option value="$PROJECT_DIR$/public/css/selfInfo.css" />
+        <option value="$PROJECT_DIR$/public/css/timeLine.css" />
         <option value="$PROJECT_DIR$/public/js/home.js" />
+        <option value="$PROJECT_DIR$/public/page/selfInfo.php" />
+        <option value="$PROJECT_DIR$/public/page/home.php" />
+        <option value="$PROJECT_DIR$/public/js/selfInfo.js" />
       </list>
     </option>
   </component>
@@ -194,7 +167,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.6" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1364" />
+    <option name="width" value="1360" />
     <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -220,9 +193,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -343,6 +313,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -653,14 +626,16 @@
       <workItem from="1448441406097" duration="3684000" />
       <workItem from="1448448308824" duration="5634000" />
       <workItem from="1448494943089" duration="15156000" />
+      <workItem from="1448527494714" duration="4231000" />
+      <workItem from="1448583626140" duration="9870000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149083000" />
+    <option name="totallyTimeSpent" value="163184000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1364" height="741" extended-state="4" />
+    <frame x="0" y="0" width="1360" height="741" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -674,9 +649,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23746313" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2366864" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -688,6 +662,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -710,28 +685,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/page/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="272" column="2" selection-start-line="272" selection-start-column="2" selection-end-line="272" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/timeLine.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -924,54 +877,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/page/passage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/findPasswordBox.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/form.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/loginBox.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/passage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/timeLine.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -984,7 +889,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.1661017">
           <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -992,15 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24149108">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/page/album.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.518518">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1008,80 +903,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-83.18519">
           <caret line="210" column="0" selection-start-line="210" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
-          <folding>
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448501064063" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1103,34 +924,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5185184">
-          <caret line="80" column="72" selection-start-line="80" selection-start-column="72" selection-end-line="80" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/page/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-38.51852">
-          <caret line="595" column="22" selection-start-line="561" selection-start-column="22" selection-end-line="595" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/dinary.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/home.css">
+    <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        <state vertical-scroll-proportion="-11.333333">
+          <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/page/passage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.67118645">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1138,15 +951,23 @@
     <entry file="file://$PROJECT_DIR$/public/css/timeLine.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/dinary.css">
+    <entry file="file://$PROJECT_DIR$/public/css/selfInfo.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="18" />
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/page/selfInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.333333">
+          <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1154,16 +975,98 @@
     <entry file="file://$PROJECT_DIR$/public/css/album.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/dinary.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="16" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-77.14286">
+          <caret line="120" column="22" selection-start-line="120" selection-start-column="18" selection-end-line="120" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/loginBox.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/findPasswordBox.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.116693676">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/passage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49594814">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/form.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.7504052">
+          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/formInPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/page/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.851851">
+          <caret line="966" column="23" selection-start-line="966" selection-start-column="23" selection-end-line="966" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5834684">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/selfInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08752026">
+          <caret line="5" column="80" selection-start-line="5" selection-start-column="80" selection-end-line="5" selection-end-column="80" />
+          <folding>
+            <element signature="e#0#47#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

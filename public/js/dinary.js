@@ -3,12 +3,15 @@
  */
 var isInPassage = false;
 function enterPassage(){
+    window.scrollTo(0, 0);
     document.getElementsByClassName("firstScreen")[0].classList.add("up");
     document.getElementsByClassName("secondScreen")[0].classList.add("up");
+    setTimeout(function(){document.getElementsByClassName("firstScreen")[0].style.display = "none"}, 2000);
     isInPassage = true;
 }
 function quitPassage(){
-    document.getElementsByClassName("firstScreen")[0].classList.remove("up");
+    document.getElementsByClassName("firstScreen")[0].style.display = "block";
+    setTimeout(function(){document.getElementsByClassName("firstScreen")[0].classList.remove("up");}, 50);
     document.getElementsByClassName("secondScreen")[0].classList.remove("up");
     isInPassage = false;
 }

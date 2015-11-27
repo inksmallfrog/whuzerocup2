@@ -1,0 +1,58 @@
+form{
+    margin: 4vh 1vw;
+}
+div.selfInfo div.formItem{
+    clear: both;
+    float: left;
+    margin-bottom: 2vh;
+    height: auto;
+    font-size: 2.4vh;
+}
+form div.formItem p.label{
+    float: left;
+    width: 8vw;
+    margin-right: 3vw;
+    text-align: right;
+}
+form div.formItem img{
+    width: 2.6vw;
+    border-radius: 50%;
+    margin-left: 2vw;
+}
+form div.formItem input{
+    float:left;
+}
+form div.formItem input[type="text"]
+form div.formItem input[type="password"]{
+    float: left;
+    padding: 0.2vh 0.6vw;
+    height: 3vh;
+    width: 18vw;
+}
+form div.formItem textarea{
+    resize: none;
+    float: left;
+    padding: 0.2vh 0.6vw;
+    height: 24vh;
+    width: 26vw;
+}
+form div.formItem input[type="submit"],
+form div.formItem input[type="reset"],
+form div.formItem input[type="button"]{
+    float:left;
+    height: 8vh;
+    width: 10vw;
+    margin: 1.6vh 3vw 1.6vh 0;
+    height: 8vh;
+    font-size: 3vh;
+    border: none;
+    background: #cff;
+}
+form div.formItem input[type="reset"]{
+    background: #ccc;
+}
+form div.formItem input[type="checkbox"]{
+    float:left;
+    margin:0.5vh 1vw 0 1vw;
+    height: 2vh;
+}

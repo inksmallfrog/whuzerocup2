@@ -24,7 +24,7 @@
         <div class="flystar"></div>
         <div class="authenticateBox login">
             <form action="../lib/login.php" target="backend" class="formSingle" method="post" onsubmit="return checkLogin()">
-                <input type="text" name="user" placeholder="登录邮箱或用户名" onblur="changeInput(this, '用户', false)">
+                <input type="text" name="user" placeholder="登录邮箱" onblur="changeInput(this, '用户', false)">
                 <div class="error userError"></div>
                 <input type="password" name="password" placeholder="密码" onblur="changeInput(this, '密码', false)">
                 <div class="error passwordError"></div>

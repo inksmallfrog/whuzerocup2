@@ -8,6 +8,9 @@
     <link rel="stylesheet" type="text/css" href="../css/timeLine.css">
     <link rel="stylesheet" type="text/css" href="../css/dinary.css">
     <link rel="stylesheet" type="text/css" href="../css/album.css">
+    <link rel="stylesheet" type="text/css" href="../css/selfInfo.css">
+    <link rel="stylesheet" type="text/css" href="../css/formInPage.css">
+    <script src="../js/selfInfo.js"></script>
     <script src="../js/home.js"></script>
     <script src="../js/timeLine.js"></script>
     <script src="../js/dinary.js"></script>
@@ -24,8 +27,7 @@
         </span>
         <div class="option">
             <ul>
-                <li class="selectItem"><a href="javascript:void(0)">个人信息</a></li>
-                <li class="selectItem"><a href="javascript:void(0)" onclick="goDinary()">情侣信息</a></li>
+                <li class="selectItem"><a href="javascript:void(0)" onclick="goScreen('selfInfo')">个人信息</a></li>
                 <li class="selectItem"><a href="javascript:void(0)" onclick="logout()">登出</a></li>
             </ul>
         </div>
@@ -85,6 +87,15 @@
                 <li class="albumItem"><a href="javascript:void(0)" onclick="showAlbum('test0')">test0(3)</a></li>
                 <li class="albumItem"><a href="javascript:void(0)" onclick="showAlbum('test1')">test1(2)</a></li>
                 <li class="albumItem"><a href="javascript:void(0)" onclick="showAlbum('test2')">test2(3)</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="selfInfoFixed">
+        <div class="selfInfoList">
+            <ul class="selfInfoSelect">
+                <li class="selfInfoItem"><a href="javascript:void(0)" onclick="goForm('individualInfo')">我的信息</a></li>
+                <li class="selfInfoItem"><a href="javascript:void(0)" onclick="goForm('pairInfo')">情侣信息</a></li>
+                <li class="selfInfoItem"><a href="javascript:void(0)" onclick="goForm('changePassword')">修改密码</a></li>
             </ul>
         </div>
     </div>
@@ -888,9 +899,72 @@
             </div>
         </div>
     </div>
+
+    <div class="selfInfo">
+        <div class="selfInfoBox">
+            <div class="individualInfo up">
+                <form class="selfInfoForm">
+                    <div class="formItem"><p class="label">昵称:</p><input type="text" name="userName"></div>
+                    <div class="formItem"><p class="label">生日:</p><input type="date" name="birthday"></div>
+                    <div class="formItem"><p class="label">头像:</p><input type="file" name="headImg"><img src=""></div>
+                    <div class="formItem"><p class="label">签名:</p><textarea name="introduction"></textarea></div>
+                    <div class="formItem"><p class="label">我眼中的他/她:</p><textarea name="theOtherInMyEyes"></textarea></div>
+                    <div class="formItem">
+                        <p class="label">&nbsp</p>
+                        <input type="submit" value="提交">
+                        <input type="reset" value="取消">
+                    </div>
+                </form>
+            </div>
+            <div class="pairInfo">
+                <form class="selfInfoForm">
+                    <div class="formItem"><p class="label">在一起的日子:</p><input type="date" name="togetherDay"></div>
+                    <div class="formItem">
+                        <p class="label">我们的纪念日:</p>
+                        <ul class="memorialDayList">
+                            <li>
+                                <p class="label">时间: </p><input type="date">
+                                <p class="label">内容:</p><input type="text">
+                                <img src="../res/icon/delete.png">
+                            </li>
+                            <div id="addMemorialDay">
+                                <p class="label">&nbsp</p><input type="button" class="addItem"  onclick="addMemorialDayItem()" value="添加">
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="formItem"><p class="label">他/她眼中的我:</p><textarea></textarea></div>
+                    <div class="formItem">
+                        <div class="formItem">
+                            <p class="label">&nbsp</p>
+                            <input type="submit" value="提交">
+                            <input type="reset" value="取消">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="changePassword">
+                <form class="selfInfoForm">
+                    <div class="formItem"><p class="label">验证邮箱:</p><text>327720269@qq.com</text></div>
+                    <div class="formItem"><p class="label">旧密码:</p><input type="password" name="oldPassword"></div>
+                    <div class="formItem"><p class="label">新密码:</p><input type="password" name="newPassword">
+                        <input type="checkbox" onchange="togglePasswordShow(this.checked)" id="showPassword">
+                        <label for="showPassword" >显示密码</label></div>
+                    <div class="formItem"><p class="label">&nbsp</p>
+                        <div class="formItem">
+                            <p class="label">&nbsp</p>
+                            <input type="submit" value="提交">
+                            <input type="reset" value="取消">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <script>
         initCurrentYear();
         initCountDown(11, 23, 1, 24, 4, 3);
+        initSelfInfo();
     </script>
 </body>
 </html>

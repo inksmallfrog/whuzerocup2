@@ -4,19 +4,27 @@
 var isSelectShow = false;
 var currentScreen = "timeLine";
 var countDownTarget = new Array();
+var currentTimeout;
 
 function toggleSelectOption(){
+    var box = document.getElementsByClassName("option")[0];
     var items = document.getElementsByClassName("selectItem");
     if(!isSelectShow){
-        for(var i = 0; i < items.length; ++i){
-            items[i].classList.add("show");
-        }
-        isSelectShow = true;
+        box.style.display = "block";
+        setTimeout(function(){
+            for(var i = 0; i < items.length; ++i){
+                items[i].style.display = "block";
+                items[i].classList.add("show");
+            }
+            isSelectShow = true;
+        }, 50);
     }
     else{
         for(var i = 0; i < items.length; ++i){
             items[i].classList.remove("show");
+            item = items[i];
         }
+        setTimeout(function(){box.style.display = "none";}, 1000);
         isSelectShow = false;
     }
 }
@@ -30,23 +38,56 @@ function goScreen(screen){
         window.scrollTo(0, 0);
         return;
     }
+    clearTimeout(currentTimeout);
     window.scrollTo(0, 0);
     var currentElement = document.getElementsByClassName(currentScreen)[0];
     var goElement = document.getElementsByClassName(screen)[0];
+    if(currentScreen == "selfInfo"){
+        if(screen == "timeLine"){
+            currentElement.classList.remove("right");
+            document.getElementsByClassName(currentScreen+"Fixed")[0].classList.remove("hide");
+            currentTimeout = setTimeout(function(){currentElement.style.display = "none";}, 1000);
+            goElement.style.display = "block";
+            setTimeout(function(){goElement.classList.remove("right");}, 10);
+            document.getElementsByClassName(screen+"Fixed")[0].classList.remove("show");
+        }
+        else{
+            currentElement.classList.remove("right");
+            document.getElementsByClassName(currentScreen+"Fixed")[0].classList.remove("show");
+            currentTimeout = setTimeout(function(){currentElement.style.display = "none";}, 1000);
+            goElement.style.display = "block";
+            setTimeout(function(){goElement.classList.add("left");}, 10);
+            document.getElementsByClassName(screen+"Fixed")[0].classList.add("show");
+        }
+    }
     if(currentScreen == "timeLine"){
-        currentElement.classList.add("left");
-        setTimeout(function(){currentElement.style.display = "none";}, 1000);
-        goElement.style.display = "block";
-        setTimeout(function(){goElement.classList.add("left");}, 10);
-        document.getElementsByClassName(currentScreen+"Fixed")[0].classList.add("hide");
-        document.getElementsByClassName(screen + "Fixed")[0].classList.add("show");
+        if(screen == "selfInfo"){
+            currentElement.classList.add("right");
+            document.getElementsByClassName(currentScreen+"Fixed")[0].classList.add("hide");
+            currentTimeout = setTimeout(function(){currentElement.style.display = "none";}, 1000);
+            goElement.style.display = "block";
+            setTimeout(function(){goElement.classList.add("right");}, 10);
+            document.getElementsByClassName(screen+"Fixed")[0].classList.add("show");
+        }
+        else{
+            currentElement.classList.add("left");
+            currentTimeout = setTimeout(function(){currentElement.style.display = "none";}, 1000);
+            goElement.style.display = "block";
+            setTimeout(function(){goElement.classList.add("left");}, 10);
+            document.getElementsByClassName(currentScreen+"Fixed")[0].classList.add("hide");
+            document.getElementsByClassName(screen + "Fixed")[0].classList.add("show");
+        }
     }
     else{
         currentElement.classList.remove("left");
         document.getElementsByClassName(currentScreen+"Fixed")[0].classList.remove("show");
-        setTimeout(function(){currentElement.style.display = "none";}, 1000);
-
-        if(screen == "timeLine"){
+        currentTimeout = setTimeout(function(){currentElement.style.display = "none";}, 1000);
+        if(screen == "selfInfo"){
+            goElement.style.display = "block";
+            setTimeout(function(){goElement.classList.add("right");}, 10);
+            document.getElementsByClassName(screen+"Fixed")[0].classList.add("show");
+        }
+        else if(screen == "timeLine"){
             goElement.style.display = "block";
             setTimeout(function(){goElement.classList.remove("left");}, 10);
             document.getElementsByClassName(screen+"Fixed")[0].classList.remove("hide");
