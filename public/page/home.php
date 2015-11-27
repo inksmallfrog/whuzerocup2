@@ -73,7 +73,7 @@
     <div class="Fixed CenterFixed dinaryFixed">
         <div class="category">
             <ul class="categorySelect">
-                <li class="categoryItem"><a href="javascript:void(0)" onclick="showCategory()">全部(8)</a></li>
+                <li class="categoryItem"><a href="javascript:void(0)" onclick="showCategory(null, this)">全部(8)</a></li>
                 <li class="categoryItem"><a href="javascript:void(0)" onclick="showCategory('test0', this)">test0(3)</a></li>
                 <li class="categoryItem"><a href="javascript:void(0)" onclick="showCategory('test1', this)">test1(2)</a></li>
                 <li class="categoryItem"><a href="javascript:void(0)" onclick="showCategory('test2', this)">test2(3)</a></li>
@@ -83,7 +83,7 @@
     <div class="Fixed CenterFixed albumFixed">
         <div class="albumList">
             <ul class="albumSelect">
-                <li class="albumItem"><a href="javascript:void(0)" onclick="showAlbum()">全部(8)</a></li>
+                <li class="albumItem"><a href="javascript:void(0)" onclick="showAlbum(null, this)">全部(8)</a></li>
                 <li class="albumItem"><a href="javascript:void(0)" onclick="showAlbum('test0', this)">test0(3)</a></li>
                 <li class="albumItem"><a href="javascript:void(0)" onclick="showAlbum('test1', this)">test1(2)</a></li>
                 <li class="albumItem"><a href="javascript:void(0)" onclick="showAlbum('test2', this)">test2(3)</a></li>
