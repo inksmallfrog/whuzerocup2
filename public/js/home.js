@@ -13,6 +13,8 @@ function init(){
     initDinaryFixed();
     initAlbumFixed();
     initSelfInfo();
+    initType();
+    initAlbum();
 }
 
 function toggleSelectOption(){

@@ -1025,17 +1025,17 @@
                         <p class="label">&nbsp</p>
                         <img id="fileShower">
                     </div>
-                    <div class="formItem" id="typeBox">
+                    <div class="formItem" id="albumBox">
                         <p class="label">分类:</p>
-                        <input type="radio" class="typeChooser" name="typeChooser" id="typeDefault" value="默认" checked>
-                        <label for="typeDefault" class="typeChooserDiv" onclick="chooseType(this)">默认</label>
-                        <input type="radio" class="typeChooser" name="typeChooser" id="type0" value="分类0">
-                        <label for="type0" class="typeChooserDiv" onclick="chooseType(this)">分类0</label>
-                        <input type="radio" class="typeChooser" name="typeChooser" id="type1" value="分类1">
-                        <label for="type1" class="typeChooserDiv" onclick="chooseType(this)">分类1</label>
-                        <input type="radio" class="typeChooser" name="typeChooser" id="type2" value="分类2">
-                        <label for="type2" class="typeChooserDiv" onclick="chooseType(this)">分类2</label>
-                        <label id="newType" class="typeChooserDiv" onclick="addType(this)">新分类</label>
+                        <input type="radio" class="albumChooser" name="typeChooser" id="typeDefault" value="默认" checked>
+                        <label for="typeDefault" class="albumChooserDiv" onclick="chooseAlbum(this)">默认</label>
+                        <input type="radio" class="albumChooser" name="typeChooser" id="type0" value="分类0">
+                        <label for="type0" class="albumChooserDiv" onclick="chooseAlbum(this)">分类0</label>
+                        <input type="radio" class="albumChooser" name="typeChooser" id="type1" value="分类1">
+                        <label for="type1" class="albumChooserDiv" onclick="chooseAlbum(this)">分类1</label>
+                        <input type="radio" class="albumChooser" name="typeChooser" id="type2" value="分类2">
+                        <label for="type2" class="albumChooserDiv" onclick="chooseAlbum(this)">分类2</label>
+                        <label id="newType" class="albumChooserDiv" onclick="addAlbum(this)">新分类</label>
                     </div>
                     <div class="formItem Content PhotograghDescribe">
                         <p class="label">描述:</p>

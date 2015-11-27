@@ -39,21 +39,25 @@ div.EditBox div.Box form div.formItem input#title{
     height: 4vh;
     padding-left: 0.4vw;
 }
-div.EditBox div.Box form div.formItem input.typeChooser{
+div.EditBox div.Box form div.formItem input.typeChooser,
+div.EditBox div.Box form div.formItem input.albumChooser{
     clear: none;
     display: none;
 }
-div.EditBox div.Box form div.formItem label.typeChooserDiv{
+div.EditBox div.Box form div.formItem label.typeChooserDiv,
+div.EditBox div.Box form div.formItem label.albumChooserDiv{
     float:left;
     margin-top: 1vh;
     margin-right: 2vw;
     min-width: 3vw;
     text-align: center;
 }
-div.EditBox div.Box form div.formItem label.typeChooserDiv#newType{
+div.EditBox div.Box form div.formItem label.typeChooserDiv#newType,
+div.EditBox div.Box form div.formItem label.albumChooserDiv#newAlbum{
     margin-left: 3vw;
 }
-div.EditBox div.Box form div.formItem label.typeChooserDiv.choose{
+div.EditBox div.Box form div.formItem label.typeChooserDiv.choose,
+div.EditBox div.Box form div.formItem label.albumChooserDiv.choose{
     background: #333;
 }
 div.EditBox div.Box form div.formItem input.newType{
