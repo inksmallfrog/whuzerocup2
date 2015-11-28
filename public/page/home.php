@@ -22,17 +22,13 @@
 <body>
     <div class="Fixed head">
         <img src="../res/headImg/head.jpg" class="headImg">
-        <span class="select">
-            <a class="userName" href="javascript:void(0)" onclick="toggleSelectOption()">
-                二娃就是这么任性
-                <img src="../res/icon/select.png" class="selectIcon">
+        <div class="select">
+            <a class="userName" href="javascript:void(0)" onclick="goScreen('selfInfo')">
+                二娃任性
             </a>
-        </span>
-        <div class="option">
-            <ul>
-                <li class="selectItem"><a href="javascript:void(0)" onclick="goScreen('selfInfo')">个人信息</a></li>
-                <li class="selectItem"><a href="javascript:void(0)" onclick="logout()">登出</a></li>
-            </ul>
+             <a class="userName" href="javascript:void(0)" onclick="logout()">
+                <img src="../res/icon/quit.png" class="selectIcon">
+            </a>
         </div>
         <p class="introduction">其实还是很喜欢你的～</p>
     </div>

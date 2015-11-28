@@ -99,7 +99,7 @@ function checkSignup(){
         showError(emailLeft, "邮箱用于找回密码，不能为空");
         return false;
     }
-    if("/[a-zA-Z0-9]+[a-zA-Z0-9_]*@([a-zA-Z0-9]+.)+[a-zA-Z0-9]+/".match(emailLeft)){
+    if("/[a-zA-Z0-9]+[a-zA-Z0-9_]*@([a-zA-Z0-9]+.)+[a-zA-Z0-9]+/".match(emailLeft.value)){
         showError(emailLeft, "邮箱的格式似乎不太对哦");
         return false;
     }
@@ -107,7 +107,7 @@ function checkSignup(){
         showError(emailRight, "邮箱用于找回密码，不能为空");
         return false;
     }
-    if("/[a-zA-Z0-9]+[a-zA-Z0-9_]*@([a-zA-Z0-9]+.)+[a-zA-Z0-9]+/".match(emailRight)){
+    if("/[a-zA-Z0-9]+[a-zA-Z0-9_]*@([a-zA-Z0-9]+.)+[a-zA-Z0-9]+/".match(emailRight.value)){
         showError(emailRight, "邮箱的格式似乎不太对哦");
         return false;
     }
@@ -180,7 +180,7 @@ function goSecondScreen(){
     navigartorBox.classList.add("show");
 
     secondScreen.classList.add("mainPage");
-    mainPage.setAttribute("src", "./page/home.php");
+    mainPage.setAttribute("src", "./page/product_home.php");
 }
 
 function goFirstScreen(){

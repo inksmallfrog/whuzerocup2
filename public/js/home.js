@@ -1,7 +1,6 @@
 /**
  * Created by inksmallfrog on 11/23/15.
  */
-var isSelectShow = false;
 var currentScreen = "timeLine";
 var countDownTarget = new Array();
 var currentTimeout;
@@ -15,29 +14,6 @@ function init(){
     initSelfInfo();
     initType();
     initAlbum();
-}
-
-function toggleSelectOption(){
-    var box = document.getElementsByClassName("option")[0];
-    var items = document.getElementsByClassName("selectItem");
-    if(!isSelectShow){
-        box.style.display = "block";
-        setTimeout(function(){
-            for(var i = 0; i < items.length; ++i){
-                items[i].style.display = "block";
-                items[i].classList.add("show");
-            }
-            isSelectShow = true;
-        }, 50);
-    }
-    else{
-        for(var i = 0; i < items.length; ++i){
-            items[i].classList.remove("show");
-            item = items[i];
-        }
-        setTimeout(function(){box.style.display = "none";}, 400);
-        isSelectShow = false;
-    }
 }
 function logout(){
     window.parent.goFirstScreen();

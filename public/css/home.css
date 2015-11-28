@@ -35,42 +35,15 @@ div.head img.headImg{
     width: 3vw;
     margin: 1vh auto;
 }
-div.head a.userName{
-    display: block;
-    width: 100%;
+div.head div.select{
     text-align: center;
+}
+div.head a.userName{
     font-size: 1.2vw;
     color: #333;
 }
 div.head a.userName img.selectIcon{
     width: 1vw;
-}
-div.head div.option{
-    width: 7vw;
-    font-size: 1vw;
-    text-align: center;
-    float: right;
-    margin-right: 1.5vw;
-    background: #505050;
-    color: #ccc;
-}
-div.head div.option li.selectItem{
-    height: 0;
-    top:-100vh;
-    opacity: 0;
-    -webkit-transition: height 0.4s ease-in-out, opacity 1s ease-in-out;
-    -moz-transition: height 0.4s ease-in-out, opacity 1s ease-in-out;
-    -ms-transition: height 0.4s ease-in-out, opacity 1s ease-in-out;
-    -o-transition: height 0.4s ease-in-out, opacity 1s ease-in-out;
-    transition: height 0.4s ease-in-out, opacity 1s ease-in-out;
-}
-div.head div.option li.selectItem.show{
-    top:0;
-    height: 3vh;
-    opacity: 1;
-}
-div.head div.option li.selectItem.show:hover{
-    color:#eee;
 }
 div.head p.introduction{
     clear: both;
@@ -197,10 +170,6 @@ div.countDown ul{
     }
     div.head a.userName img.selectIcon{
         display: none;
-    }
-    div.head div.option{
-        width: 14vw;
-        font-size: 2.6vw;
     }
     div.head p.introduction{
         margin-top: 0;

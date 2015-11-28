@@ -45,9 +45,9 @@
                         <label for="showPwdLeft">显示密码</label>
                     </div>
                     <div class="radioBox">
-                        <input type="radio" name="sexLeft" value="male" id="sexMaleLeft" onclick="changeInput(this, '', true)">
+                        <input type="radio" name="sexLeft" value=0 id="sexMaleLeft" onclick="changeInput(this, '', true)">
                         <label for="sexMaleLeft">汉子</label>
-                        <input type="radio" name="sexLeft" value="female" id="sexFemaleLeft" onclick="changeInput(this, '', true)">
+                        <input type="radio" name="sexLeft" value=1 id="sexFemaleLeft" onclick="changeInput(this, '', true)">
                         <label for="sexFemaleLeft">妹纸</label>
                     </div>
                     <div class="error sexLeftError"></div>
@@ -63,9 +63,9 @@
                         <label for="showPwdRight">显示密码</label>
                     </div>
                     <div class="radioBox">
-                        <input type="radio" name="sexRight" value="male" id="sexMaleRight" onclick="changeInput(this, '', true)">
+                        <input type="radio" name="sexRight" value=0 id="sexMaleRight" onclick="changeInput(this, '', true)">
                         <label for="sexMaleRight">汉子</label>
-                        <input type="radio" name="sexRight" value="female" id="sexFemaleRight" onclick="changeInput(this, '', true)">
+                        <input type="radio" name="sexRight" value=1 id="sexFemaleRight" onclick="changeInput(this, '', true)">
                         <label for="sexFemaleRight">妹纸</label>
                     </div>
                     <div class="error sexRightError"></div>

@@ -6,28 +6,26 @@
  * Time: 7:52 AM
  */
     $home_selfInfo = "
-    <div class=\"head\">
-        <img src=\"{userHeadImg}\" class=\"headImg\">
-        <a class=\"userName\" href=\"javascript:void(0)\" onclick=\"toggleSelectOption()\">
-            {userName}
-            <img src=\"../res/icon/select.png\" class=\"selectIcon\">
-        </a>
-        <div class=\"option\">
-            <ul>
-                <li class=\"selectItem\"><a href=\"javascript:void(0)\">个人信息</a></li>
-                <li class=\"selectItem\"><a href=\"javascript:void(0)\" onclick=\"goDinary()\">情侣信息</a></li>
-                <li class=\"selectItem\"><a href=\"javascript:void(0)\" onclick=\"logout()\">登出</a></li>
-            </ul>
+     <div class=\"Fixed head\">
+        <img src=\"{user.headImg}\" class=\"headImg\">
+        <div class=\"select\">
+            <a class=\"userName\" href=\"javascript:void(0)\" onclick=\"goScreen('selfInfo')\">
+                {user.name}
+            </a>
+             <a class=\"userName\" href=\"javascript:void(0)\" onclick=\"logout()\">
+                <img src=\"../res/icon/quit.png\" class=\"selectIcon\">
+            </a>
         </div>
-        <p class=\"introduction\">{userIntroduction}</p>
+        <p class=\"introduction\">{user.introduction}</p>
     </div>";
 
     $home_timeBar = "
-    <div class=\"timeLineFixed\">
+    <div class=\"Fixed CenterFixed timeLineFixed show\">
         <ul class=\"yearSelect\">
             {list}
         </ul>
     </div>";
+
     $home_timeBar_list = "
     <li class=\"yearItem\" id=\"yearItem{year}\">
         <a class=\"year\" href=\"javascript:void(0)\" onclick=\"toYear(this)\">
